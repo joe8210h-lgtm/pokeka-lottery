@@ -1,0 +1,126 @@
+{
+  "updated": "2026-11-01",
+  "project": "pokeka-lottery",
+  "repo_public": "https://github.com/jojojo8210-commits/pokeka-lottery",
+  "site": "https://pokeka-lottery.jojojo8210.workers.dev/",
+  "read_order": [
+    "docs/HANDOFF.md",
+    "docs/DECISIONS.md",
+    "docs/HANDOVER.md",
+    "docs/status.json",
+    "CLAUDE.md"
+  ],
+  "source_of_truth": "docs/HANDOFF.md(引き継ぎ指示書)と、リポジトリ内のファイル。会話の全文は引き継がない(D23)",
+  "stages": [
+    {
+      "id": 1,
+      "name": "準備(GitHub・リポジトリ)",
+      "status": "done"
+    },
+    {
+      "id": 2,
+      "name": "設計(CLAUDE.md・schema・chains・shops)",
+      "status": "done"
+    },
+    {
+      "id": 3,
+      "name": "一覧サイトMVPの公開",
+      "status": "done",
+      "note": "サンプルデータ、noindex中、サンプルの締切は過ぎている"
+    },
+    {
+      "id": 4,
+      "name": "自動検証(GitHub Actions)",
+      "status": "done",
+      "note": "段階1〜4の時点で緑を確認。以降の変更は未確認"
+    },
+    {
+      "id": "A",
+      "name": "無料の試験運用(知識ファイル・設定・正解データ・振り分け)",
+      "status": "scaffold_done",
+      "note": "API呼び出しなし"
+    },
+    {
+      "id": "A2",
+      "name": "カードゲーム関連のアフィリエイト(枠と規則のみ)",
+      "status": "scaffold_done",
+      "note": "承認前のため非表示"
+    },
+    {
+      "id": "5",
+      "name": "収集の最小版(Scout、Extractor、Verifier)",
+      "status": "todo",
+      "blocker": "情報源URLの確定、APIキー、予算"
+    },
+    {
+      "id": "5b",
+      "name": "リード検出と店舗拡張",
+      "status": "todo",
+      "note": "最初は手動。自動化は規約確認後"
+    },
+    {
+      "id": 6,
+      "name": "本番の店舗リスト50件",
+      "status": "todo"
+    },
+    {
+      "id": 7,
+      "name": "通知(Web Push)",
+      "status": "todo"
+    },
+    {
+      "id": 8,
+      "name": "当選・落選の報告と穴場スコア",
+      "status": "todo"
+    },
+    {
+      "id": 9,
+      "name": "独自ドメイン・noindex解除・収益化",
+      "status": "todo",
+      "note": "独自ドメイン未取得"
+    },
+    {
+      "id": 10,
+      "name": "Claude Code移行・サブエージェント導入",
+      "status": "todo"
+    }
+  ],
+  "uploads_to_confirm": [
+    "CLAUDE.md",
+    "data/chains.yaml(hint版)",
+    "data/schema.json(v2)",
+    "data/leads.schema.json",
+    "data/leads.json",
+    "data/affiliate.json",
+    "config/operations.yaml",
+    "tests/golden/golden.json",
+    "knowledge/ の6ファイル",
+    "scripts/validate.py",
+    ".github/workflows/validate.yml",
+    ".assetsignore",
+    "index.html",
+    "docs/ の3ファイル"
+  ],
+  "open_issues": [
+    "情報源URLの確定(外部サイトは、メッセージに貼られたURLのみ開ける)",
+    "X API の商用利用の規約と費用",
+    "予算の金額(現在0円)",
+    "cardchusen などの規約とrobots.txt の確認",
+    "提携プログラムへの申込みと規約確認",
+    "プライバシーポリシーと広告表記のページ",
+    "独自ドメインの取得",
+    "ログインが必要な応募ページは自動収集できない可能性"
+  ],
+  "kpi_targets": {
+    "extraction_match_rate": 0.95,
+    "unknown_deadline_rate_max": 0.05,
+    "duplicates": 0,
+    "time_to_publish_minutes": 30,
+    "golden_pass_rate_min": 0.95
+  },
+  "x_collection": {
+    "frequency_per_day": 2,
+    "scope": "頻繁にXで告知する店舗、またはXのみで告知する店舗 計50件",
+    "decision": "D22(2026-11-01)"
+  }
+}

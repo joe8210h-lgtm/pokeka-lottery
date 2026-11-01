@@ -1,0 +1,171 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Lead v2",
+  "description": "新しく抽選を始めたとみられる店舗・抽選の候補(確認待ち)。事実を項目に分けて保存し、他サイトの本文・当選率は保存しない",
+  "type": "object",
+  "required": [
+    "id",
+    "detected_at",
+    "via",
+    "store_name",
+    "status"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "detected_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "via": {
+      "type": "string",
+      "description": "見つけた経路(他サイトの名前、manual、user_report)"
+    },
+    "store_name": {
+      "type": "string"
+    },
+    "chain_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "prefecture": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "area": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "x_handle": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "店舗のXアカウント(@なし)。リンク先から分かった場合のみ"
+    },
+    "is_new_store": {
+      "type": "boolean",
+      "description": "shops.yamlに無い店舗(拡張候補)"
+    },
+    "matched_shop_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "product": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "method": {
+      "type": "string",
+      "enum": [
+        "online",
+        "store",
+        "unknown"
+      ]
+    },
+    "entry_channel": {
+      "type": "string",
+      "enum": [
+        "web_form",
+        "x_repost",
+        "app",
+        "in_store",
+        "invitation",
+        "receipt_upload",
+        "unknown"
+      ]
+    },
+    "entry_start": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    },
+    "entry_end": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    },
+    "result_date": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    },
+    "requirements_hint": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "key",
+          "label"
+        ],
+        "properties": {
+          "key": {
+            "type": "string"
+          },
+          "label": {
+            "type": "string",
+            "maxLength": 40,
+            "description": "短い項目名(他サイトの文章は写さない)"
+          }
+        }
+      },
+      "description": "応募要件のヒント。確認済みではない"
+    },
+    "payment_restriction": {
+      "type": "string",
+      "enum": [
+        "none",
+        "own_card_only",
+        "unknown"
+      ]
+    },
+    "primary_url": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "店舗自身の元の告知URL(他サイトのページのURLではない)"
+    },
+    "source_grade": {
+      "type": "string",
+      "enum": [
+        "third_party"
+      ],
+      "description": "リードは常に第三者の出典"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "new",
+        "matched",
+        "collected",
+        "dismissed"
+      ]
+    },
+    "note": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 80,
+      "description": "短い管理メモ。他サイトの文章は書かない"
+    }
+  }
+}

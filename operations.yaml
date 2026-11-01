@@ -1,0 +1,34 @@
+# 運用の設定(エージェントの振り分けと安全装置)  版: v1 / 2026-10-15
+# 無料の試験運用では、API利用はしない。値は変更したら版番号を上げ、learn.md に理由を書く。
+
+publish_policy:
+  auto_publish_min_confidence: 0.9      # 以上かつ consistency=match かつ review_needed=false のときだけ自動公開
+  queue_min_confidence: 0.7             # 0.7以上0.9未満は確認待ち
+  # 0.7未満は破棄(次の収集で再検討)
+
+safety:
+  kill_switch: false                    # true で自動公開を止める(Watchdogが失敗率で切り替える想定)
+  shadow_mode: true                     # true の間は公開せず、結果だけ記録する
+  shadow_days_required: 7               # 本番切り替えの前に必要な日数
+  max_failure_rate_to_run: 0.2          # 失敗率がこれを超えたら kill_switch を有効にする
+
+budget:
+  monthly_api_budget_yen: 0             # 0=無料の試験運用(API呼び出しなし)。金額を決めたら設定する
+  warn_at_ratio: 0.8                    # 上限の80%で警告
+
+collection:
+  max_checks_per_day: 2                 # 1日2回まで
+  
+golden_set:
+  path: tests/golden/golden.json
+  min_pass_rate: 0.95                   # 抽出のゴールデンセットの正解率がこれ未満なら、公開を止める
+
+affiliate:
+  enabled: false                        # 提携の承認と規約確認が済むまで false
+  allowed_categories: [accessory, book, play_goods]
+  banned_categories: [oripa, gacha, resale, lottery_target]
+  placement: below_list                 # 抽選一覧の下のみ
+  max_items: 3
+  pr_label_required: true
+  must_not_affect_ranking: true
+  link_rel: "sponsored noopener noreferrer"

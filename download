@@ -1,0 +1,15 @@
+.git
+.github
+.gitignore
+.assetsignore
+scripts
+config
+tests
+knowledge
+docs
+.claude
+CLAUDE.md
+wrangler.jsonc
+node_modules
+.env
+.env.*

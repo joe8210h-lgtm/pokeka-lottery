@@ -1,0 +1,42 @@
+{
+  "version": "v1",
+  "note": "架空の告知文で作った正解データ。実在の店舗・他サイトの文章は使わない。",
+  "cases": [
+    {
+      "id": "golden-001",
+      "synthetic": true,
+      "input_text": "(架空)○○店、新弾BOXの店頭抽選。10/20 10:00〜10/22 20:00に店頭レジで受付。発表は10/23、掲示で。",
+      "expected": {
+        "method": "store",
+        "entry_channel": "in_store",
+        "entry_start": "2026-10-20T10:00:00+09:00",
+        "entry_end": "2026-10-22T20:00:00+09:00",
+        "result_date": "2026-10-23T00:00:00+09:00",
+        "announce_channel": "poster",
+        "review_needed": false
+      }
+    },
+    {
+      "id": "golden-002",
+      "synthetic": true,
+      "input_text": "(架空)①店舗アカウントをフォロー ②対象の投稿をリポスト ③締切は10/25 23:59。",
+      "expected": {
+        "method": "online",
+        "entry_channel": "x_repost",
+        "entry_end": "2026-10-25T23:59:00+09:00",
+        "entry_steps_count": 2,
+        "review_needed": false
+      }
+    },
+    {
+      "id": "golden-003",
+      "synthetic": true,
+      "input_text": "(架空)画像のみの告知。文字の一部が読めない。",
+      "expected": {
+        "entry_end": null,
+        "review_needed": true,
+        "note": "読めない項目は null にし、確認待ちにすること"
+      }
+    }
+  ]
+}

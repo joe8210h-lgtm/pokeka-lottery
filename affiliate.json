@@ -1,0 +1,55 @@
+{
+  "version": "v1",
+  "updated": "2026-10-15",
+  "enabled": false,
+  "note": "承認前はすべて draft。enabled=true にするには、提携の承認と規約確認を済ませ、config/operations.yaml の affiliate.enabled も揃えて変更する",
+  "programs": [
+    {
+      "id": "amazon-associates",
+      "name": "Amazonアソシエイト",
+      "approved": false,
+      "terms_checked": false,
+      "status": "not_applied"
+    },
+    {
+      "id": "rakuten-affiliate",
+      "name": "楽天アフィリエイト",
+      "approved": false,
+      "terms_checked": false,
+      "status": "not_applied"
+    },
+    {
+      "id": "a8net",
+      "name": "A8.net",
+      "approved": false,
+      "terms_checked": false,
+      "status": "not_applied"
+    }
+  ],
+  "items": [
+    {
+      "id": "ad-sample-sleeve",
+      "program_id": "amazon-associates",
+      "title": "(例)カードスリーブ(架空の掲載例)",
+      "category": "accessory",
+      "is_lottery_target": false,
+      "placement": "below_list",
+      "pr_label": true,
+      "status": "draft",
+      "url": "https://example.com/affiliate-sleeve",
+      "note": "例示。実在の商品ではない"
+    },
+    {
+      "id": "ad-sample-book",
+      "program_id": "rakuten-affiliate",
+      "title": "(例)攻略本(架空の掲載例)",
+      "category": "book",
+      "is_lottery_target": false,
+      "placement": "below_list",
+      "pr_label": true,
+      "status": "draft",
+      "url": "https://example.com/affiliate-book",
+      "note": "例示。実在の商品ではない"
+    }
+  ]
+}
