@@ -1,0 +1,36 @@
+name: x-intake-parse
+on:
+  issues:
+    types: [opened, edited]
+permissions:
+  contents: read
+  issues: write
+jobs:
+  parse:
+    if: contains(github.event.issue.labels.*.name, 'x-intake')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: 本文を読み取り、確認用の結果を作る
+        env:
+          ISSUE_BODY: ${{ github.event.issue.body }}
+        run: |
+          printf '%s' "$ISSUE_BODY" > /tmp/body.txt
+          python3 scripts/parse_intake.py /tmp/body.txt > /tmp/result.json
+          cat /tmp/result.json
+      - name: Issueに確認用の結果を書く(公開データは変更しない)
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+          REPO: ${{ github.repository }}
+        run: |
+          {
+            echo "### 自動読み取りの結果(確認用)"
+            echo ""
+            echo "次の内容を、店舗の公式情報と照らして確認してください。公開データは、まだ変更していません。"
+            echo ""
+            echo '```json'
+            cat /tmp/result.json
+            echo '```'
+          } > /tmp/comment.md
+          gh issue comment "$ISSUE_NUMBER" --repo "$REPO" --body-file /tmp/comment.md
