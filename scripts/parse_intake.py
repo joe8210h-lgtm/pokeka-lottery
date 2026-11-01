@@ -75,6 +75,10 @@ def parse(body):
             errors.append(err)
     if data["entry_end"] is None:
         warnings.append("受付終了が不明です(確認待ちになります)")
+    if not data["product"]:
+        warnings.append("商品名が未入力です")
+    if data["payment_restriction"] == "unknown":
+        warnings.append("支払いの制限が「不明」または未選択です。支払い条件を確認してください")
 
     req = [r.strip("- ").strip() for r in (data["requirements"] or "").splitlines() if r.strip()]
     data["requirements_hint"] = [{"key": "hint", "label": r[:40]} for r in req]
