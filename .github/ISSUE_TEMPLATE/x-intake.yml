@@ -1,0 +1,77 @@
+name: X投稿の取り込み
+description: 店舗のX投稿から、抽選の事実を項目に分けて登録する(本文は貼らない)
+title: "[X取込] 店舗名 / 商品名"
+labels: ["x-intake", "review-needed"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **本文は貼らないでください。** 他人の投稿の文章を、公開リポジトリに残さないためです。
+        投稿を読んで、事実だけを項目に分けて入力してください。
+        個人情報(メールアドレス、電話番号、アカウントの識別子)は書かないでください。
+  - type: input
+    id: store_name
+    attributes:
+      label: 店舗名
+      description: 例)ビックカメラ○○店
+    validations:
+      required: true
+  - type: input
+    id: post_url
+    attributes:
+      label: 投稿のURL(店舗の公式アカウントのもの)
+      description: 例) https://x.com/(店舗のアカウント)/status/(番号)
+    validations:
+      required: true
+  - type: input
+    id: product
+    attributes:
+      label: 商品名
+      description: 例) 拡張パック○○ BOX
+  - type: dropdown
+    id: entry_channel
+    attributes:
+      label: 受付方法
+      options:
+        - 店頭
+        - Webフォーム
+        - Xリポスト
+        - アプリ
+        - 招待リクエスト
+        - 不明
+    validations:
+      required: true
+  - type: input
+    id: entry_start
+    attributes:
+      label: 受付開始(日本時間)
+      description: 例) 2026-10-20 10:00
+  - type: input
+    id: entry_end
+    attributes:
+      label: 受付終了(日本時間)
+      description: 例) 2026-10-22 20:00(不明なら空欄)
+  - type: input
+    id: result_date
+    attributes:
+      label: 当選発表日
+      description: 例) 2026-10-23
+  - type: textarea
+    id: requirements
+    attributes:
+      label: 必要なもの(短く)
+      description: 例) 会員登録、本人名義のマイナンバーカード、指定期間の購入履歴(1行に1つ)
+  - type: dropdown
+    id: payment
+    attributes:
+      label: 支払いの制限
+      options:
+        - なし
+        - 指定カードのみ
+        - 不明
+  - type: checkboxes
+    id: verified
+    attributes:
+      label: 確認状況
+      options:
+        - label: 店舗の公式サイトまたは店頭で、この内容を確認した
