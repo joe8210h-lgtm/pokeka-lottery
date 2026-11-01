@@ -206,5 +206,54 @@
     "last_verified_at": null,
     "confidence": 0.8,
     "review_needed": false
+  },
+  {
+    "id": "x-4",
+    "shop_id": "example-bic",
+    "shop_name": "例)ビックカメラ○○店",
+    "chain_id": "biccamera",
+    "store_type": "chain",
+    "product": "(架空)シート連携テスト",
+    "method": "store",
+    "entry_channel": "in_store",
+    "window_type": "fixed",
+    "entry_start": "2026-10-27T10:00:00+09:00",
+    "entry_end": "2026-10-29T20:00:00+09:00",
+    "result_date": "2026-10-30T00:00:00+09:00",
+    "announce": {
+      "channel": "x_post",
+      "no_inquiry": false
+    },
+    "purchase_start": null,
+    "purchase_end": null,
+    "delivery": "unknown",
+    "shrink": "unknown",
+    "limit_per_person": null,
+    "requirements": [
+      {
+        "key": "hint",
+        "label": "会員登録"
+      }
+    ],
+    "payment": {
+      "restriction": "none",
+      "required_card": null,
+      "timing": "unknown"
+    },
+    "may_close_early": false,
+    "exclusive_group": null,
+    "status": "open",
+    "source_type": "x",
+    "source_grade": "store_notice",
+    "source_url": "https://example.com/test-sheet",
+    "first_seen_at": "2026-11-01T17:58:00+09:00",
+    "last_verified_at": "2026-11-01T17:58:00+09:00",
+    "confidence": 0.95,
+    "review_needed": false,
+    "consistency": {
+      "status": "match",
+      "checked_at": "2026-11-01T17:58:00+09:00",
+      "conflict_fields": []
+    }
   }
 ]
