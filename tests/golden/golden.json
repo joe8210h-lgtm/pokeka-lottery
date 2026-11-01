@@ -37,6 +37,19 @@
         "review_needed": true,
         "note": "読めない項目は null にし、確認待ちにすること"
       }
+    },
+    {
+      "id": "golden-004",
+      "synthetic": true,
+      "input_text": "(架空)Xの投稿型。受付は2026-10-27 10:00から10-29 20:00まで、店頭。発表は10-30。必要なものは会員登録。",
+      "expected": {
+        "entry_channel": "in_store",
+        "entry_start": "2026-10-27T10:00:00+09:00",
+        "entry_end": "2026-10-29T20:00:00+09:00",
+        "result_date": "2026-10-30T00:00:00+09:00",
+        "source_grade": "third_party",
+        "review_needed": true
+      }
     }
   ]
 }
