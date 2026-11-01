@@ -1,0 +1,49 @@
+name: x-intake-approve
+on:
+  issues:
+    types: [labeled]
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+jobs:
+  approve:
+    if: github.event.label.name == 'approved' && contains(github.event.issue.labels.*.name, 'x-intake')
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      ISSUE_NUMBER: ${{ github.event.issue.number }}
+      REPO: ${{ github.repository }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install pyyaml jsonschema
+      - name: Issueの内容を、公開データに追加する案にする
+        env:
+          ISSUE_BODY: ${{ github.event.issue.body }}
+        run: |
+          printf '%s' "$ISSUE_BODY" > /tmp/body.txt
+          if ! python3 scripts/apply_intake.py /tmp/body.txt --issue "$ISSUE_NUMBER" > /tmp/result.json; then
+            { echo "### 承認を見送りました"; echo ""; echo '```json'; cat /tmp/result.json; echo '```'; echo ""; echo "修正して、ラベル「approved」を付け直してください。"; } > /tmp/comment.md
+            gh issue comment "$ISSUE_NUMBER" --repo "$REPO" --body-file /tmp/comment.md
+            exit 1
+          fi
+      - name: 検証する
+        run: python3 scripts/validate.py
+      - name: ブランチとPRを作る(mainへは直接書かない)
+        run: |
+          git config user.name "intake-bot"
+          git config user.email "intake-bot@users.noreply.github.com"
+          BR="intake/issue-$ISSUE_NUMBER"
+          git checkout -b "$BR"
+          git add data/lotteries.json
+          git commit -m "X取込 #$ISSUE_NUMBER を追加"
+          git push origin "$BR"
+          gh pr create --repo "$REPO" --base main --head "$BR" \
+            --title "X取込 #$ISSUE_NUMBER を公開データに追加" \
+            --body "Issue #$ISSUE_NUMBER を承認して追加しました。内容を確認してマージすると公開されます。" > /tmp/pr_url.txt
+          gh issue comment "$ISSUE_NUMBER" --repo "$REPO" --body "PRを作成しました: $(cat /tmp/pr_url.txt)。内容を確認してマージしてください。"
