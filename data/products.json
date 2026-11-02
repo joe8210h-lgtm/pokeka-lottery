@@ -39,19 +39,23 @@
   },
   {
     "id": "p-5",
-    "name": "メガブレイブ",
-    "aliases": [],
-    "img_url": null,
-    "img_source": null,
-    "img_checked_at": null
+    "name": "拡張パック「メガブレイブ」",
+    "aliases": [
+      "メガブレイブ"
+    ],
+    "img_url": "https://files.cardrush.media/pokemon/packs/483.webp",
+    "img_source": "https://cardrush.media/pokemon/packs/483",
+    "img_checked_at": "2026-11-02"
   },
   {
     "id": "p-6",
-    "name": "メガシンフォニア",
-    "aliases": [],
-    "img_url": null,
-    "img_source": null,
-    "img_checked_at": null
+    "name": "拡張パック「メガシンフォニア」",
+    "aliases": [
+      "メガシンフォニア"
+    ],
+    "img_url": "https://files.cardrush.media/pokemon/packs/482.webp",
+    "img_source": "https://cardrush.media/pokemon/packs/482",
+    "img_checked_at": "2026-11-02"
   },
   {
     "id": "p-7",
@@ -59,9 +63,9 @@
     "aliases": [
       "30th CELEBRATION プレミアムデッキセット エーフィ・ブラッキー"
     ],
-    "img_url": null,
-    "img_source": null,
-    "img_checked_at": null
+    "img_url": "https://files.cardrush.media/pokemon/packs/501.webp",
+    "img_source": "https://cardrush.media/pokemon/packs/501",
+    "img_checked_at": "2026-11-02"
   },
   {
     "id": "p-8",
@@ -69,9 +73,9 @@
     "aliases": [
       "アビスアイ"
     ],
-    "img_url": null,
-    "img_source": null,
-    "img_checked_at": null
+    "img_url": "https://files.cardrush.media/pokemon/packs/495.webp",
+    "img_source": "https://cardrush.media/pokemon/packs/495",
+    "img_checked_at": "2026-11-02"
   },
   {
     "id": "p-9",
@@ -79,9 +83,9 @@
     "aliases": [
       "ニンジャスピナー"
     ],
-    "img_url": null,
-    "img_source": null,
-    "img_checked_at": null
+    "img_url": "https://files.cardrush.media/pokemon/packs/494.webp",
+    "img_source": "https://cardrush.media/pokemon/packs/494",
+    "img_checked_at": "2026-11-02"
   },
   {
     "id": "p-10",
@@ -89,9 +93,9 @@
     "aliases": [
       "ムニキスゼロ"
     ],
-    "img_url": null,
-    "img_source": null,
-    "img_checked_at": null
+    "img_url": "https://files.cardrush.media/pokemon/packs/492.webp",
+    "img_source": "https://cardrush.media/pokemon/packs/492",
+    "img_checked_at": "2026-11-02"
   },
   {
     "id": "p-11",
@@ -99,9 +103,9 @@
     "aliases": [
       "MEGAドリームex"
     ],
-    "img_url": null,
-    "img_source": null,
-    "img_checked_at": null
+    "img_url": "https://files.cardrush.media/pokemon/packs/489.webp",
+    "img_source": "https://cardrush.media/pokemon/packs/489",
+    "img_checked_at": "2026-11-02"
   },
   {
     "id": "p-12",
@@ -109,9 +113,9 @@
     "aliases": [
       "インフェルノX"
     ],
-    "img_url": null,
-    "img_source": null,
-    "img_checked_at": null
+    "img_url": "https://files.cardrush.media/pokemon/packs/488.webp",
+    "img_source": "https://cardrush.media/pokemon/packs/488",
+    "img_checked_at": "2026-11-02"
   },
   {
     "id": "p-13",
@@ -119,9 +123,9 @@
     "aliases": [
       "ブラックボルト"
     ],
-    "img_url": null,
-    "img_source": null,
-    "img_checked_at": null
+    "img_url": "https://files.cardrush.media/pokemon/packs/473.webp",
+    "img_source": "https://cardrush.media/pokemon/packs/473",
+    "img_checked_at": "2026-11-02"
   },
   {
     "id": "p-14",
@@ -129,9 +133,9 @@
     "aliases": [
       "ホワイトフレア"
     ],
-    "img_url": null,
-    "img_source": null,
-    "img_checked_at": null
+    "img_url": "https://files.cardrush.media/pokemon/packs/474.webp",
+    "img_source": "https://cardrush.media/pokemon/packs/474",
+    "img_checked_at": "2026-11-02"
   },
   {
     "id": "p-15",
@@ -155,9 +159,9 @@
     "aliases": [
       "ロケット団の栄光"
     ],
-    "img_url": null,
-    "img_source": null,
-    "img_checked_at": null
+    "img_url": "https://files.cardrush.media/pokemon/packs/471.webp",
+    "img_source": "https://cardrush.media/pokemon/packs/471",
+    "img_checked_at": "2026-11-02"
   },
   {
     "id": "p-18",
@@ -165,9 +169,9 @@
     "aliases": [
       "熱風のアリーナ"
     ],
-    "img_url": null,
-    "img_source": null,
-    "img_checked_at": null
+    "img_url": "https://files.cardrush.media/pokemon/packs/470.webp",
+    "img_source": "https://cardrush.media/pokemon/packs/470",
+    "img_checked_at": "2026-11-02"
   },
   {
     "id": "p-19",
@@ -175,16 +179,210 @@
     "aliases": [
       "バトルパートナーズ"
     ],
-    "img_url": null,
-    "img_source": null,
-    "img_checked_at": null
+    "img_url": "https://files.cardrush.media/pokemon/packs/467.webp",
+    "img_source": "https://cardrush.media/pokemon/packs/467",
+    "img_checked_at": "2026-11-02"
   },
   {
     "id": "p-20",
     "name": "スタートデッキ100",
+    "aliases": [
+      "スタートデッキ100 バトルコレクション"
+    ],
+    "img_url": "https://files.cardrush.media/pokemon/packs/490.webp",
+    "img_source": "https://cardrush.media/pokemon/packs/490",
+    "img_checked_at": "2026-11-02"
+  },
+  {
+    "id": "p-21",
+    "name": "スターターセットex ゾロア＆ゾロアークex",
     "aliases": [],
-    "img_url": null,
-    "img_source": null,
-    "img_checked_at": null
+    "img_url": "https://files.cardrush.media/pokemon/packs/498.webp",
+    "img_source": "https://cardrush.media/pokemon/packs/498",
+    "img_checked_at": "2026-11-02"
+  },
+  {
+    "id": "p-22",
+    "name": "スターターセットex イーブイex",
+    "aliases": [],
+    "img_url": "https://files.cardrush.media/pokemon/packs/497.webp",
+    "img_source": "https://cardrush.media/pokemon/packs/497",
+    "img_checked_at": "2026-11-02"
+  },
+  {
+    "id": "p-23",
+    "name": "スターターセットex ニャオハ＆マスカーニャex",
+    "aliases": [],
+    "img_url": "https://files.cardrush.media/pokemon/packs/499.webp",
+    "img_source": "https://cardrush.media/pokemon/packs/499",
+    "img_checked_at": "2026-11-02"
+  },
+  {
+    "id": "p-24",
+    "name": "スペシャルカードセット メガエルレイドex",
+    "aliases": [],
+    "img_url": "https://files.cardrush.media/pokemon/packs/493.webp",
+    "img_source": "https://cardrush.media/pokemon/packs/493",
+    "img_checked_at": "2026-11-02"
+  },
+  {
+    "id": "p-25",
+    "name": "スタートデッキ100 バトルコレクション コロちゃおVer.",
+    "aliases": [],
+    "img_url": "https://files.cardrush.media/pokemon/packs/491.webp",
+    "img_source": "https://cardrush.media/pokemon/packs/491",
+    "img_checked_at": "2026-11-02"
+  },
+  {
+    "id": "p-26",
+    "name": "スターターセットMEGA メガゲンガーex",
+    "aliases": [],
+    "img_url": "https://files.cardrush.media/pokemon/packs/487.webp",
+    "img_source": "https://cardrush.media/pokemon/packs/487",
+    "img_checked_at": "2026-11-02"
+  },
+  {
+    "id": "p-27",
+    "name": "スターターセットMEGA メガディアンシーex",
+    "aliases": [],
+    "img_url": "https://files.cardrush.media/pokemon/packs/486.webp",
+    "img_source": "https://cardrush.media/pokemon/packs/486",
+    "img_checked_at": "2026-11-02"
+  },
+  {
+    "id": "p-30",
+    "name": "プレミアムトレーナーボックスMEGA",
+    "aliases": [],
+    "img_url": "https://files.cardrush.media/pokemon/packs/484.webp",
+    "img_source": "https://cardrush.media/pokemon/packs/484",
+    "img_checked_at": "2026-11-02"
+  },
+  {
+    "id": "p-31",
+    "name": "デッキビルドBOX バトルパートナーズ",
+    "aliases": [],
+    "img_url": "https://files.cardrush.media/pokemon/packs/475.webp",
+    "img_source": "https://cardrush.media/pokemon/packs/475",
+    "img_checked_at": "2026-11-02"
+  },
+  {
+    "id": "p-32",
+    "name": "ハイクラスパック「テラスタルフェスex」",
+    "aliases": [],
+    "img_url": "https://files.cardrush.media/pokemon/packs/465.webp",
+    "img_source": "https://cardrush.media/pokemon/packs/465",
+    "img_checked_at": "2026-11-02"
+  },
+  {
+    "id": "p-33",
+    "name": "拡張パック「超電ブレイカー」",
+    "aliases": [],
+    "img_url": "https://files.cardrush.media/pokemon/packs/464.webp",
+    "img_source": "https://cardrush.media/pokemon/packs/464",
+    "img_checked_at": "2026-11-02"
+  },
+  {
+    "id": "p-34",
+    "name": "強化拡張パック「楽園ドラゴーナ」",
+    "aliases": [],
+    "img_url": "https://files.cardrush.media/pokemon/packs/461.webp",
+    "img_source": "https://cardrush.media/pokemon/packs/461",
+    "img_checked_at": "2026-11-02"
+  },
+  {
+    "id": "p-35",
+    "name": "デッキビルドBOX ステラミラクル",
+    "aliases": [],
+    "img_url": "https://files.cardrush.media/pokemon/packs/476.webp",
+    "img_source": "https://cardrush.media/pokemon/packs/476",
+    "img_checked_at": "2026-11-02"
+  },
+  {
+    "id": "p-36",
+    "name": "拡張パック「ステラミラクル」",
+    "aliases": [],
+    "img_url": "https://files.cardrush.media/pokemon/packs/459.webp",
+    "img_source": "https://cardrush.media/pokemon/packs/459",
+    "img_checked_at": "2026-11-02"
+  },
+  {
+    "id": "p-37",
+    "name": "強化拡張パック「ナイトワンダラー」",
+    "aliases": [],
+    "img_url": "https://files.cardrush.media/pokemon/packs/458.webp",
+    "img_source": "https://cardrush.media/pokemon/packs/458",
+    "img_checked_at": "2026-11-02"
+  },
+  {
+    "id": "p-38",
+    "name": "バトルマスターデッキ パオジアンex",
+    "aliases": [],
+    "img_url": "https://files.cardrush.media/pokemon/packs/478.webp",
+    "img_source": "https://cardrush.media/pokemon/packs/478",
+    "img_checked_at": "2026-11-02"
+  },
+  {
+    "id": "p-39",
+    "name": "バトルマスターデッキ テラスタル リザードンex",
+    "aliases": [],
+    "img_url": "https://files.cardrush.media/pokemon/packs/477.webp",
+    "img_source": "https://cardrush.media/pokemon/packs/477",
+    "img_checked_at": "2026-11-02"
+  },
+  {
+    "id": "p-40",
+    "name": "拡張パック「変幻の仮面」",
+    "aliases": [],
+    "img_url": "https://files.cardrush.media/pokemon/packs/457.webp",
+    "img_source": "https://cardrush.media/pokemon/packs/457",
+    "img_checked_at": "2026-11-02"
+  },
+  {
+    "id": "p-41",
+    "name": "強化拡張パック「クリムゾンヘイズ」",
+    "aliases": [],
+    "img_url": "https://files.cardrush.media/pokemon/packs/456.webp",
+    "img_source": "https://cardrush.media/pokemon/packs/456",
+    "img_checked_at": "2026-11-02"
+  },
+  {
+    "id": "p-42",
+    "name": "拡張パック「ワイルドフォース」",
+    "aliases": [],
+    "img_url": "https://files.cardrush.media/pokemon/packs/452.webp",
+    "img_source": "https://cardrush.media/pokemon/packs/452",
+    "img_checked_at": "2026-11-02"
+  },
+  {
+    "id": "p-43",
+    "name": "拡張パック「サイバージャッジ」",
+    "aliases": [],
+    "img_url": "https://files.cardrush.media/pokemon/packs/451.webp",
+    "img_source": "https://cardrush.media/pokemon/packs/451",
+    "img_checked_at": "2026-11-02"
+  },
+  {
+    "id": "p-44",
+    "name": "ハイクラスパック「シャイニートレジャーex」",
+    "aliases": [],
+    "img_url": "https://files.cardrush.media/pokemon/packs/450.webp",
+    "img_source": "https://cardrush.media/pokemon/packs/450",
+    "img_checked_at": "2026-11-02"
+  },
+  {
+    "id": "p-45",
+    "name": "ポケモンカードゲームClassic フシギバナ&ルギアexデッキ",
+    "aliases": [],
+    "img_url": "https://files.cardrush.media/pokemon/packs/479.webp",
+    "img_source": "https://cardrush.media/pokemon/packs/479",
+    "img_checked_at": "2026-11-02"
+  },
+  {
+    "id": "p-46",
+    "name": "拡張パック「古代の咆哮」",
+    "aliases": [],
+    "img_url": "https://files.cardrush.media/pokemon/packs/447.webp",
+    "img_source": "https://cardrush.media/pokemon/packs/447",
+    "img_checked_at": "2026-11-02"
   }
 ]
