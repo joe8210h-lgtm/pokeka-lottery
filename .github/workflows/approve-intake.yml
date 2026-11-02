@@ -6,6 +6,7 @@ permissions:
   contents: write
   pull-requests: write
   issues: write
+  statuses: write
 jobs:
   approve:
     if: github.event.label.name == 'approved' && contains(github.event.issue.labels.*.name, 'x-intake')
@@ -33,7 +34,9 @@ jobs:
             exit 1
           fi
       - name: 検証する
-        run: python3 scripts/validate.py
+        run: |
+          python3 scripts/validate.py > /tmp/validate.txt || { cat /tmp/validate.txt; exit 1; }
+          cat /tmp/validate.txt
       - name: ブランチとPRを作る(mainへは直接書かない)
         run: |
           git config user.name "intake-bot"
@@ -43,7 +46,11 @@ jobs:
           git add data/lotteries.json data/products.json
           git commit -m "X取込 #$ISSUE_NUMBER を追加"
           git push origin "$BR"
+          SHA="$(git rev-parse HEAD)"
           gh pr create --repo "$REPO" --base main --head "$BR" \
             --title "X取込 #$ISSUE_NUMBER を公開データに追加" \
             --body "Issue #$ISSUE_NUMBER を承認して追加しました。内容を確認してマージすると公開されます。" > /tmp/pr_url.txt
+          # ボットが作ったPRは、通常のチェック(validate-data)が実行されない。上で検証済みの結果を、PRのチェックとして付ける
+          gh api "repos/$REPO/statuses/$SHA" -f state=success -f context="validate-data(取込の承認で実行済み)" \
+            -f description="$(grep '検証OK' /tmp/validate.txt | head -c 120)"
           gh issue comment "$ISSUE_NUMBER" --repo "$REPO" --body "PRを作成しました: $(cat /tmp/pr_url.txt)。内容を確認してマージしてください。"
