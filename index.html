@@ -59,6 +59,9 @@ select{font:inherit;padding:6px 8px;border:1px solid var(--line);border-radius:6
 .row.closed .big{font-size:20px;color:var(--muted)}
 .shop{font-size:13px;font-weight:700;color:var(--muted)}
 .product{font-size:17px;font-weight:700;line-height:1.4;margin:2px 0 6px}
+.pimg{display:block;max-width:100%;max-height:160px;width:auto;height:auto;object-fit:contain;border-radius:8px;margin:0 0 6px;background:#fff}
+.imgsrc{font-size:11px;color:var(--muted,#888);margin:-2px 0 6px}
+.imgsrc a{color:inherit}
 .dates{font-size:14px}
 .chips{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0}
 .chip{display:inline-block;padding:1px 9px;border:1px solid var(--line);border-radius:999px;font-size:12px;background:var(--surface)}
@@ -152,7 +155,7 @@ footer{padding:28px 0 48px;font-size:12px;color:var(--muted)}
   var dtf = new Intl.DateTimeFormat('ja-JP', {timeZone: TZ, month: 'numeric', day: 'numeric', weekday: 'short', hour: '2-digit', minute: '2-digit', hour12: false});
   var KEY = 'pokeka-applied:';
   var mem = {};
-  var state = {items: [], method: 'all', showClosed: false, showUnknown: true, sort: 'end', onlyOk: false, error: false};
+  var state = {items: [], products: {}, method: 'all', showClosed: false, showUnknown: true, sort: 'end', onlyOk: false, error: false};
   var groupApplied = {};
 
   function fmt(v){ return v ? dtf.format(new Date(v)) : null; }
@@ -248,6 +251,23 @@ footer{padding:28px 0 48px;font-size:12px;color:var(--muted)}
     var b = h('div', 'body');
     b.appendChild(h('div', 'shop', it.shop_name || it.shop_id));
     b.appendChild(h('div', 'product', it.product));
+    var pd = state.products[it.product_id];
+    if (pd && /^https:\/\//.test(pd.img_url || '')){
+      var im = document.createElement('img');
+      im.className = 'pimg'; im.alt = (it.product || '商品') + 'の商品画像'; im.loading = 'lazy';
+      im.referrerPolicy = 'no-referrer';
+      im.addEventListener('error', function(){ im.remove(); if (im.nextSibling && im.nextSibling.className === 'imgsrc') im.nextSibling.remove(); });
+      im.src = pd.img_url;
+      b.appendChild(im);
+      if (/^https:\/\//.test(pd.img_source || '')){
+        var sc = h('div', 'imgsrc', '画像の出典: ');
+        var sa = document.createElement('a');
+        sa.href = pd.img_source; sa.target = '_blank'; sa.rel = 'noopener noreferrer';
+        try { sa.textContent = new URL(pd.img_source).hostname; } catch (e) { sa.textContent = '出典ページ'; }
+        sc.appendChild(sa);
+        b.appendChild(sc);
+      }
+    }
 
     var period = '受付 ' + (fmt(it.entry_start) || '未定') + ' 〜 ' + (fmt(it.entry_end) || '未定');
     b.appendChild(h('div', 'dates', period));
@@ -446,6 +466,16 @@ footer{padding:28px 0 48px;font-size:12px;color:var(--muted)}
     });
   }
 
+  function loadProducts(){
+    fetch('data/products.json', {cache: 'no-store'})
+      .then(function(r){ if (!r.ok) throw new Error(r.status); return r.json(); })
+      .then(function(list){
+        (Array.isArray(list) ? list : []).forEach(function(p){ if (p && p.id) state.products[p.id] = p; });
+        render();
+      })
+      .catch(function(){});
+  }
+
   function load(){
     fetch('data/lotteries.json', {cache: 'no-store'})
       .then(function(r){ if (!r.ok) throw new Error(r.status); return r.json(); })
@@ -455,6 +485,7 @@ footer{padding:28px 0 48px;font-size:12px;color:var(--muted)}
 
   bind();
   load();
+  loadProducts();
   loadPr();
   setInterval(render, 60000);
 })();

@@ -40,7 +40,7 @@ jobs:
           git config user.email "intake-bot@users.noreply.github.com"
           BR="intake/issue-$ISSUE_NUMBER"
           git checkout -b "$BR"
-          git add data/lotteries.json
+          git add data/lotteries.json data/products.json
           git commit -m "X取込 #$ISSUE_NUMBER を追加"
           git push origin "$BR"
           gh pr create --repo "$REPO" --base main --head "$BR" \

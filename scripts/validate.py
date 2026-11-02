@@ -7,6 +7,9 @@ from pathlib import Path
 
 import yaml
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import products_lib  # noqa: E402
+
 ROOT = Path(__file__).resolve().parent.parent
 errors = []
 warnings = []
@@ -19,6 +22,8 @@ ops = yaml.safe_load((ROOT / "config/operations.yaml").read_text(encoding="utf-8
 golden = json.loads((ROOT / "tests/golden/golden.json").read_text(encoding="utf-8"))
 chain_ids = {c["id"] for c in chains}
 shop_ids = {s["id"] for s in shops}
+products = json.loads((ROOT / "data/products.json").read_text(encoding="utf-8"))
+product_ids = {p.get("id") for p in products}
 
 try:
     import jsonschema
@@ -89,11 +94,35 @@ for it in items:
         errors.append(f"{i}: 締切が不明なのに review_needed が false です")
     if it.get("source_grade") == "third_party" and not it.get("review_needed"):
         errors.append(f"{i}: 第三者の出典なのに review_needed が false です")
+    pid = it.get("product_id")
+    if pid and pid not in product_ids:
+        errors.append(f"{i}: product_id '{pid}' が products.json にありません")
+    elif not pid:
+        warnings.append(f"{i}: product_id が未設定です(商品マスターに紐づいていません)")
     band[classify(it)] += 1
 
 for s in shops:
     if s.get("chain_id") and s["chain_id"] not in chain_ids:
         errors.append(f"shops.yaml {s['id']}: chain_id '{s['chain_id']}' が chains.yaml にありません")
+
+# --- 商品マスター(商品名と画像の紐づけ) ---
+pseen, pnames = set(), {}
+for p in products:
+    pi = p.get("id", "(idなし)")
+    if pi in pseen:
+        errors.append(f"products {pi}: idが重複しています")
+    pseen.add(pi)
+    if not p.get("name"):
+        errors.append(f"products {pi}: 商品名がありません")
+    for k in [p.get("name")] + list(p.get("aliases", [])):
+        key = products_lib.norm(k)
+        if key in pnames and pnames[key] != pi:
+            errors.append(f"products {pi}: 名前『{k}』が {pnames[key]} と重複しています(表記ゆれの二重登録)")
+        pnames[key] = pi
+    for e in products_lib.check_image(p.get("img_url"), p.get("img_source")):
+        errors.append(f"products {pi}: {e}")
+    if p.get("img_url") and not p.get("img_checked_at"):
+        errors.append(f"products {pi}: 画像の出典を確認した日(img_checked_at)がありません")
 
 # --- ゴールデンセットの形式 ---
 cases = golden.get("cases", [])
@@ -146,6 +175,6 @@ if errors:
     sys.exit(1)
 for w in warnings:
     print("注意:", w)
-print(f"検証OK: 抽選{len(items)}件 / 店舗{len(shops)}件 / チェーン{len(chains)}件 / 正解データ{len(cases)}件")
+print(f"検証OK: 商品{len(products)}件 / 抽選{len(items)}件 / 店舗{len(shops)}件 / チェーン{len(chains)}件 / 正解データ{len(cases)}件")
 print(f"振り分け(現状): 自動公開 {band['publish']} / 確認待ち {band['queue']} / 破棄 {band['discard']}")
 print(f"閾値: 自動公開 {a} 以上 / 確認待ち {q} 以上")

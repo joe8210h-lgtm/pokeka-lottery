@@ -86,6 +86,12 @@
       "id": 10,
       "name": "Claude Code移行・サブエージェント導入",
       "status": "todo"
+    },
+    {
+      "id": "P1",
+      "name": "商品マスターと画像の紐づけ(D32)",
+      "status": "testing",
+      "note": "products.json、検証、取込スクリプト、Issueテンプレート、サイト表示を実装。スプレッドシートにL・M列を追加済み。Apps Script(sheet_sync.gs)の修正が未了。サイトの画像描画は未テスト(環境にDOMテストが入らない)"
     }
   ],
   "uploads_to_confirm": [
@@ -123,7 +129,7 @@
   },
   "spreadsheet_intake": {
     "sheet": "ポケカ取込",
-    "columns": "A店舗名 B投稿のURL C商品名 D受付方法 E受付開始 F受付終了 G発表日 H必要なもの I支払い制限 J確認済み K状態",
+    "columns": "A店舗名 B投稿のURL C商品名 D受付方法 E受付開始 F受付終了 G発表日 H必要なもの I支払い制限 J確認済み K状態 L商品画像のURL M画像の出典URL",
     "trigger": "10分ごと(Apps Script)",
     "warning": "K列は新規の行以外で消さない(重複Issueが作られる)"
   },

@@ -28,6 +28,16 @@ body:
     attributes:
       label: 商品名
       description: 例) 拡張パック○○ BOX
+  - type: input
+    id: img_url
+    attributes:
+      label: 商品画像のURL
+      description: 商品の公式ページ・販売店のページにある画像のURL(https)。Xの投稿の画像は使えません。画像は複製せず、URLだけ保存します
+  - type: input
+    id: img_source
+    attributes:
+      label: 画像の出典URL
+      description: その画像が載っているページのURL(https)。画像のURLを入れたときは必須
   - type: dropdown
     id: entry_channel
     attributes:

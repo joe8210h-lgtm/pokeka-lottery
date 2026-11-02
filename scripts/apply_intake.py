@@ -13,6 +13,7 @@ import yaml
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from parse_intake import parse  # noqa: E402
+import products_lib  # noqa: E402
 
 JST = timezone(timedelta(hours=9))
 METHOD = {"in_store": "store", "web_form": "online", "x_repost": "online",
@@ -56,6 +57,24 @@ def main():
     if reasons:
         return reject(reasons)
 
+    # 商品名と画像を紐づける(商品マスター)。既存の商品は名前・別名で照合し、なければ新規に登録する
+    products = products_lib.load(root)
+    prod = products_lib.find(products, d["product"])
+    product_note = None
+    if prod is None:
+        prod = {"id": products_lib.next_id(products), "name": d["product"].strip(), "aliases": [],
+                "img_url": d["img_url"], "img_source": d["img_source"],
+                "img_checked_at": products_lib.today() if d["img_url"] else None}
+        products.append(prod)
+        product_note = "new"
+    elif d["img_url"] and not prod.get("img_url"):
+        prod.update(img_url=d["img_url"], img_source=d["img_source"], img_checked_at=products_lib.today())
+        product_note = "image_added"
+    elif d["img_url"] and prod.get("img_url") != d["img_url"]:
+        product_note = "image_kept(既存の画像は変更しません)"
+    if product_note in ("new", "image_added"):
+        products_lib.save(root, products)
+
     now = datetime.now(JST).strftime("%Y-%m-%dT%H:%M:00+09:00")
     start, end = d["entry_start"], d["entry_end"]
     nowdt = datetime.now(JST)
@@ -67,6 +86,7 @@ def main():
         "chain_id": shop.get("chain_id"),
         "store_type": shop.get("store_type", "local_shop"),
         "product": d["product"],
+        "product_id": prod["id"],
         "method": METHOD.get(d["entry_channel"], "unknown"),
         "entry_channel": d["entry_channel"],
         "window_type": "fixed",
@@ -95,7 +115,7 @@ def main():
     }
     items.append(item)
     path.write_text(json.dumps(items, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    print(json.dumps({"status": "added", "id": new_id, "shop_name": shop["name"]}, ensure_ascii=False))
+    print(json.dumps({"status": "added", "id": new_id, "shop_name": shop["name"], "product_id": prod["id"], "product": product_note}, ensure_ascii=False))
     return 0
 
 

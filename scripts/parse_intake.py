@@ -6,11 +6,17 @@ import json
 import re
 import sys
 from datetime import datetime
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import products_lib  # noqa: E402
 
 LABELS = {
     "店舗名": "store_name",
     "投稿のURL": "post_url",
     "商品名": "product",
+    "商品画像のURL": "img_url",
+    "画像の出典URL": "img_source",
     "受付方法": "entry_channel",
     "受付開始(日本時間)": "entry_start",
     "受付終了(日本時間)": "entry_end",
@@ -77,6 +83,9 @@ def parse(body):
         warnings.append("受付終了が不明です(確認待ちになります)")
     if not data["product"]:
         warnings.append("商品名が未入力です")
+    errors.extend(products_lib.check_image(data["img_url"], data["img_source"]))
+    if data["product"] and not data["img_url"]:
+        warnings.append("商品画像が未入力です(商品マスターに画像がなければ、仮イラストで表示します)")
     if data["payment_restriction"] == "unknown":
         warnings.append("支払いの制限が「不明」または未選択です。支払い条件を確認してください")
 
