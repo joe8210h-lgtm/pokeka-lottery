@@ -6,3 +6,4 @@ dist/
 .wrangler/
 
 __pycache__/
+data/.inbox/
