@@ -66,7 +66,7 @@ chains:
     method: 店頭の指定レジで受付
     accepted_cards:
     - ビックカメラポイントカード
-    - ビックカメラSuicaカード
+    - BIG Suicaカード
     - ビックカメラJ-WESTカード
     - ビックカメラJQ SUGOCAカード
     - ビックカメラ公式アプリ
@@ -86,7 +86,7 @@ chains:
   - label: 4店舗(ラゾーナ川崎ほか) 30th CELEBRATION(2026-10-12〜13)
     verified: false
     source: SNS上の第三者の投稿(提供された画像)。公式で要確認
-    accepted_cards: ビックカメラSuicaカード会員のみ(仮カードは不可)
+    accepted_cards: BIG Suicaカード会員のみ(仮カードは不可)
     purchase_history: あり(詳細は要確認)
     id_verification: 受取時にマイナンバーカード等
     note: 受付開始時間が店舗により異なる(10時または13時)

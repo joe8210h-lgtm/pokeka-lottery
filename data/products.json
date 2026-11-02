@@ -65,8 +65,8 @@
     "aliases": [
       "30th CELEBRATION プレミアムデッキセット エーフィ・ブラッキー"
     ],
-    "img_url": "https://files.cardrush.media/pokemon/packs/501.webp",
-    "img_source": "https://cardrush.media/pokemon/packs/501",
+    "img_url": "https://www.30th.pokemon-card.com/images/mf/thumb_16471c73.webp",
+    "img_source": "https://www.30th.pokemon-card.com/product/mf",
     "img_checked_at": "2026-11-02"
   },
   {
@@ -385,6 +385,17 @@
     "aliases": [],
     "img_url": "https://files.cardrush.media/pokemon/packs/447.webp",
     "img_source": "https://cardrush.media/pokemon/packs/447",
+    "img_checked_at": "2026-11-02"
+  },
+  {
+    "id": "p-47",
+    "name": "30th CELEBRATION FUTURISTIC BOX",
+    "aliases": [
+      "FUTURISTIC BOX",
+      "FUTURISTIC BOX(30th CELEBRATION)"
+    ],
+    "img_url": "https://www.30th.pokemon-card.com/images/furbox/thumb_31c64744.webp",
+    "img_source": "https://www.30th.pokemon-card.com/product/furbox",
     "img_checked_at": "2026-11-02"
   }
 ]
