@@ -90,6 +90,8 @@ for it in items:
             errors.append(f"{i}: 受付終了が開始より前です")
     except ValueError:
         pass
+    if it.get("apply_url") and not str(it["apply_url"]).startswith("https://"):
+        errors.append(f"{i}: apply_url はhttpsで始まる必要があります")
     if not it.get("entry_end") and not it.get("review_needed"):
         errors.append(f"{i}: 締切が不明なのに review_needed が false です")
     if it.get("source_grade") == "third_party" and not it.get("review_needed"):

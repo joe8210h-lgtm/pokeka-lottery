@@ -341,6 +341,13 @@
     "source_url": {
       "type": "string"
     },
+    "apply_url": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "店舗の公式の応募ページ(LivePocket・店舗フォーム等)。告知に載っているURLだけを入れる。無ければnull(告知URLを使う)"
+    },
     "first_seen_at": {
       "type": "string",
       "format": "date-time"
