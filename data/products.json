@@ -13,8 +13,10 @@
   },
   {
     "id": "p-2",
-    "name": "スペシャルデッキセットMEGA",
-    "aliases": [],
+    "name": "スペシャルデッキセットMEGA メガオーダイル・メガカイリュー・メガゲンガー",
+    "aliases": [
+      "スペシャルデッキセットMEGA"
+    ],
     "img_url": "https://www.pokemon-card.com/products/2026/images/mg_1.jpg",
     "img_source": "https://www.pokemon-card.com/products/mega/mg.html",
     "img_checked_at": "2026-11-02",
