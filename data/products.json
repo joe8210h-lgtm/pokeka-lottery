@@ -62,5 +62,129 @@
     "img_url": null,
     "img_source": null,
     "img_checked_at": null
+  },
+  {
+    "id": "p-8",
+    "name": "拡張パック「アビスアイ」",
+    "aliases": [
+      "アビスアイ"
+    ],
+    "img_url": null,
+    "img_source": null,
+    "img_checked_at": null
+  },
+  {
+    "id": "p-9",
+    "name": "拡張パック「ニンジャスピナー」",
+    "aliases": [
+      "ニンジャスピナー"
+    ],
+    "img_url": null,
+    "img_source": null,
+    "img_checked_at": null
+  },
+  {
+    "id": "p-10",
+    "name": "拡張パック「ムニキスゼロ」",
+    "aliases": [
+      "ムニキスゼロ"
+    ],
+    "img_url": null,
+    "img_source": null,
+    "img_checked_at": null
+  },
+  {
+    "id": "p-11",
+    "name": "ハイクラスパック「MEGAドリームex」",
+    "aliases": [
+      "MEGAドリームex"
+    ],
+    "img_url": null,
+    "img_source": null,
+    "img_checked_at": null
+  },
+  {
+    "id": "p-12",
+    "name": "拡張パック「インフェルノX」",
+    "aliases": [
+      "インフェルノX"
+    ],
+    "img_url": null,
+    "img_source": null,
+    "img_checked_at": null
+  },
+  {
+    "id": "p-13",
+    "name": "拡張パック「ブラックボルト」",
+    "aliases": [
+      "ブラックボルト"
+    ],
+    "img_url": null,
+    "img_source": null,
+    "img_checked_at": null
+  },
+  {
+    "id": "p-14",
+    "name": "拡張パック「ホワイトフレア」",
+    "aliases": [
+      "ホワイトフレア"
+    ],
+    "img_url": null,
+    "img_source": null,
+    "img_checked_at": null
+  },
+  {
+    "id": "p-15",
+    "name": "拡張パックデラックス「ブラックボルト」",
+    "aliases": [],
+    "img_url": null,
+    "img_source": null,
+    "img_checked_at": null
+  },
+  {
+    "id": "p-16",
+    "name": "拡張パックデラックス「ホワイトフレア」",
+    "aliases": [],
+    "img_url": null,
+    "img_source": null,
+    "img_checked_at": null
+  },
+  {
+    "id": "p-17",
+    "name": "拡張パック「ロケット団の栄光」",
+    "aliases": [
+      "ロケット団の栄光"
+    ],
+    "img_url": null,
+    "img_source": null,
+    "img_checked_at": null
+  },
+  {
+    "id": "p-18",
+    "name": "強化拡張パック「熱風のアリーナ」",
+    "aliases": [
+      "熱風のアリーナ"
+    ],
+    "img_url": null,
+    "img_source": null,
+    "img_checked_at": null
+  },
+  {
+    "id": "p-19",
+    "name": "拡張パック「バトルパートナーズ」",
+    "aliases": [
+      "バトルパートナーズ"
+    ],
+    "img_url": null,
+    "img_source": null,
+    "img_checked_at": null
+  },
+  {
+    "id": "p-20",
+    "name": "スタートデッキ100",
+    "aliases": [],
+    "img_url": null,
+    "img_source": null,
+    "img_checked_at": null
   }
 ]

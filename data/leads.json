@@ -269,7 +269,7 @@
   {
     "id": "lead-tcg193-set",
     "detected_at": "2026-11-02T12:00:00+09:00",
-    "via": "pokechuu+nyuka-now",
+    "via": "pokechuu+nyuka-now+cardchusen",
     "store_name": "TCGショップ193(対象6店舗)",
     "chain_id": null,
     "prefecture": null,
@@ -298,7 +298,7 @@
   {
     "id": "lead-tcg193-mega",
     "detected_at": "2026-11-02T12:00:00+09:00",
-    "via": "pokechuu",
+    "via": "pokechuu+cardchusen",
     "store_name": "TCGShop193",
     "chain_id": null,
     "prefecture": null,
@@ -557,7 +557,7 @@
   {
     "id": "lead-seagull-30th",
     "detected_at": "2026-11-02T12:00:00+09:00",
-    "via": "nyuka-now",
+    "via": "nyuka-now+cardchusen",
     "store_name": "シーガル",
     "chain_id": null,
     "prefecture": null,
@@ -1238,5 +1238,1634 @@
     "source_grade": "third_party",
     "status": "new",
     "note": "要確認:店舗の一次情報で照合する"
+  },
+  {
+    "id": "lead-cc2-01",
+    "detected_at": "2026-11-02T14:00:00+09:00",
+    "via": "cardchusen",
+    "store_name": "キデイランド ららぽーと富士…",
+    "chain_id": null,
+    "prefecture": null,
+    "area": null,
+    "x_handle": null,
+    "is_new_store": true,
+    "matched_shop_id": null,
+    "product": "30th CELEBRATION BOX",
+    "method": "online",
+    "entry_channel": "unknown",
+    "entry_start": null,
+    "entry_end": "2026-11-02T23:59:00+09:00",
+    "result_date": null,
+    "requirements_hint": [
+      {
+        "key": "membership",
+        "label": "会員登録"
+      },
+      {
+        "key": "id_verification",
+        "label": "本人確認"
+      }
+    ],
+    "payment_restriction": "unknown",
+    "primary_url": null,
+    "source_grade": "third_party",
+    "status": "new",
+    "note": "商品は画像から判定。店舗の一次情報で照合する"
+  },
+  {
+    "id": "lead-cc2-02",
+    "detected_at": "2026-11-02T14:00:00+09:00",
+    "via": "cardchusen",
+    "store_name": "キデイランド ららぽーと富士…",
+    "chain_id": null,
+    "prefecture": null,
+    "area": null,
+    "x_handle": null,
+    "is_new_store": true,
+    "matched_shop_id": null,
+    "product": "ストームエメラルダ",
+    "method": "online",
+    "entry_channel": "unknown",
+    "entry_start": null,
+    "entry_end": "2026-11-02T23:59:00+09:00",
+    "result_date": null,
+    "requirements_hint": [
+      {
+        "key": "membership",
+        "label": "会員登録"
+      },
+      {
+        "key": "id_verification",
+        "label": "本人確認"
+      }
+    ],
+    "payment_restriction": "unknown",
+    "primary_url": null,
+    "source_grade": "third_party",
+    "status": "new",
+    "note": "商品は画像から判定。店舗の一次情報で照合する"
+  },
+  {
+    "id": "lead-cc2-03",
+    "detected_at": "2026-11-02T14:00:00+09:00",
+    "via": "cardchusen",
+    "store_name": "ふるいちトップブックス中野店",
+    "chain_id": null,
+    "prefecture": null,
+    "area": null,
+    "x_handle": null,
+    "is_new_store": true,
+    "matched_shop_id": null,
+    "product": "30th CELEBRATION BOX",
+    "method": "store",
+    "entry_channel": "in_store",
+    "entry_start": null,
+    "entry_end": "2026-11-03T20:00:00+09:00",
+    "result_date": null,
+    "requirements_hint": [
+      {
+        "key": "app",
+        "label": "アプリ"
+      },
+      {
+        "key": "membership",
+        "label": "会員登録"
+      },
+      {
+        "key": "id_verification",
+        "label": "本人確認"
+      }
+    ],
+    "payment_restriction": "unknown",
+    "primary_url": null,
+    "source_grade": "third_party",
+    "status": "new",
+    "note": "商品は画像から判定。店舗の一次情報で照合する"
+  },
+  {
+    "id": "lead-cc2-04",
+    "detected_at": "2026-11-02T14:00:00+09:00",
+    "via": "cardchusen",
+    "store_name": "ふるいちイオンモール熱田店",
+    "chain_id": null,
+    "prefecture": null,
+    "area": null,
+    "x_handle": null,
+    "is_new_store": true,
+    "matched_shop_id": null,
+    "product": "ストームエメラルダ",
+    "method": "online",
+    "entry_channel": "app",
+    "entry_start": null,
+    "entry_end": "2026-11-03T21:01:00+09:00",
+    "result_date": null,
+    "requirements_hint": [
+      {
+        "key": "app",
+        "label": "アプリ"
+      },
+      {
+        "key": "membership",
+        "label": "会員登録"
+      },
+      {
+        "key": "id_verification",
+        "label": "本人確認"
+      }
+    ],
+    "payment_restriction": "unknown",
+    "primary_url": null,
+    "source_grade": "third_party",
+    "status": "new",
+    "note": "商品は画像から判定。店舗の一次情報で照合する"
+  },
+  {
+    "id": "lead-cc2-05",
+    "detected_at": "2026-11-02T14:00:00+09:00",
+    "via": "cardchusen",
+    "store_name": "カードボックス津店",
+    "chain_id": null,
+    "prefecture": null,
+    "area": null,
+    "x_handle": null,
+    "is_new_store": true,
+    "matched_shop_id": null,
+    "product": "ハドウシーカー",
+    "method": "online",
+    "entry_channel": "unknown",
+    "entry_start": null,
+    "entry_end": "2026-11-03T22:00:00+09:00",
+    "result_date": null,
+    "requirements_hint": [],
+    "payment_restriction": "unknown",
+    "primary_url": null,
+    "source_grade": "third_party",
+    "status": "new",
+    "note": "商品は画像から判定。店舗の一次情報で照合する"
+  },
+  {
+    "id": "lead-cc2-06",
+    "detected_at": "2026-11-02T14:00:00+09:00",
+    "via": "cardchusen",
+    "store_name": "TSUTAYA森町店トレカコーナー",
+    "chain_id": null,
+    "prefecture": null,
+    "area": null,
+    "x_handle": null,
+    "is_new_store": true,
+    "matched_shop_id": null,
+    "product": "30th CELEBRATION BOX",
+    "method": "online",
+    "entry_channel": "unknown",
+    "entry_start": null,
+    "entry_end": "2026-11-03T23:59:00+09:00",
+    "result_date": null,
+    "requirements_hint": [
+      {
+        "key": "membership",
+        "label": "会員登録"
+      }
+    ],
+    "payment_restriction": "unknown",
+    "primary_url": null,
+    "source_grade": "third_party",
+    "status": "new",
+    "note": "商品は画像から判定。店舗の一次情報で照合する"
+  },
+  {
+    "id": "lead-cc2-07",
+    "detected_at": "2026-11-02T14:00:00+09:00",
+    "via": "cardchusen",
+    "store_name": "カードボックスオーサカ店",
+    "chain_id": null,
+    "prefecture": null,
+    "area": null,
+    "x_handle": null,
+    "is_new_store": true,
+    "matched_shop_id": null,
+    "product": "ハドウシーカー",
+    "method": "online",
+    "entry_channel": "unknown",
+    "entry_start": null,
+    "entry_end": "2026-11-03T23:59:00+09:00",
+    "result_date": null,
+    "requirements_hint": [
+      {
+        "key": "membership",
+        "label": "会員登録"
+      },
+      {
+        "key": "id_verification",
+        "label": "本人確認"
+      }
+    ],
+    "payment_restriction": "unknown",
+    "primary_url": null,
+    "source_grade": "third_party",
+    "status": "new",
+    "note": "商品は画像から判定。店舗の一次情報で照合する"
+  },
+  {
+    "id": "lead-cc2-08",
+    "detected_at": "2026-11-02T14:00:00+09:00",
+    "via": "cardchusen",
+    "store_name": "カードボックスオーサカ店",
+    "chain_id": null,
+    "prefecture": null,
+    "area": null,
+    "x_handle": null,
+    "is_new_store": true,
+    "matched_shop_id": null,
+    "product": "スペシャルデッキセットMEGA",
+    "method": "online",
+    "entry_channel": "unknown",
+    "entry_start": null,
+    "entry_end": "2026-11-03T23:59:00+09:00",
+    "result_date": null,
+    "requirements_hint": [
+      {
+        "key": "membership",
+        "label": "会員登録"
+      },
+      {
+        "key": "id_verification",
+        "label": "本人確認"
+      }
+    ],
+    "payment_restriction": "unknown",
+    "primary_url": null,
+    "source_grade": "third_party",
+    "status": "new",
+    "note": "商品は画像から判定。店舗の一次情報で照合する"
+  },
+  {
+    "id": "lead-cc2-09",
+    "detected_at": "2026-11-02T14:00:00+09:00",
+    "via": "cardchusen",
+    "store_name": "TSUTAYA富士八幡町店",
+    "chain_id": null,
+    "prefecture": null,
+    "area": null,
+    "x_handle": null,
+    "is_new_store": true,
+    "matched_shop_id": null,
+    "product": "スペシャルデッキセットMEGA",
+    "method": "store",
+    "entry_channel": "in_store",
+    "entry_start": null,
+    "entry_end": "2026-11-03T22:00:00+09:00",
+    "result_date": null,
+    "requirements_hint": [
+      {
+        "key": "membership",
+        "label": "会員登録"
+      },
+      {
+        "key": "id_verification",
+        "label": "本人確認"
+      }
+    ],
+    "payment_restriction": "unknown",
+    "primary_url": null,
+    "source_grade": "third_party",
+    "status": "new",
+    "note": "商品は画像から判定。店舗の一次情報で照合する"
+  },
+  {
+    "id": "lead-cc2-10",
+    "detected_at": "2026-11-02T14:00:00+09:00",
+    "via": "cardchusen",
+    "store_name": "ブックオフ高槻栄店",
+    "chain_id": null,
+    "prefecture": null,
+    "area": null,
+    "x_handle": null,
+    "is_new_store": true,
+    "matched_shop_id": null,
+    "product": "30th CELEBRATION カードセット",
+    "method": "store",
+    "entry_channel": "x_repost",
+    "entry_start": null,
+    "entry_end": "2026-11-03T23:59:00+09:00",
+    "result_date": null,
+    "requirements_hint": [
+      {
+        "key": "sns_entry",
+        "label": "SNS応募"
+      }
+    ],
+    "payment_restriction": "unknown",
+    "primary_url": null,
+    "source_grade": "third_party",
+    "status": "new",
+    "note": "商品は画像から判定。店舗の一次情報で照合する"
+  },
+  {
+    "id": "lead-cc2-11",
+    "detected_at": "2026-11-02T14:00:00+09:00",
+    "via": "cardchusen",
+    "store_name": "カードボックス横浜本店",
+    "chain_id": null,
+    "prefecture": null,
+    "area": null,
+    "x_handle": null,
+    "is_new_store": true,
+    "matched_shop_id": null,
+    "product": "ハドウシーカー",
+    "method": "online",
+    "entry_channel": "unknown",
+    "entry_start": null,
+    "entry_end": "2026-11-03T23:59:00+09:00",
+    "result_date": null,
+    "requirements_hint": [
+      {
+        "key": "membership",
+        "label": "会員登録"
+      },
+      {
+        "key": "id_verification",
+        "label": "本人確認"
+      }
+    ],
+    "payment_restriction": "unknown",
+    "primary_url": null,
+    "source_grade": "third_party",
+    "status": "new",
+    "note": "商品は画像から判定。店舗の一次情報で照合する"
+  },
+  {
+    "id": "lead-cc2-12",
+    "detected_at": "2026-11-02T14:00:00+09:00",
+    "via": "cardchusen",
+    "store_name": "トレカショップなかよし久米…",
+    "chain_id": null,
+    "prefecture": null,
+    "area": null,
+    "x_handle": null,
+    "is_new_store": true,
+    "matched_shop_id": null,
+    "product": "30th CELEBRATION BOX",
+    "method": "online",
+    "entry_channel": "x_repost",
+    "entry_start": null,
+    "entry_end": "2026-11-04T21:00:00+09:00",
+    "result_date": null,
+    "requirements_hint": [
+      {
+        "key": "sns_entry",
+        "label": "SNS応募"
+      }
+    ],
+    "payment_restriction": "unknown",
+    "primary_url": null,
+    "source_grade": "third_party",
+    "status": "new",
+    "note": "商品は画像から判定。店舗の一次情報で照合する"
+  },
+  {
+    "id": "lead-cc2-13",
+    "detected_at": "2026-11-02T14:00:00+09:00",
+    "via": "cardchusen",
+    "store_name": "ブックオフ栄スカイル店",
+    "chain_id": null,
+    "prefecture": null,
+    "area": null,
+    "x_handle": null,
+    "is_new_store": true,
+    "matched_shop_id": null,
+    "product": "プレミアムデッキセット エーフィ・ブラッキー",
+    "method": "online",
+    "entry_channel": "x_repost",
+    "entry_start": null,
+    "entry_end": "2026-11-04T23:59:00+09:00",
+    "result_date": null,
+    "requirements_hint": [
+      {
+        "key": "sns_entry",
+        "label": "SNS応募"
+      }
+    ],
+    "payment_restriction": "unknown",
+    "primary_url": null,
+    "source_grade": "third_party",
+    "status": "new",
+    "note": "商品は画像から判定。店舗の一次情報で照合する"
+  },
+  {
+    "id": "lead-cc2-14",
+    "detected_at": "2026-11-02T14:00:00+09:00",
+    "via": "cardchusen",
+    "store_name": "カードボックス通販/買取",
+    "chain_id": null,
+    "prefecture": null,
+    "area": null,
+    "x_handle": null,
+    "is_new_store": true,
+    "matched_shop_id": null,
+    "product": "スペシャルデッキセットMEGA",
+    "method": "online",
+    "entry_channel": "unknown",
+    "entry_start": null,
+    "entry_end": "2026-11-04T23:59:00+09:00",
+    "result_date": null,
+    "requirements_hint": [
+      {
+        "key": "membership",
+        "label": "会員登録"
+      }
+    ],
+    "payment_restriction": "unknown",
+    "primary_url": null,
+    "source_grade": "third_party",
+    "status": "new",
+    "note": "商品は画像から判定。店舗の一次情報で照合する"
+  },
+  {
+    "id": "lead-cc2-15",
+    "detected_at": "2026-11-02T14:00:00+09:00",
+    "via": "cardchusen",
+    "store_name": "BOOKOFFイオンモール成田店",
+    "chain_id": null,
+    "prefecture": null,
+    "area": null,
+    "x_handle": null,
+    "is_new_store": true,
+    "matched_shop_id": null,
+    "product": "30th CELEBRATION BOX",
+    "method": "online",
+    "entry_channel": "x_repost",
+    "entry_start": null,
+    "entry_end": "2026-11-04T23:59:00+09:00",
+    "result_date": null,
+    "requirements_hint": [
+      {
+        "key": "sns_entry",
+        "label": "SNS応募"
+      }
+    ],
+    "payment_restriction": "unknown",
+    "primary_url": null,
+    "source_grade": "third_party",
+    "status": "new",
+    "note": "商品は画像から判定。店舗の一次情報で照合する"
+  },
+  {
+    "id": "lead-cc2-16",
+    "detected_at": "2026-11-02T14:00:00+09:00",
+    "via": "cardchusen",
+    "store_name": "BOOKOFFイオンモール成田店",
+    "chain_id": null,
+    "prefecture": null,
+    "area": null,
+    "x_handle": null,
+    "is_new_store": true,
+    "matched_shop_id": null,
+    "product": "プレミアムデッキセット エーフィ・ブラッキー",
+    "method": "online",
+    "entry_channel": "x_repost",
+    "entry_start": null,
+    "entry_end": "2026-11-04T23:59:00+09:00",
+    "result_date": null,
+    "requirements_hint": [
+      {
+        "key": "sns_entry",
+        "label": "SNS応募"
+      }
+    ],
+    "payment_restriction": "unknown",
+    "primary_url": null,
+    "source_grade": "third_party",
+    "status": "new",
+    "note": "商品は画像から判定。店舗の一次情報で照合する"
+  },
+  {
+    "id": "lead-cc2-17",
+    "detected_at": "2026-11-02T14:00:00+09:00",
+    "via": "cardchusen",
+    "store_name": "ホビト通販部",
+    "chain_id": null,
+    "prefecture": null,
+    "area": null,
+    "x_handle": null,
+    "is_new_store": true,
+    "matched_shop_id": null,
+    "product": "30th CELEBRATION BOX",
+    "method": "online",
+    "entry_channel": "unknown",
+    "entry_start": null,
+    "entry_end": "2026-11-04T23:59:00+09:00",
+    "result_date": null,
+    "requirements_hint": [
+      {
+        "key": "membership",
+        "label": "会員登録"
+      }
+    ],
+    "payment_restriction": "unknown",
+    "primary_url": null,
+    "source_grade": "third_party",
+    "status": "new",
+    "note": "商品は画像から判定。店舗の一次情報で照合する"
+  },
+  {
+    "id": "lead-cc2-18",
+    "detected_at": "2026-11-02T14:00:00+09:00",
+    "via": "cardchusen",
+    "store_name": "キデイランド アミュプラザくる…",
+    "chain_id": null,
+    "prefecture": null,
+    "area": null,
+    "x_handle": null,
+    "is_new_store": true,
+    "matched_shop_id": null,
+    "product": "スペシャルデッキセットMEGA",
+    "method": "online",
+    "entry_channel": "unknown",
+    "entry_start": null,
+    "entry_end": "2026-11-04T23:59:00+09:00",
+    "result_date": null,
+    "requirements_hint": [
+      {
+        "key": "membership",
+        "label": "会員登録"
+      }
+    ],
+    "payment_restriction": "unknown",
+    "primary_url": null,
+    "source_grade": "third_party",
+    "status": "new",
+    "note": "商品は画像から判定。店舗の一次情報で照合する"
+  },
+  {
+    "id": "lead-cc2-19",
+    "detected_at": "2026-11-02T14:00:00+09:00",
+    "via": "cardchusen",
+    "store_name": "カードボックス ブックスジュ…",
+    "chain_id": null,
+    "prefecture": null,
+    "area": null,
+    "x_handle": null,
+    "is_new_store": true,
+    "matched_shop_id": null,
+    "product": "スペシャルデッキセットMEGA",
+    "method": "online",
+    "entry_channel": "unknown",
+    "entry_start": null,
+    "entry_end": "2026-11-05T23:59:00+09:00",
+    "result_date": null,
+    "requirements_hint": [
+      {
+        "key": "membership",
+        "label": "会員登録"
+      },
+      {
+        "key": "id_verification",
+        "label": "本人確認"
+      }
+    ],
+    "payment_restriction": "unknown",
+    "primary_url": null,
+    "source_grade": "third_party",
+    "status": "new",
+    "note": "商品は画像から判定。店舗の一次情報で照合する"
+  },
+  {
+    "id": "lead-cc2-20",
+    "detected_at": "2026-11-02T14:00:00+09:00",
+    "via": "cardchusen",
+    "store_name": "福福トレカ通販店",
+    "chain_id": null,
+    "prefecture": null,
+    "area": null,
+    "x_handle": null,
+    "is_new_store": true,
+    "matched_shop_id": null,
+    "product": "アビスアイ",
+    "method": "online",
+    "entry_channel": "unknown",
+    "entry_start": null,
+    "entry_end": "2026-11-05T23:59:00+09:00",
+    "result_date": null,
+    "requirements_hint": [
+      {
+        "key": "membership",
+        "label": "会員登録"
+      }
+    ],
+    "payment_restriction": "unknown",
+    "primary_url": null,
+    "source_grade": "third_party",
+    "status": "new",
+    "note": "商品は画像から判定。店舗の一次情報で照合する"
+  },
+  {
+    "id": "lead-cc2-21",
+    "detected_at": "2026-11-02T14:00:00+09:00",
+    "via": "cardchusen",
+    "store_name": "ドラゴンスター各店",
+    "chain_id": null,
+    "prefecture": null,
+    "area": null,
+    "x_handle": null,
+    "is_new_store": true,
+    "matched_shop_id": null,
+    "product": "スペシャルデッキセットMEGA",
+    "method": "online",
+    "entry_channel": "unknown",
+    "entry_start": null,
+    "entry_end": "2026-11-05T23:59:00+09:00",
+    "result_date": null,
+    "requirements_hint": [
+      {
+        "key": "membership",
+        "label": "会員登録"
+      },
+      {
+        "key": "id_verification",
+        "label": "本人確認"
+      }
+    ],
+    "payment_restriction": "unknown",
+    "primary_url": null,
+    "source_grade": "third_party",
+    "status": "new",
+    "note": "商品は画像から判定。店舗の一次情報で照合する"
+  },
+  {
+    "id": "lead-cc2-22",
+    "detected_at": "2026-11-02T14:00:00+09:00",
+    "via": "cardchusen",
+    "store_name": "北国書林辰口店",
+    "chain_id": null,
+    "prefecture": null,
+    "area": null,
+    "x_handle": null,
+    "is_new_store": true,
+    "matched_shop_id": null,
+    "product": "30th CELEBRATION カードセット",
+    "method": "online",
+    "entry_channel": "unknown",
+    "entry_start": null,
+    "entry_end": "2026-11-06T00:00:00+09:00",
+    "result_date": null,
+    "requirements_hint": [
+      {
+        "key": "id_verification",
+        "label": "本人確認"
+      }
+    ],
+    "payment_restriction": "unknown",
+    "primary_url": null,
+    "source_grade": "third_party",
+    "status": "new",
+    "note": "商品は画像から判定。店舗の一次情報で照合する"
+  },
+  {
+    "id": "lead-cc2-23",
+    "detected_at": "2026-11-02T14:00:00+09:00",
+    "via": "cardchusen",
+    "store_name": "北国書林辰口店",
+    "chain_id": null,
+    "prefecture": null,
+    "area": null,
+    "x_handle": null,
+    "is_new_store": true,
+    "matched_shop_id": null,
+    "product": "30th CELEBRATION BOX",
+    "method": "online",
+    "entry_channel": "unknown",
+    "entry_start": null,
+    "entry_end": "2026-11-07T00:00:00+09:00",
+    "result_date": null,
+    "requirements_hint": [
+      {
+        "key": "id_verification",
+        "label": "本人確認"
+      }
+    ],
+    "payment_restriction": "unknown",
+    "primary_url": null,
+    "source_grade": "third_party",
+    "status": "new",
+    "note": "商品は画像から判定。店舗の一次情報で照合する"
+  },
+  {
+    "id": "lead-cc2-24",
+    "detected_at": "2026-11-02T14:00:00+09:00",
+    "via": "cardchusen",
+    "store_name": "竜のしっぽ",
+    "chain_id": null,
+    "prefecture": null,
+    "area": null,
+    "x_handle": null,
+    "is_new_store": true,
+    "matched_shop_id": null,
+    "product": "スペシャルデッキセットMEGA",
+    "method": "online",
+    "entry_channel": "unknown",
+    "entry_start": null,
+    "entry_end": "2026-11-06T23:59:00+09:00",
+    "result_date": null,
+    "requirements_hint": [
+      {
+        "key": "membership",
+        "label": "会員登録"
+      },
+      {
+        "key": "id_verification",
+        "label": "本人確認"
+      }
+    ],
+    "payment_restriction": "unknown",
+    "primary_url": null,
+    "source_grade": "third_party",
+    "status": "new",
+    "note": "商品は画像から判定。店舗の一次情報で照合する"
+  },
+  {
+    "id": "lead-cc2-25",
+    "detected_at": "2026-11-02T14:00:00+09:00",
+    "via": "cardchusen",
+    "store_name": "TSUTAYA合川店",
+    "chain_id": null,
+    "prefecture": null,
+    "area": null,
+    "x_handle": null,
+    "is_new_store": true,
+    "matched_shop_id": null,
+    "product": "スペシャルデッキセットMEGA",
+    "method": "store",
+    "entry_channel": "in_store",
+    "entry_start": null,
+    "entry_end": "2026-11-08T23:00:00+09:00",
+    "result_date": null,
+    "requirements_hint": [
+      {
+        "key": "membership",
+        "label": "会員登録"
+      },
+      {
+        "key": "id_verification",
+        "label": "本人確認"
+      }
+    ],
+    "payment_restriction": "unknown",
+    "primary_url": null,
+    "source_grade": "third_party",
+    "status": "new",
+    "note": "商品は画像から判定。店舗の一次情報で照合する"
+  },
+  {
+    "id": "lead-cc2-26",
+    "detected_at": "2026-11-02T14:00:00+09:00",
+    "via": "cardchusen",
+    "store_name": "BOOKOFFお宝大陸和泉中央店",
+    "chain_id": null,
+    "prefecture": null,
+    "area": null,
+    "x_handle": null,
+    "is_new_store": true,
+    "matched_shop_id": null,
+    "product": "スペシャルデッキセットMEGA",
+    "method": "online",
+    "entry_channel": "x_repost",
+    "entry_start": null,
+    "entry_end": "2026-11-08T23:59:00+09:00",
+    "result_date": null,
+    "requirements_hint": [
+      {
+        "key": "sns_entry",
+        "label": "SNS応募"
+      }
+    ],
+    "payment_restriction": "unknown",
+    "primary_url": null,
+    "source_grade": "third_party",
+    "status": "new",
+    "note": "商品は画像から判定。店舗の一次情報で照合する"
+  },
+  {
+    "id": "lead-cc2-27",
+    "detected_at": "2026-11-02T14:00:00+09:00",
+    "via": "cardchusen",
+    "store_name": "きくざわ書店ナッピィモール店",
+    "chain_id": null,
+    "prefecture": null,
+    "area": null,
+    "x_handle": null,
+    "is_new_store": true,
+    "matched_shop_id": null,
+    "product": "30th CELEBRATION BOX",
+    "method": "online",
+    "entry_channel": "unknown",
+    "entry_start": null,
+    "entry_end": "2026-11-08T23:59:00+09:00",
+    "result_date": null,
+    "requirements_hint": [
+      {
+        "key": "id_verification",
+        "label": "本人確認"
+      }
+    ],
+    "payment_restriction": "unknown",
+    "primary_url": null,
+    "source_grade": "third_party",
+    "status": "new",
+    "note": "商品は画像から判定。店舗の一次情報で照合する"
+  },
+  {
+    "id": "lead-cc2-28",
+    "detected_at": "2026-11-02T14:00:00+09:00",
+    "via": "cardchusen",
+    "store_name": "TSUTAYA Trading Card 平塚店",
+    "chain_id": null,
+    "prefecture": null,
+    "area": null,
+    "x_handle": null,
+    "is_new_store": true,
+    "matched_shop_id": null,
+    "product": "プレミアムデッキセット エーフィ・ブラッキー",
+    "method": "online",
+    "entry_channel": "x_repost",
+    "entry_start": null,
+    "entry_end": "2026-11-13T23:59:00+09:00",
+    "result_date": null,
+    "requirements_hint": [
+      {
+        "key": "sns_entry",
+        "label": "SNS応募"
+      }
+    ],
+    "payment_restriction": "unknown",
+    "primary_url": null,
+    "source_grade": "third_party",
+    "status": "new",
+    "note": "商品は画像から判定。店舗の一次情報で照合する"
+  },
+  {
+    "id": "lead-cc2-29",
+    "detected_at": "2026-11-02T14:00:00+09:00",
+    "via": "cardchusen",
+    "store_name": "TSUTAYA Trading Card 北千住",
+    "chain_id": null,
+    "prefecture": null,
+    "area": null,
+    "x_handle": null,
+    "is_new_store": true,
+    "matched_shop_id": null,
+    "product": "プレミアムデッキセット エーフィ・ブラッキー",
+    "method": "online",
+    "entry_channel": "x_repost",
+    "entry_start": null,
+    "entry_end": "2026-11-08T23:59:00+09:00",
+    "result_date": null,
+    "requirements_hint": [
+      {
+        "key": "sns_entry",
+        "label": "SNS応募"
+      }
+    ],
+    "payment_restriction": "unknown",
+    "primary_url": null,
+    "source_grade": "third_party",
+    "status": "new",
+    "note": "商品は画像から判定。店舗の一次情報で照合する"
+  },
+  {
+    "id": "lead-cc2-30",
+    "detected_at": "2026-11-02T14:00:00+09:00",
+    "via": "cardchusen",
+    "store_name": "オレタン岡山本店",
+    "chain_id": null,
+    "prefecture": null,
+    "area": null,
+    "x_handle": null,
+    "is_new_store": true,
+    "matched_shop_id": null,
+    "product": "スペシャルデッキセットMEGA",
+    "method": "online",
+    "entry_channel": "unknown",
+    "entry_start": null,
+    "entry_end": "2026-11-08T23:59:00+09:00",
+    "result_date": null,
+    "requirements_hint": [
+      {
+        "key": "membership",
+        "label": "会員登録"
+      }
+    ],
+    "payment_restriction": "unknown",
+    "primary_url": null,
+    "source_grade": "third_party",
+    "status": "new",
+    "note": "商品は画像から判定。店舗の一次情報で照合する"
+  },
+  {
+    "id": "lead-cc2-31",
+    "detected_at": "2026-11-02T14:00:00+09:00",
+    "via": "cardchusen",
+    "store_name": "ブックオフプラス上野広小路店",
+    "chain_id": null,
+    "prefecture": null,
+    "area": null,
+    "x_handle": null,
+    "is_new_store": true,
+    "matched_shop_id": null,
+    "product": "ハドウシーカー",
+    "method": "online",
+    "entry_channel": "app",
+    "entry_start": null,
+    "entry_end": "2026-11-24T23:59:00+09:00",
+    "result_date": null,
+    "requirements_hint": [
+      {
+        "key": "app",
+        "label": "アプリ"
+      },
+      {
+        "key": "membership",
+        "label": "会員登録"
+      },
+      {
+        "key": "sns_entry",
+        "label": "SNS応募"
+      }
+    ],
+    "payment_restriction": "unknown",
+    "primary_url": null,
+    "source_grade": "third_party",
+    "status": "new",
+    "note": "商品は画像から判定。店舗の一次情報で照合する"
+  },
+  {
+    "id": "lead-cc2-32",
+    "detected_at": "2026-11-02T14:00:00+09:00",
+    "via": "cardchusen",
+    "store_name": "カードコレクト秋葉原 -KAK…",
+    "chain_id": null,
+    "prefecture": null,
+    "area": null,
+    "x_handle": null,
+    "is_new_store": true,
+    "matched_shop_id": null,
+    "product": "30th CELEBRATION カードセット",
+    "method": "online",
+    "entry_channel": "x_repost",
+    "entry_start": null,
+    "entry_end": "2026-11-25T13:00:00+09:00",
+    "result_date": null,
+    "requirements_hint": [
+      {
+        "key": "sns_entry",
+        "label": "SNS応募"
+      }
+    ],
+    "payment_restriction": "unknown",
+    "primary_url": null,
+    "source_grade": "third_party",
+    "status": "new",
+    "note": "商品は画像から判定。店舗の一次情報で照合する"
+  },
+  {
+    "id": "lead-cc2-33",
+    "detected_at": "2026-11-02T14:00:00+09:00",
+    "via": "cardchusen",
+    "store_name": "カードコレクト秋葉原 -KAK…",
+    "chain_id": null,
+    "prefecture": null,
+    "area": null,
+    "x_handle": null,
+    "is_new_store": true,
+    "matched_shop_id": null,
+    "product": "30th CELEBRATION BOX",
+    "method": "online",
+    "entry_channel": "x_repost",
+    "entry_start": null,
+    "entry_end": "2026-11-25T13:00:00+09:00",
+    "result_date": null,
+    "requirements_hint": [
+      {
+        "key": "sns_entry",
+        "label": "SNS応募"
+      }
+    ],
+    "payment_restriction": "unknown",
+    "primary_url": null,
+    "source_grade": "third_party",
+    "status": "new",
+    "note": "商品は画像から判定。店舗の一次情報で照合する"
+  },
+  {
+    "id": "lead-cc2-34",
+    "detected_at": "2026-11-02T14:00:00+09:00",
+    "via": "cardchusen",
+    "store_name": "カードコレクト秋葉原本店",
+    "chain_id": null,
+    "prefecture": null,
+    "area": null,
+    "x_handle": null,
+    "is_new_store": true,
+    "matched_shop_id": null,
+    "product": "30th CELEBRATION カードセット",
+    "method": "online",
+    "entry_channel": "x_repost",
+    "entry_start": null,
+    "entry_end": "2026-11-25T13:00:00+09:00",
+    "result_date": null,
+    "requirements_hint": [
+      {
+        "key": "sns_entry",
+        "label": "SNS応募"
+      }
+    ],
+    "payment_restriction": "unknown",
+    "primary_url": null,
+    "source_grade": "third_party",
+    "status": "new",
+    "note": "商品は画像から判定。店舗の一次情報で照合する"
+  },
+  {
+    "id": "lead-cc2-35",
+    "detected_at": "2026-11-02T14:00:00+09:00",
+    "via": "cardchusen",
+    "store_name": "秋葉原チェルモ",
+    "chain_id": null,
+    "prefecture": null,
+    "area": null,
+    "x_handle": null,
+    "is_new_store": true,
+    "matched_shop_id": null,
+    "product": "ハドウシーカー",
+    "method": "online",
+    "entry_channel": "x_repost",
+    "entry_start": null,
+    "entry_end": "2026-11-25T23:59:00+09:00",
+    "result_date": null,
+    "requirements_hint": [
+      {
+        "key": "sns_entry",
+        "label": "SNS応募"
+      }
+    ],
+    "payment_restriction": "unknown",
+    "primary_url": null,
+    "source_grade": "third_party",
+    "status": "new",
+    "note": "商品は画像から判定。店舗の一次情報で照合する"
+  },
+  {
+    "id": "lead-cc2-36",
+    "detected_at": "2026-11-02T14:00:00+09:00",
+    "via": "cardchusen",
+    "store_name": "るるなカード",
+    "chain_id": null,
+    "prefecture": null,
+    "area": null,
+    "x_handle": null,
+    "is_new_store": true,
+    "matched_shop_id": null,
+    "product": "プレミアムデッキセット エーフィ・ブラッキー",
+    "method": "online",
+    "entry_channel": "unknown",
+    "entry_start": null,
+    "entry_end": "2026-11-26T23:45:00+09:00",
+    "result_date": null,
+    "requirements_hint": [
+      {
+        "key": "membership",
+        "label": "会員登録"
+      },
+      {
+        "key": "receipt",
+        "label": "レシート"
+      },
+      {
+        "key": "sns_entry",
+        "label": "SNS応募"
+      }
+    ],
+    "payment_restriction": "unknown",
+    "primary_url": null,
+    "source_grade": "third_party",
+    "status": "new",
+    "note": "商品は画像から判定。店舗の一次情報で照合する"
+  },
+  {
+    "id": "lead-cc2-37",
+    "detected_at": "2026-11-02T14:00:00+09:00",
+    "via": "cardchusen",
+    "store_name": "トレカSHOPあんりみてっど",
+    "chain_id": null,
+    "prefecture": null,
+    "area": null,
+    "x_handle": null,
+    "is_new_store": true,
+    "matched_shop_id": null,
+    "product": "30th CELEBRATION BOX",
+    "method": "online",
+    "entry_channel": "x_repost",
+    "entry_start": null,
+    "entry_end": "2027-02-18T23:59:00+09:00",
+    "result_date": null,
+    "requirements_hint": [
+      {
+        "key": "sns_entry",
+        "label": "SNS応募"
+      }
+    ],
+    "payment_restriction": "unknown",
+    "primary_url": null,
+    "source_grade": "third_party",
+    "status": "new",
+    "note": "商品は画像から判定。店舗の一次情報で照合する"
+  },
+  {
+    "id": "lead-cc2-38",
+    "detected_at": "2026-11-02T14:00:00+09:00",
+    "via": "cardchusen",
+    "store_name": "おじゃま館 長居店",
+    "chain_id": null,
+    "prefecture": null,
+    "area": null,
+    "x_handle": null,
+    "is_new_store": true,
+    "matched_shop_id": null,
+    "product": "30th CELEBRATION カードセット",
+    "method": "online",
+    "entry_channel": "app",
+    "entry_start": null,
+    "entry_end": null,
+    "result_date": null,
+    "requirements_hint": [
+      {
+        "key": "app",
+        "label": "アプリ"
+      },
+      {
+        "key": "membership",
+        "label": "会員登録"
+      }
+    ],
+    "payment_restriction": "unknown",
+    "primary_url": null,
+    "source_grade": "third_party",
+    "status": "new",
+    "note": "商品は画像から判定。店舗の一次情報で照合する"
+  },
+  {
+    "id": "lead-cc2-39",
+    "detected_at": "2026-11-02T14:00:00+09:00",
+    "via": "cardchusen",
+    "store_name": "メディオ!西市",
+    "chain_id": null,
+    "prefecture": null,
+    "area": null,
+    "x_handle": null,
+    "is_new_store": true,
+    "matched_shop_id": null,
+    "product": "ストームエメラルダ",
+    "method": "online",
+    "entry_channel": "app",
+    "entry_start": null,
+    "entry_end": null,
+    "result_date": null,
+    "requirements_hint": [
+      {
+        "key": "app",
+        "label": "アプリ"
+      },
+      {
+        "key": "membership",
+        "label": "会員登録"
+      }
+    ],
+    "payment_restriction": "unknown",
+    "primary_url": null,
+    "source_grade": "third_party",
+    "status": "new",
+    "note": "商品は画像から判定。店舗の一次情報で照合する"
+  },
+  {
+    "id": "lead-cc2-40",
+    "detected_at": "2026-11-02T14:00:00+09:00",
+    "via": "cardchusen",
+    "store_name": "メディオ!西市",
+    "chain_id": null,
+    "prefecture": null,
+    "area": null,
+    "x_handle": null,
+    "is_new_store": true,
+    "matched_shop_id": null,
+    "product": "メガブレイブ",
+    "method": "online",
+    "entry_channel": "app",
+    "entry_start": null,
+    "entry_end": null,
+    "result_date": null,
+    "requirements_hint": [
+      {
+        "key": "app",
+        "label": "アプリ"
+      },
+      {
+        "key": "membership",
+        "label": "会員登録"
+      }
+    ],
+    "payment_restriction": "unknown",
+    "primary_url": null,
+    "source_grade": "third_party",
+    "status": "new",
+    "note": "商品は画像から判定。店舗の一次情報で照合する"
+  },
+  {
+    "id": "lead-cc2-41",
+    "detected_at": "2026-11-02T14:00:00+09:00",
+    "via": "cardchusen",
+    "store_name": "メディオ!西市",
+    "chain_id": null,
+    "prefecture": null,
+    "area": null,
+    "x_handle": null,
+    "is_new_store": true,
+    "matched_shop_id": null,
+    "product": "メガシンフォニア",
+    "method": "online",
+    "entry_channel": "app",
+    "entry_start": null,
+    "entry_end": null,
+    "result_date": null,
+    "requirements_hint": [
+      {
+        "key": "app",
+        "label": "アプリ"
+      },
+      {
+        "key": "membership",
+        "label": "会員登録"
+      }
+    ],
+    "payment_restriction": "unknown",
+    "primary_url": null,
+    "source_grade": "third_party",
+    "status": "new",
+    "note": "商品は画像から判定。店舗の一次情報で照合する"
+  },
+  {
+    "id": "lead-cc2-42",
+    "detected_at": "2026-11-02T14:00:00+09:00",
+    "via": "cardchusen",
+    "store_name": "三洋堂トレカ館 穂積店",
+    "chain_id": null,
+    "prefecture": null,
+    "area": null,
+    "x_handle": null,
+    "is_new_store": true,
+    "matched_shop_id": null,
+    "product": "ストームエメラルダ",
+    "method": "online",
+    "entry_channel": "x_repost",
+    "entry_start": null,
+    "entry_end": null,
+    "result_date": null,
+    "requirements_hint": [
+      {
+        "key": "sns_entry",
+        "label": "SNS応募"
+      }
+    ],
+    "payment_restriction": "unknown",
+    "primary_url": null,
+    "source_grade": "third_party",
+    "status": "new",
+    "note": "商品は画像から判定。店舗の一次情報で照合する"
+  },
+  {
+    "id": "lead-cc2-43",
+    "detected_at": "2026-11-02T14:00:00+09:00",
+    "via": "cardchusen",
+    "store_name": "三洋堂トレカ館 穂積店",
+    "chain_id": null,
+    "prefecture": null,
+    "area": null,
+    "x_handle": null,
+    "is_new_store": true,
+    "matched_shop_id": null,
+    "product": "スタートデッキ100",
+    "method": "online",
+    "entry_channel": "x_repost",
+    "entry_start": null,
+    "entry_end": null,
+    "result_date": null,
+    "requirements_hint": [
+      {
+        "key": "sns_entry",
+        "label": "SNS応募"
+      }
+    ],
+    "payment_restriction": "unknown",
+    "primary_url": null,
+    "source_grade": "third_party",
+    "status": "new",
+    "note": "商品は画像から判定。店舗の一次情報で照合する"
+  },
+  {
+    "id": "lead-cc2-44",
+    "detected_at": "2026-11-02T14:00:00+09:00",
+    "via": "cardchusen",
+    "store_name": "カードショップクラクラ",
+    "chain_id": null,
+    "prefecture": null,
+    "area": null,
+    "x_handle": null,
+    "is_new_store": true,
+    "matched_shop_id": null,
+    "product": "スタートデッキ100",
+    "method": "online",
+    "entry_channel": "x_repost",
+    "entry_start": null,
+    "entry_end": null,
+    "result_date": null,
+    "requirements_hint": [
+      {
+        "key": "sns_entry",
+        "label": "SNS応募"
+      }
+    ],
+    "payment_restriction": "unknown",
+    "primary_url": null,
+    "source_grade": "third_party",
+    "status": "new",
+    "note": "商品は画像から判定。店舗の一次情報で照合する"
+  },
+  {
+    "id": "lead-cc2-45",
+    "detected_at": "2026-11-02T14:00:00+09:00",
+    "via": "cardchusen",
+    "store_name": "おたちゅう。秋葉原5号店",
+    "chain_id": null,
+    "prefecture": null,
+    "area": null,
+    "x_handle": null,
+    "is_new_store": true,
+    "matched_shop_id": null,
+    "product": "ストームエメラルダ",
+    "method": "online",
+    "entry_channel": "x_repost",
+    "entry_start": null,
+    "entry_end": null,
+    "result_date": null,
+    "requirements_hint": [
+      {
+        "key": "sns_entry",
+        "label": "SNS応募"
+      }
+    ],
+    "payment_restriction": "unknown",
+    "primary_url": null,
+    "source_grade": "third_party",
+    "status": "new",
+    "note": "商品は画像から判定。店舗の一次情報で照合する"
+  },
+  {
+    "id": "lead-cc2-46",
+    "detected_at": "2026-11-02T14:00:00+09:00",
+    "via": "cardchusen",
+    "store_name": "ビッグワンTSUTAYAさくら店",
+    "chain_id": null,
+    "prefecture": null,
+    "area": null,
+    "x_handle": null,
+    "is_new_store": true,
+    "matched_shop_id": null,
+    "product": "30th CELEBRATION BOX",
+    "method": "online",
+    "entry_channel": "x_repost",
+    "entry_start": null,
+    "entry_end": null,
+    "result_date": null,
+    "requirements_hint": [
+      {
+        "key": "sns_entry",
+        "label": "SNS応募"
+      }
+    ],
+    "payment_restriction": "unknown",
+    "primary_url": null,
+    "source_grade": "third_party",
+    "status": "new",
+    "note": "商品は画像から判定。店舗の一次情報で照合する"
+  },
+  {
+    "id": "lead-cc2-47",
+    "detected_at": "2026-11-02T14:00:00+09:00",
+    "via": "cardchusen",
+    "store_name": "トレカライザス ネットショップ",
+    "chain_id": null,
+    "prefecture": null,
+    "area": null,
+    "x_handle": null,
+    "is_new_store": true,
+    "matched_shop_id": null,
+    "product": "30th CELEBRATION BOX",
+    "method": "online",
+    "entry_channel": "x_repost",
+    "entry_start": null,
+    "entry_end": null,
+    "result_date": null,
+    "requirements_hint": [
+      {
+        "key": "sns_entry",
+        "label": "SNS応募"
+      }
+    ],
+    "payment_restriction": "unknown",
+    "primary_url": null,
+    "source_grade": "third_party",
+    "status": "new",
+    "note": "商品は画像から判定。店舗の一次情報で照合する"
+  },
+  {
+    "id": "lead-cc2-48",
+    "detected_at": "2026-11-02T14:00:00+09:00",
+    "via": "cardchusen",
+    "store_name": "ポケ堂高崎店",
+    "chain_id": null,
+    "prefecture": null,
+    "area": null,
+    "x_handle": null,
+    "is_new_store": true,
+    "matched_shop_id": null,
+    "product": "30th CELEBRATION BOX",
+    "method": "online",
+    "entry_channel": "x_repost",
+    "entry_start": null,
+    "entry_end": null,
+    "result_date": null,
+    "requirements_hint": [
+      {
+        "key": "sns_entry",
+        "label": "SNS応募"
+      }
+    ],
+    "payment_restriction": "unknown",
+    "primary_url": null,
+    "source_grade": "third_party",
+    "status": "new",
+    "note": "商品は画像から判定。店舗の一次情報で照合する"
+  },
+  {
+    "id": "lead-cc2-49",
+    "detected_at": "2026-11-02T14:00:00+09:00",
+    "via": "cardchusen",
+    "store_name": "カードショップIRODORI",
+    "chain_id": null,
+    "prefecture": null,
+    "area": null,
+    "x_handle": null,
+    "is_new_store": true,
+    "matched_shop_id": null,
+    "product": "30th CELEBRATION BOX",
+    "method": "online",
+    "entry_channel": "x_repost",
+    "entry_start": null,
+    "entry_end": null,
+    "result_date": null,
+    "requirements_hint": [
+      {
+        "key": "sns_entry",
+        "label": "SNS応募"
+      }
+    ],
+    "payment_restriction": "unknown",
+    "primary_url": null,
+    "source_grade": "third_party",
+    "status": "new",
+    "note": "商品は画像から判定。店舗の一次情報で照合する"
+  },
+  {
+    "id": "lead-cc2-50",
+    "detected_at": "2026-11-02T14:00:00+09:00",
+    "via": "cardchusen",
+    "store_name": "トクジロー浦安店",
+    "chain_id": null,
+    "prefecture": null,
+    "area": null,
+    "x_handle": null,
+    "is_new_store": true,
+    "matched_shop_id": null,
+    "product": "30th CELEBRATION カードセット",
+    "method": "store",
+    "entry_channel": "x_repost",
+    "entry_start": null,
+    "entry_end": null,
+    "result_date": null,
+    "requirements_hint": [
+      {
+        "key": "sns_entry",
+        "label": "SNS応募"
+      }
+    ],
+    "payment_restriction": "unknown",
+    "primary_url": null,
+    "source_grade": "third_party",
+    "status": "new",
+    "note": "商品は画像から判定。店舗の一次情報で照合する"
+  },
+  {
+    "id": "lead-cc2-51",
+    "detected_at": "2026-11-02T14:00:00+09:00",
+    "via": "cardchusen",
+    "store_name": "ホビーオフ各店(藤沢店・東…)",
+    "chain_id": null,
+    "prefecture": null,
+    "area": null,
+    "x_handle": null,
+    "is_new_store": true,
+    "matched_shop_id": null,
+    "product": "30th CELEBRATION カードセット",
+    "method": "online",
+    "entry_channel": "unknown",
+    "entry_start": null,
+    "entry_end": null,
+    "result_date": null,
+    "requirements_hint": [],
+    "payment_restriction": "unknown",
+    "primary_url": null,
+    "source_grade": "third_party",
+    "status": "new",
+    "note": "商品は画像から判定。店舗の一次情報で照合する"
+  },
+  {
+    "id": "lead-cc2-52",
+    "detected_at": "2026-11-02T14:00:00+09:00",
+    "via": "cardchusen",
+    "store_name": "ホビーオフ甲府国母店",
+    "chain_id": null,
+    "prefecture": null,
+    "area": null,
+    "x_handle": null,
+    "is_new_store": true,
+    "matched_shop_id": null,
+    "product": "プレミアムデッキセット エーフィ・ブラッキー",
+    "method": "online",
+    "entry_channel": "unknown",
+    "entry_start": null,
+    "entry_end": null,
+    "result_date": null,
+    "requirements_hint": [],
+    "payment_restriction": "unknown",
+    "primary_url": null,
+    "source_grade": "third_party",
+    "status": "new",
+    "note": "商品は画像から判定。店舗の一次情報で照合する"
+  },
+  {
+    "id": "lead-cc2-53",
+    "detected_at": "2026-11-02T14:00:00+09:00",
+    "via": "cardchusen",
+    "store_name": "ホビーオフ甲府向町店",
+    "chain_id": null,
+    "prefecture": null,
+    "area": null,
+    "x_handle": null,
+    "is_new_store": true,
+    "matched_shop_id": null,
+    "product": "メガブレイブ",
+    "method": "online",
+    "entry_channel": "unknown",
+    "entry_start": null,
+    "entry_end": null,
+    "result_date": null,
+    "requirements_hint": [],
+    "payment_restriction": "unknown",
+    "primary_url": null,
+    "source_grade": "third_party",
+    "status": "new",
+    "note": "商品は画像から判定。店舗の一次情報で照合する"
+  },
+  {
+    "id": "lead-cc2-54",
+    "detected_at": "2026-11-02T14:00:00+09:00",
+    "via": "cardchusen",
+    "store_name": "ホビーオフ甲府向町店",
+    "chain_id": null,
+    "prefecture": null,
+    "area": null,
+    "x_handle": null,
+    "is_new_store": true,
+    "matched_shop_id": null,
+    "product": "メガシンフォニア",
+    "method": "online",
+    "entry_channel": "unknown",
+    "entry_start": null,
+    "entry_end": null,
+    "result_date": null,
+    "requirements_hint": [],
+    "payment_restriction": "unknown",
+    "primary_url": null,
+    "source_grade": "third_party",
+    "status": "new",
+    "note": "商品は画像から判定。店舗の一次情報で照合する"
   }
 ]
