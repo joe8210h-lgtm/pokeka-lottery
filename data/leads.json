@@ -677,12 +677,21 @@
     "is_new_store": true,
     "matched_shop_id": null,
     "product": "ハドウシーカー",
-    "method": "unknown",
-    "entry_channel": "unknown",
+    "method": "online",
+    "entry_channel": "web_form",
     "entry_start": null,
     "entry_end": "2026-11-02T22:00:00+09:00",
     "result_date": null,
-    "requirements_hint": [],
+    "requirements_hint": [
+      {
+        "key": "membership",
+        "label": "会員登録"
+      },
+      {
+        "key": "id_verification",
+        "label": "本人確認"
+      }
+    ],
     "payment_restriction": "unknown",
     "primary_url": null,
     "source_grade": "third_party",
@@ -701,12 +710,21 @@
     "is_new_store": true,
     "matched_shop_id": null,
     "product": "スペシャルデッキセットMEGA",
-    "method": "unknown",
-    "entry_channel": "unknown",
+    "method": "online",
+    "entry_channel": "web_form",
     "entry_start": null,
     "entry_end": "2026-11-02T23:59:00+09:00",
     "result_date": null,
-    "requirements_hint": [],
+    "requirements_hint": [
+      {
+        "key": "membership",
+        "label": "会員登録"
+      },
+      {
+        "key": "id_verification",
+        "label": "本人確認"
+      }
+    ],
     "payment_restriction": "unknown",
     "primary_url": null,
     "source_grade": "third_party",
@@ -725,12 +743,21 @@
     "is_new_store": true,
     "matched_shop_id": null,
     "product": "ハドウシーカー",
-    "method": "unknown",
-    "entry_channel": "unknown",
+    "method": "online",
+    "entry_channel": "web_form",
     "entry_start": null,
     "entry_end": "2026-11-02T23:59:00+09:00",
     "result_date": null,
-    "requirements_hint": [],
+    "requirements_hint": [
+      {
+        "key": "membership",
+        "label": "会員登録"
+      },
+      {
+        "key": "id_verification",
+        "label": "本人確認"
+      }
+    ],
     "payment_restriction": "unknown",
     "primary_url": null,
     "source_grade": "third_party",
@@ -749,12 +776,21 @@
     "is_new_store": true,
     "matched_shop_id": null,
     "product": "スペシャルデッキセットMEGA",
-    "method": "unknown",
-    "entry_channel": "unknown",
+    "method": "online",
+    "entry_channel": "web_form",
     "entry_start": null,
     "entry_end": "2026-11-02T23:59:00+09:00",
     "result_date": null,
-    "requirements_hint": [],
+    "requirements_hint": [
+      {
+        "key": "membership",
+        "label": "会員登録"
+      },
+      {
+        "key": "id_verification",
+        "label": "本人確認"
+      }
+    ],
     "payment_restriction": "unknown",
     "primary_url": null,
     "source_grade": "third_party",
@@ -773,12 +809,21 @@
     "is_new_store": true,
     "matched_shop_id": null,
     "product": "ハドウシーカー",
-    "method": "unknown",
-    "entry_channel": "unknown",
+    "method": "store",
+    "entry_channel": "in_store",
     "entry_start": null,
     "entry_end": "2026-11-03T21:00:00+09:00",
     "result_date": null,
-    "requirements_hint": [],
+    "requirements_hint": [
+      {
+        "key": "membership",
+        "label": "会員登録"
+      },
+      {
+        "key": "id_verification",
+        "label": "本人確認"
+      }
+    ],
     "payment_restriction": "unknown",
     "primary_url": null,
     "source_grade": "third_party",
@@ -797,12 +842,21 @@
     "is_new_store": true,
     "matched_shop_id": null,
     "product": "ハドウシーカー",
-    "method": "unknown",
-    "entry_channel": "unknown",
+    "method": "online",
+    "entry_channel": "web_form",
     "entry_start": null,
     "entry_end": "2026-11-03T22:00:00+09:00",
     "result_date": null,
-    "requirements_hint": [],
+    "requirements_hint": [
+      {
+        "key": "membership",
+        "label": "会員登録"
+      },
+      {
+        "key": "id_verification",
+        "label": "本人確認"
+      }
+    ],
     "payment_restriction": "unknown",
     "primary_url": null,
     "source_grade": "third_party",
@@ -821,12 +875,21 @@
     "is_new_store": true,
     "matched_shop_id": null,
     "product": "30周年パック(表記のまま)",
-    "method": "unknown",
-    "entry_channel": "unknown",
+    "method": "online",
+    "entry_channel": "x_repost",
     "entry_start": null,
     "entry_end": "2026-11-02T23:59:00+09:00",
     "result_date": null,
-    "requirements_hint": [],
+    "requirements_hint": [
+      {
+        "key": "app",
+        "label": "アプリ"
+      },
+      {
+        "key": "membership",
+        "label": "会員登録"
+      }
+    ],
     "payment_restriction": "unknown",
     "primary_url": null,
     "source_grade": "third_party",
@@ -845,12 +908,17 @@
     "is_new_store": true,
     "matched_shop_id": null,
     "product": "30周年パック(表記のまま)",
-    "method": "unknown",
-    "entry_channel": "unknown",
+    "method": "online",
+    "entry_channel": "web_form",
     "entry_start": null,
     "entry_end": "2026-11-02T23:59:00+09:00",
     "result_date": null,
-    "requirements_hint": [],
+    "requirements_hint": [
+      {
+        "key": "membership",
+        "label": "会員登録"
+      }
+    ],
     "payment_restriction": "unknown",
     "primary_url": null,
     "source_grade": "third_party",
@@ -869,12 +937,17 @@
     "is_new_store": true,
     "matched_shop_id": null,
     "product": "30周年パック(表記のまま)",
-    "method": "unknown",
-    "entry_channel": "unknown",
+    "method": "online",
+    "entry_channel": "web_form",
     "entry_start": null,
     "entry_end": "2026-11-03T21:00:00+09:00",
     "result_date": null,
-    "requirements_hint": [],
+    "requirements_hint": [
+      {
+        "key": "id_verification",
+        "label": "本人確認"
+      }
+    ],
     "payment_restriction": "unknown",
     "primary_url": null,
     "source_grade": "third_party",
@@ -893,12 +966,17 @@
     "is_new_store": true,
     "matched_shop_id": null,
     "product": "30周年パック(表記のまま)",
-    "method": "unknown",
-    "entry_channel": "unknown",
+    "method": "online",
+    "entry_channel": "web_form",
     "entry_start": null,
     "entry_end": "2026-11-03T22:59:00+09:00",
     "result_date": null,
-    "requirements_hint": [],
+    "requirements_hint": [
+      {
+        "key": "membership",
+        "label": "会員登録"
+      }
+    ],
     "payment_restriction": "unknown",
     "primary_url": null,
     "source_grade": "third_party",
@@ -917,12 +995,17 @@
     "is_new_store": true,
     "matched_shop_id": null,
     "product": null,
-    "method": "unknown",
-    "entry_channel": "unknown",
+    "method": "online",
+    "entry_channel": "web_form",
     "entry_start": null,
     "entry_end": "2026-11-02T16:59:00+09:00",
     "result_date": null,
-    "requirements_hint": [],
+    "requirements_hint": [
+      {
+        "key": "membership",
+        "label": "会員登録"
+      }
+    ],
     "payment_restriction": "unknown",
     "primary_url": null,
     "source_grade": "third_party",
@@ -941,12 +1024,17 @@
     "is_new_store": true,
     "matched_shop_id": null,
     "product": "30周年パック(表記のまま)",
-    "method": "unknown",
-    "entry_channel": "unknown",
+    "method": "online",
+    "entry_channel": "app",
     "entry_start": "2026-11-06T16:00:00+09:00",
     "entry_end": null,
     "result_date": null,
-    "requirements_hint": [],
+    "requirements_hint": [
+      {
+        "key": "app",
+        "label": "アプリ"
+      }
+    ],
     "payment_restriction": "unknown",
     "primary_url": null,
     "source_grade": "third_party",
@@ -965,8 +1053,8 @@
     "is_new_store": true,
     "matched_shop_id": null,
     "product": "ハドウシーカー",
-    "method": "unknown",
-    "entry_channel": "unknown",
+    "method": "online",
+    "entry_channel": "web_form",
     "entry_start": "2026-11-02T11:00:00+09:00",
     "entry_end": null,
     "result_date": null,
@@ -989,12 +1077,17 @@
     "is_new_store": true,
     "matched_shop_id": null,
     "product": "30周年エーフィ・ブラッキーデッキ(表記のまま)",
-    "method": "unknown",
-    "entry_channel": "unknown",
+    "method": "online",
+    "entry_channel": "app",
     "entry_start": "2026-11-10T00:00:00+09:00",
     "entry_end": null,
     "result_date": null,
-    "requirements_hint": [],
+    "requirements_hint": [
+      {
+        "key": "app",
+        "label": "アプリ"
+      }
+    ],
     "payment_restriction": "unknown",
     "primary_url": null,
     "source_grade": "third_party",
@@ -1013,12 +1106,17 @@
     "is_new_store": true,
     "matched_shop_id": null,
     "product": "30周年パック(表記のまま)",
-    "method": "unknown",
-    "entry_channel": "unknown",
+    "method": "store",
+    "entry_channel": "in_store",
     "entry_start": null,
     "entry_end": "2026-11-03T22:00:00+09:00",
     "result_date": null,
-    "requirements_hint": [],
+    "requirements_hint": [
+      {
+        "key": "membership",
+        "label": "会員登録"
+      }
+    ],
     "payment_restriction": "unknown",
     "primary_url": null,
     "source_grade": "third_party",
@@ -1037,12 +1135,17 @@
     "is_new_store": true,
     "matched_shop_id": null,
     "product": "30周年御三家カードセット(表記のまま)",
-    "method": "unknown",
-    "entry_channel": "unknown",
+    "method": "store",
+    "entry_channel": "in_store",
     "entry_start": null,
     "entry_end": "2026-11-03T23:59:00+09:00",
     "result_date": null,
-    "requirements_hint": [],
+    "requirements_hint": [
+      {
+        "key": "app",
+        "label": "アプリ"
+      }
+    ],
     "payment_restriction": "unknown",
     "primary_url": null,
     "source_grade": "third_party",
@@ -1061,12 +1164,17 @@
     "is_new_store": true,
     "matched_shop_id": null,
     "product": "スペシャルデッキセットMEGA",
-    "method": "unknown",
-    "entry_channel": "unknown",
+    "method": "store",
+    "entry_channel": "in_store",
     "entry_start": null,
     "entry_end": "2026-11-06T23:59:00+09:00",
     "result_date": null,
-    "requirements_hint": [],
+    "requirements_hint": [
+      {
+        "key": "membership",
+        "label": "会員登録"
+      }
+    ],
     "payment_restriction": "unknown",
     "primary_url": null,
     "source_grade": "third_party",
@@ -1085,12 +1193,17 @@
     "is_new_store": true,
     "matched_shop_id": null,
     "product": "ハドウシーカー",
-    "method": "unknown",
-    "entry_channel": "unknown",
+    "method": "store",
+    "entry_channel": "in_store",
     "entry_start": null,
     "entry_end": "2026-11-08T23:59:00+09:00",
     "result_date": null,
-    "requirements_hint": [],
+    "requirements_hint": [
+      {
+        "key": "membership",
+        "label": "会員登録"
+      }
+    ],
     "payment_restriction": "unknown",
     "primary_url": null,
     "source_grade": "third_party",
@@ -1109,12 +1222,17 @@
     "is_new_store": true,
     "matched_shop_id": null,
     "product": "スペシャルデッキセットMEGA",
-    "method": "unknown",
-    "entry_channel": "unknown",
+    "method": "store",
+    "entry_channel": "in_store",
     "entry_start": null,
     "entry_end": "2026-11-08T23:59:00+09:00",
     "result_date": null,
-    "requirements_hint": [],
+    "requirements_hint": [
+      {
+        "key": "membership",
+        "label": "会員登録"
+      }
+    ],
     "payment_restriction": "unknown",
     "primary_url": null,
     "source_grade": "third_party",
