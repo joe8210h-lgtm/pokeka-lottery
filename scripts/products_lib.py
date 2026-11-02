@@ -1,5 +1,6 @@
 """商品マスター(data/products.json)の共通処理。商品名と画像を紐づけて管理する(D31)。
-画像は「URLだけ」保存する(複製しない)。X投稿の画像は使わない。出典ページのURLを必ず記録する。
+画像は assets/products/ に保存して自サイトから出す(D36。D32の「URLだけ」を変更)。img_url は取得元、img_file は保存先。
+X投稿の画像は使わない。出典ページのURLを必ず記録する。
 """
 import json
 import re
@@ -39,6 +40,26 @@ def check_image(img_url, img_source):
         elif host_blocked(u):
             errs.append(f"{label}にXの投稿・画像は使えません(D31)。商品の公式・販売店のページのものを使ってください")
     return errs
+
+
+IMG_DIR = "assets/products"
+IMG_EXT = (".webp", ".jpg", ".jpeg", ".png")
+IMG_MAX_BYTES = 400 * 1024
+
+
+def check_file(root, img_file):
+    """保存した画像ファイルの検査。問題の文章のリストを返す(空なら問題なし)。"""
+    if not img_file:
+        return []
+    f = str(img_file)
+    if not f.startswith(IMG_DIR + "/") or ".." in f or not f.lower().endswith(IMG_EXT):
+        return [f"画像ファイルは {IMG_DIR}/ 内の webp/jpg/png にしてください: {f}"]
+    p = Path(root) / f
+    if not p.is_file():
+        return [f"画像ファイルが見つかりません: {f}"]
+    if p.stat().st_size > IMG_MAX_BYTES:
+        return [f"画像ファイルが大きすぎます(400KB以下): {f}"]
+    return []
 
 
 def load(root):

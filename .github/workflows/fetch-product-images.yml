@@ -1,0 +1,33 @@
+name: fetch-product-images
+# 商品画像を取得元から assets/products/ に保存して、PRにする(D36)。手動で実行する。
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+  pull-requests: write
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install pillow pyyaml jsonschema
+      - run: python scripts/fetch_product_images.py | tee /tmp/fetch.txt
+      - run: python scripts/validate.py > /tmp/validate.txt || { cat /tmp/validate.txt; exit 1; }
+      - name: PRを作る
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if [ -z "$(git status --porcelain)" ]; then echo "変更なし"; exit 0; fi
+          B="images/$(date +%Y%m%d-%H%M%S)"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -b "$B"
+          git add assets/products data/products.json
+          git commit -m "data: 商品画像を保存(取得元から assets/products/ へ)"
+          git push origin "$B"
+          SHA="$(git rev-parse HEAD)"
+          gh pr create --base main --head "$B" --title "商品画像を保存する" --body "$(printf '取得結果:\n\n%s\n\n公開の可否は、マージする人が決めます。' "$(cat /tmp/fetch.txt)")"
+          gh api "repos/${{ github.repository }}/statuses/$SHA" -f state=success -f context="validate-data(画像取得で実行済み)" -f description="$(grep '検証OK' /tmp/validate.txt | head -c 120)"

@@ -16,7 +16,8 @@
     "aliases": [],
     "img_url": "https://www.pokemon-card.com/products/2026/images/mg_1.jpg",
     "img_source": "https://www.pokemon-card.com/products/mega/mg.html",
-    "img_checked_at": "2026-11-02"
+    "img_checked_at": "2026-11-02",
+    "img_file": "assets/products/p-2.webp"
   },
   {
     "id": "p-3",
@@ -24,7 +25,8 @@
     "aliases": [],
     "img_url": "https://shop.r10s.jp/market-place-osaka/cabinet/imgrc0159817388.jpg",
     "img_source": "https://item.rakuten.co.jp/market-place-osaka/s8819300/",
-    "img_checked_at": "2026-11-02"
+    "img_checked_at": "2026-11-02",
+    "img_file": "assets/products/p-3.webp"
   },
   {
     "id": "p-4",

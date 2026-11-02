@@ -121,6 +121,10 @@ for p in products:
         pnames[key] = pi
     for e in products_lib.check_image(p.get("img_url"), p.get("img_source")):
         errors.append(f"products {pi}: {e}")
+    for e in products_lib.check_file(ROOT, p.get("img_file")):
+        errors.append(f"products {pi}: {e}")
+    if p.get("img_file") and not p.get("img_source"):
+        errors.append(f"products {pi}: 保存した画像には出典URL(img_source)が必要です")
     if p.get("img_url") and not p.get("img_checked_at"):
         errors.append(f"products {pi}: 画像の出典を確認した日(img_checked_at)がありません")
 

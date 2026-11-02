@@ -252,12 +252,13 @@ footer{padding:28px 0 48px;font-size:12px;color:var(--muted)}
     b.appendChild(h('div', 'shop', it.shop_name || it.shop_id));
     b.appendChild(h('div', 'product', it.product));
     var pd = state.products[it.product_id];
-    if (pd && /^https:\/\//.test(pd.img_url || '')){
+    var imgSrc = pd && ((/^assets\/products\/[\w.-]+$/.test(pd.img_file || '') && pd.img_file) || (/^https:\/\//.test(pd.img_url || '') && pd.img_url));
+    if (imgSrc){
       var im = document.createElement('img');
       im.className = 'pimg'; im.alt = (it.product || '商品') + 'の商品画像'; im.loading = 'lazy';
       im.referrerPolicy = 'no-referrer';
       im.addEventListener('error', function(){ im.remove(); if (im.nextSibling && im.nextSibling.className === 'imgsrc') im.nextSibling.remove(); });
-      im.src = pd.img_url;
+      im.src = imgSrc;
       b.appendChild(im);
       if (/^https:\/\//.test(pd.img_source || '')){
         var sc = h('div', 'imgsrc', '画像の出典: ');
