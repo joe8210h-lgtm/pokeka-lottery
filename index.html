@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#3A1778">
 <title>ポケカ抽選・予約情報まとめ</title>
 <meta name="description" content="全国の店舗の公式告知から集めた、ポケモンカードの抽選・予約情報を締切が近い順に一覧できます。">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,14 +12,15 @@
 <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700;900&display=swap" rel="stylesheet">
 <style>
 :root{
-  --paper:#F2F5F8;
+  --paper:#F5F0FC;
   --surface:#FFFFFF;
-  --ink:#12203A;
-  --muted:#5B6B82;
-  --line:#D7DEE8;
-  --action:#0A5CB8;
+  --ink:#1C1233;
+  --muted:#625780;
+  --line:#DCCFEE;
+  --action:#6A2CC4;
+  --accent:#D4217D;
   --soon:#D9560B;
-  --urgent:#C8281E;
+  --urgent:#C0283A;
 }
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%}
@@ -28,15 +30,18 @@ body{
   font-size:16px;line-height:1.6;color-scheme:light;
 }
 .wrap{max-width:760px;margin:0 auto;padding:0 16px}
-header{padding:28px 0 16px}
+header{padding:28px 0 20px}
+.top{background:linear-gradient(135deg,#2B0F5C 0%,#5A24A8 58%,#B8227F 100%);color:#fff;border-bottom:4px solid var(--accent)}
+.top .lead,.top .meta{color:rgba(255,255,255,.82)}
+.top .notice{color:var(--ink)}
 h1{margin:0;font-size:clamp(26px,6vw,34px);font-weight:900;line-height:1.25}
 .lead{margin:8px 0 0;color:var(--muted);font-size:14px}
 .meta{margin-top:10px;font-size:13px;color:var(--muted)}
 .notice{margin:12px 0 0;padding:10px 12px;border:1px dashed var(--soon);background:#FFF4EC;border-radius:6px;font-size:13px}
-.bar{position:sticky;top:0;z-index:5;background:rgba(242,245,248,.95);backdrop-filter:blur(6px);border-bottom:1px solid var(--line);padding:10px 0}
+.bar{position:sticky;top:0;z-index:5;background:rgba(245,240,252,.95);backdrop-filter:blur(6px);border-bottom:1px solid var(--line);padding:10px 0}
 .tabs{display:flex;gap:6px}
 .tab{flex:1;min-height:44px;border:1px solid var(--line);background:var(--surface);color:var(--ink);font:inherit;font-weight:700;border-radius:8px;cursor:pointer}
-.tab[aria-pressed="true"]{background:var(--ink);color:#fff;border-color:var(--ink)}
+.tab[aria-pressed="true"]{background:var(--action);color:#fff;border-color:var(--action)}
 .opts{display:flex;flex-wrap:wrap;gap:4px 16px;align-items:center;margin-top:8px;font-size:14px}
 .opts label{display:flex;align-items:center;gap:6px;min-height:32px}
 .opts input[type=checkbox]{width:18px;height:18px}
@@ -65,12 +70,12 @@ select{font:inherit;padding:6px 8px;border:1px solid var(--line);border-radius:6
 .dates{font-size:14px}
 .chips{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0}
 .chip{display:inline-block;padding:1px 9px;border:1px solid var(--line);border-radius:999px;font-size:12px;background:var(--surface)}
-.chip.m-online{background:#E6F0FB;border-color:#B9D4F1;color:#0A4A95}
+.chip.m-online{background:#EEE6FB;border-color:#D2C0F0;color:#4A1F99}
 .chip.m-store{background:#E6F4EC;border-color:#B6DCC5;color:#17613F}
 .chip.check{background:#FFF4EC;border-color:#F0C4A6;color:#8C3A07}
 .actions{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-top:10px}
 .btn{min-height:44px;padding:0 16px;display:inline-flex;align-items:center;border-radius:8px;font:inherit;font-weight:700;text-decoration:none;cursor:pointer;border:1px solid var(--action);background:var(--surface);color:var(--action)}
-.btn.primary{background:var(--action);color:#fff}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:#fff}
 .btn.quiet{border-color:var(--line);color:var(--muted);font-weight:500;min-height:36px;padding:0 10px;font-size:13px}
 .applied{font-size:14px;font-weight:700;color:#17613F}
 a:focus-visible,button:focus-visible,select:focus-visible,input:focus-visible{outline:3px solid #FFB020;outline-offset:2px}
@@ -79,7 +84,7 @@ footer{padding:28px 0 48px;font-size:12px;color:var(--muted)}
 .chip.warn{background:#FFF1E0;border-color:#F0B77A;color:#8C3A07;font-weight:700}
 .chip.ok{background:#E6F4EC;border-color:#B6DCC5;color:#17613F}
 .chip.mute{color:var(--muted)}
-.need{margin:8px 0;padding:8px 10px;background:#F7F9FB;border:1px solid var(--line);border-radius:8px;font-size:13px}
+.need{margin:8px 0;padding:8px 10px;background:#F8F5FD;border:1px solid var(--line);border-radius:8px;font-size:13px}
 .need b{display:block;margin-bottom:2px}
 .need ul,.steps{margin:0;padding-left:20px}
 .need li.no{color:var(--urgent);font-weight:700}
@@ -102,14 +107,14 @@ footer{padding:28px 0 48px;font-size:12px;color:var(--muted)}
 </style>
 </head>
 <body>
-<div class="wrap">
+<div class="top"><div class="wrap">
   <header>
     <h1>ポケカ抽選・予約情報</h1>
     <p class="lead">店舗の公式告知から集めています。応募の前に、必ず告知の原文で条件を確認してください。</p>
     <div class="meta" id="updated"></div>
     <div class="notice" id="sampleNotice" hidden>表示中のデータは動作確認用のサンプルです。実際の抽選情報ではありません。</div>
   </header>
-</div>
+</div></div>
 
 <div class="bar">
   <div class="wrap">
