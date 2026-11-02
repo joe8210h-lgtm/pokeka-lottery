@@ -174,6 +174,36 @@ for x in aff.get("items", []):
             errors.append(f"{i}: 提携の承認と規約確認が済んでいません")
 print(f"広告: 有効={aff.get('enabled')} / 掲載中={len(active_ads)}件 / 下書き={len(aff.get('items', [])) - len(active_ads)}件")
 
+# --- リード(競合サイト由来のヒント) ---
+leads_path = ROOT / "data/leads.json"
+lead_count = 0
+if leads_path.exists():
+    leads = json.loads(leads_path.read_text(encoding="utf-8"))
+    lead_count = len(leads)
+    lead_schema = json.loads((ROOT / "data/leads.schema.json").read_text(encoding="utf-8"))
+    if jsonschema:
+        lead_validator = jsonschema.Draft202012Validator(
+            lead_schema if lead_schema.get("type") == "array" else {"type": "array", "items": lead_schema}
+        )
+        for e in lead_validator.iter_errors(leads):
+            errors.append(f"leads: スキーマ違反: {e.message[:120]}")
+    lead_seen = set()
+    for ld in leads:
+        li = ld.get("id", "(idなし)")
+        if li in lead_seen:
+            errors.append(f"leads {li}: idが重複しています")
+        lead_seen.add(li)
+        if ld.get("chain_id") and ld["chain_id"] not in chain_ids:
+            warnings.append(f"leads {li}: chain_id '{ld['chain_id']}' が chains.yaml にありません")
+        if str(ld.get("x_handle") or "").startswith("@"):
+            errors.append(f"leads {li}: x_handle は @ を付けずに書きます")
+        try:
+            ls, le = parse(ld.get("entry_start")), parse(ld.get("entry_end"))
+            if ls and le and le < ls:
+                errors.append(f"leads {li}: 受付終了が開始より前です")
+        except ValueError:
+            errors.append(f"leads {li}: 日時として読めません")
+
 if errors:
     print("検証に失敗しました:")
     for m in errors:
@@ -181,6 +211,6 @@ if errors:
     sys.exit(1)
 for w in warnings:
     print("注意:", w)
-print(f"検証OK: 商品{len(products)}件 / 抽選{len(items)}件 / 店舗{len(shops)}件 / チェーン{len(chains)}件 / 正解データ{len(cases)}件")
+print(f"検証OK: 商品{len(products)}件 / リード{lead_count}件 / 抽選{len(items)}件 / 店舗{len(shops)}件 / チェーン{len(chains)}件 / 正解データ{len(cases)}件")
 print(f"振り分け(現状): 自動公開 {band['publish']} / 確認待ち {band['queue']} / 破棄 {band['discard']}")
 print(f"閾値: 自動公開 {a} 以上 / 確認待ち {q} 以上")
