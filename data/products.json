@@ -9,5 +9,55 @@
     "img_url": "https://www.30th.pokemon-card.com/images/m6a/m6a_pillow_4f272152.webp",
     "img_source": "https://www.30th.pokemon-card.com/product/m6a",
     "img_checked_at": "2026-11-02"
+  },
+  {
+    "id": "p-2",
+    "name": "スペシャルデッキセットMEGA",
+    "aliases": [],
+    "img_url": "https://www.pokemon-card.com/products/2026/images/mg_1.jpg",
+    "img_source": "https://www.pokemon-card.com/products/mega/mg.html",
+    "img_checked_at": "2026-11-02"
+  },
+  {
+    "id": "p-3",
+    "name": "ハドウシーカー",
+    "aliases": [],
+    "img_url": null,
+    "img_source": null,
+    "img_checked_at": null
+  },
+  {
+    "id": "p-4",
+    "name": "ストームエメラルダ",
+    "aliases": [],
+    "img_url": null,
+    "img_source": null,
+    "img_checked_at": null
+  },
+  {
+    "id": "p-5",
+    "name": "メガブレイブ",
+    "aliases": [],
+    "img_url": null,
+    "img_source": null,
+    "img_checked_at": null
+  },
+  {
+    "id": "p-6",
+    "name": "メガシンフォニア",
+    "aliases": [],
+    "img_url": null,
+    "img_source": null,
+    "img_checked_at": null
+  },
+  {
+    "id": "p-7",
+    "name": "プレミアムデッキセット エーフィ・ブラッキー",
+    "aliases": [
+      "30th CELEBRATION プレミアムデッキセット エーフィ・ブラッキー"
+    ],
+    "img_url": null,
+    "img_source": null,
+    "img_checked_at": null
   }
 ]

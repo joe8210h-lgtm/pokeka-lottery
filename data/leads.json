@@ -1,1 +1,668 @@
-[]
+[
+  {
+    "id": "lead-amazon-hadou",
+    "detected_at": "2026-11-02T12:00:00+09:00",
+    "via": "pokechuu+nyuka-now",
+    "store_name": "Amazon",
+    "chain_id": "amazon",
+    "prefecture": null,
+    "area": null,
+    "x_handle": null,
+    "is_new_store": true,
+    "matched_shop_id": null,
+    "product": "ハドウシーカー",
+    "method": "online",
+    "entry_channel": "invitation",
+    "entry_start": "2026-10-26T14:00:00+09:00",
+    "entry_end": null,
+    "result_date": null,
+    "requirements_hint": [
+      {
+        "key": "invite_request",
+        "label": "招待リクエスト"
+      }
+    ],
+    "payment_restriction": "unknown",
+    "primary_url": null,
+    "source_grade": "third_party",
+    "status": "new",
+    "note": "要確認:店舗の一次情報で照合する"
+  },
+  {
+    "id": "lead-amazon-premium-eevee",
+    "detected_at": "2026-11-02T12:00:00+09:00",
+    "via": "pokechuu",
+    "store_name": "Amazon",
+    "chain_id": "amazon",
+    "prefecture": null,
+    "area": null,
+    "x_handle": null,
+    "is_new_store": true,
+    "matched_shop_id": null,
+    "product": "プレミアムデッキセット エーフィ・ブラッキー",
+    "method": "online",
+    "entry_channel": "invitation",
+    "entry_start": null,
+    "entry_end": null,
+    "result_date": null,
+    "requirements_hint": [
+      {
+        "key": "invite_request",
+        "label": "招待リクエスト"
+      }
+    ],
+    "payment_restriction": "unknown",
+    "primary_url": null,
+    "source_grade": "third_party",
+    "status": "new",
+    "note": "要確認:店舗の一次情報で照合する"
+  },
+  {
+    "id": "lead-amazon-storm",
+    "detected_at": "2026-11-02T12:00:00+09:00",
+    "via": "pokechuu",
+    "store_name": "Amazon",
+    "chain_id": "amazon",
+    "prefecture": null,
+    "area": null,
+    "x_handle": null,
+    "is_new_store": true,
+    "matched_shop_id": null,
+    "product": "ストームエメラルダ",
+    "method": "online",
+    "entry_channel": "invitation",
+    "entry_start": null,
+    "entry_end": null,
+    "result_date": null,
+    "requirements_hint": [
+      {
+        "key": "invite_request",
+        "label": "招待リクエスト"
+      }
+    ],
+    "payment_restriction": "unknown",
+    "primary_url": null,
+    "source_grade": "third_party",
+    "status": "new",
+    "note": "要確認:店舗の一次情報で照合する"
+  },
+  {
+    "id": "lead-otakara-storm",
+    "detected_at": "2026-11-02T12:00:00+09:00",
+    "via": "pokechuu",
+    "store_name": "お宝創庫(お宝倉庫/プレイズ)",
+    "chain_id": null,
+    "prefecture": null,
+    "area": null,
+    "x_handle": null,
+    "is_new_store": true,
+    "matched_shop_id": null,
+    "product": "ストームエメラルダ",
+    "method": "online",
+    "entry_channel": "app",
+    "entry_start": null,
+    "entry_end": "2026-11-01T23:45:00+09:00",
+    "result_date": null,
+    "requirements_hint": [
+      {
+        "key": "purchase_history",
+        "label": "過去1年の購入・買取履歴"
+      },
+      {
+        "key": "app",
+        "label": "専用アプリ"
+      }
+    ],
+    "payment_restriction": "unknown",
+    "primary_url": null,
+    "source_grade": "third_party",
+    "status": "new",
+    "note": "要確認:店舗の一次情報で照合する"
+  },
+  {
+    "id": "lead-fullcomp-storm",
+    "detected_at": "2026-11-02T12:00:00+09:00",
+    "via": "pokechuu",
+    "store_name": "フルコンプ(一部店舗)",
+    "chain_id": null,
+    "prefecture": null,
+    "area": null,
+    "x_handle": null,
+    "is_new_store": true,
+    "matched_shop_id": null,
+    "product": "ストームエメラルダ",
+    "method": "online",
+    "entry_channel": "web_form",
+    "entry_start": null,
+    "entry_end": "2026-11-01T23:59:00+09:00",
+    "result_date": null,
+    "requirements_hint": [],
+    "payment_restriction": "unknown",
+    "primary_url": null,
+    "source_grade": "third_party",
+    "status": "new",
+    "note": "要確認:店舗の一次情報で照合する"
+  },
+  {
+    "id": "lead-lounge-30th",
+    "detected_at": "2026-11-02T12:00:00+09:00",
+    "via": "pokechuu",
+    "store_name": "ポケモンカードラウンジ",
+    "chain_id": "pokemon-card-lounge",
+    "prefecture": null,
+    "area": null,
+    "x_handle": null,
+    "is_new_store": true,
+    "matched_shop_id": null,
+    "product": "30th CELEBRATION",
+    "method": "online",
+    "entry_channel": "web_form",
+    "entry_start": null,
+    "entry_end": "2026-11-01T23:59:00+09:00",
+    "result_date": null,
+    "requirements_hint": [],
+    "payment_restriction": "unknown",
+    "primary_url": null,
+    "source_grade": "third_party",
+    "status": "new",
+    "note": "要確認:店舗の一次情報で照合する"
+  },
+  {
+    "id": "lead-heiwado-mega",
+    "detected_at": "2026-11-02T12:00:00+09:00",
+    "via": "pokechuu",
+    "store_name": "平和堂",
+    "chain_id": null,
+    "prefecture": null,
+    "area": null,
+    "x_handle": null,
+    "is_new_store": true,
+    "matched_shop_id": null,
+    "product": "スペシャルデッキセットMEGA",
+    "method": "online",
+    "entry_channel": "app",
+    "entry_start": null,
+    "entry_end": "2026-11-01T23:59:00+09:00",
+    "result_date": null,
+    "requirements_hint": [
+      {
+        "key": "purchase_history",
+        "label": "期間内の購入履歴"
+      },
+      {
+        "key": "app",
+        "label": "HOPアプリ会員登録"
+      }
+    ],
+    "payment_restriction": "unknown",
+    "primary_url": null,
+    "source_grade": "third_party",
+    "status": "new",
+    "note": "要確認:店舗の一次情報で照合する"
+  },
+  {
+    "id": "lead-bic-hadou",
+    "detected_at": "2026-11-02T12:00:00+09:00",
+    "via": "pokechuu",
+    "store_name": "ビックカメラ(一部店舗)",
+    "chain_id": "biccamera",
+    "prefecture": null,
+    "area": null,
+    "x_handle": null,
+    "is_new_store": true,
+    "matched_shop_id": null,
+    "product": "ハドウシーカー",
+    "method": "store",
+    "entry_channel": "in_store",
+    "entry_start": null,
+    "entry_end": "2026-11-01T00:00:00+09:00",
+    "result_date": null,
+    "requirements_hint": [
+      {
+        "key": "purchase_history",
+        "label": "過去1年の購入履歴"
+      }
+    ],
+    "payment_restriction": "unknown",
+    "primary_url": null,
+    "source_grade": "third_party",
+    "status": "new",
+    "note": "要確認:店舗の一次情報で照合する"
+  },
+  {
+    "id": "lead-amiami-hadou-mega",
+    "detected_at": "2026-11-02T12:00:00+09:00",
+    "via": "pokechuu+nyuka-now",
+    "store_name": "あみあみ",
+    "chain_id": null,
+    "prefecture": null,
+    "area": null,
+    "x_handle": null,
+    "is_new_store": true,
+    "matched_shop_id": null,
+    "product": "ハドウシーカー/スペシャルデッキセットMEGA",
+    "method": "online",
+    "entry_channel": "web_form",
+    "entry_start": null,
+    "entry_end": "2026-11-04T13:59:00+09:00",
+    "result_date": "2026-11-05T00:00:00+09:00",
+    "requirements_hint": [
+      {
+        "key": "membership",
+        "label": "会員アカウント"
+      },
+      {
+        "key": "mail_magazine",
+        "label": "メルマガ購読"
+      },
+      {
+        "key": "purchase_history",
+        "label": "直近1年の購入"
+      }
+    ],
+    "payment_restriction": "unknown",
+    "primary_url": null,
+    "source_grade": "third_party",
+    "status": "new",
+    "note": "要確認:店舗の一次情報で照合する"
+  },
+  {
+    "id": "lead-tcg193-set",
+    "detected_at": "2026-11-02T12:00:00+09:00",
+    "via": "pokechuu+nyuka-now",
+    "store_name": "TCGショップ193(対象6店舗)",
+    "chain_id": null,
+    "prefecture": null,
+    "area": null,
+    "x_handle": null,
+    "is_new_store": true,
+    "matched_shop_id": null,
+    "product": "30th CELEBRATION カードセット(9種)",
+    "method": "store",
+    "entry_channel": "web_form",
+    "entry_start": "2026-10-28T09:50:00+09:00",
+    "entry_end": "2026-11-04T23:59:00+09:00",
+    "result_date": null,
+    "requirements_hint": [
+      {
+        "key": "membership",
+        "label": "店頭会員"
+      }
+    ],
+    "payment_restriction": "unknown",
+    "primary_url": null,
+    "source_grade": "third_party",
+    "status": "new",
+    "note": "要確認:店舗の一次情報で照合する"
+  },
+  {
+    "id": "lead-tcg193-mega",
+    "detected_at": "2026-11-02T12:00:00+09:00",
+    "via": "pokechuu",
+    "store_name": "TCGShop193",
+    "chain_id": null,
+    "prefecture": null,
+    "area": null,
+    "x_handle": null,
+    "is_new_store": true,
+    "matched_shop_id": null,
+    "product": "スペシャルデッキセットMEGA",
+    "method": "online",
+    "entry_channel": "web_form",
+    "entry_start": null,
+    "entry_end": "2026-11-03T23:59:00+09:00",
+    "result_date": null,
+    "requirements_hint": [],
+    "payment_restriction": "unknown",
+    "primary_url": null,
+    "source_grade": "third_party",
+    "status": "new",
+    "note": "要確認:店舗の一次情報で照合する"
+  },
+  {
+    "id": "lead-trecaplaza-set",
+    "detected_at": "2026-11-02T12:00:00+09:00",
+    "via": "pokechuu+nyuka-now",
+    "store_name": "トレカプラザ55 通販店",
+    "chain_id": null,
+    "prefecture": null,
+    "area": null,
+    "x_handle": null,
+    "is_new_store": true,
+    "matched_shop_id": null,
+    "product": "30th CELEBRATION カードセット(9種)",
+    "method": "online",
+    "entry_channel": "web_form",
+    "entry_start": "2026-10-30T20:00:00+09:00",
+    "entry_end": "2026-11-06T23:59:00+09:00",
+    "result_date": null,
+    "requirements_hint": [
+      {
+        "key": "membership",
+        "label": "会員登録"
+      }
+    ],
+    "payment_restriction": "unknown",
+    "primary_url": null,
+    "source_grade": "third_party",
+    "status": "new",
+    "note": "要確認:店舗の一次情報で照合する"
+  },
+  {
+    "id": "lead-kojima-mega",
+    "detected_at": "2026-11-02T12:00:00+09:00",
+    "via": "pokechuu+nyuka-now",
+    "store_name": "コジマ",
+    "chain_id": null,
+    "prefecture": null,
+    "area": null,
+    "x_handle": null,
+    "is_new_store": true,
+    "matched_shop_id": null,
+    "product": "スペシャルデッキセットMEGA",
+    "method": "store",
+    "entry_channel": "app",
+    "entry_start": "2026-10-30T21:00:00+09:00",
+    "entry_end": "2026-11-06T23:59:00+09:00",
+    "result_date": "2026-11-13T00:00:00+09:00",
+    "requirements_hint": [
+      {
+        "key": "purchase_history",
+        "label": "期間内5,000円以上の購入"
+      },
+      {
+        "key": "app",
+        "label": "コジマアプリ"
+      },
+      {
+        "key": "membership",
+        "label": "マイ店舗登録"
+      }
+    ],
+    "payment_restriction": "unknown",
+    "primary_url": null,
+    "source_grade": "third_party",
+    "status": "new",
+    "note": "要確認:店舗の一次情報で照合する"
+  },
+  {
+    "id": "lead-aeon-kyushu-hadou",
+    "detected_at": "2026-11-02T12:00:00+09:00",
+    "via": "pokechuu+nyuka-now",
+    "store_name": "イオン九州",
+    "chain_id": "aeon",
+    "prefecture": null,
+    "area": null,
+    "x_handle": null,
+    "is_new_store": true,
+    "matched_shop_id": null,
+    "product": "ハドウシーカー",
+    "method": "store",
+    "entry_channel": "app",
+    "entry_start": "2026-10-31T00:00:00+09:00",
+    "entry_end": "2026-11-08T23:59:00+09:00",
+    "result_date": "2026-11-26T12:00:00+09:00",
+    "requirements_hint": [
+      {
+        "key": "app",
+        "label": "iAEONアプリ"
+      }
+    ],
+    "payment_restriction": "unknown",
+    "primary_url": null,
+    "source_grade": "third_party",
+    "status": "new",
+    "note": "要確認:店舗の一次情報で照合する"
+  },
+  {
+    "id": "lead-geo-mega",
+    "detected_at": "2026-11-02T12:00:00+09:00",
+    "via": "pokechuu+nyuka-now",
+    "store_name": "ゲオ",
+    "chain_id": "geo",
+    "prefecture": null,
+    "area": null,
+    "x_handle": null,
+    "is_new_store": true,
+    "matched_shop_id": null,
+    "product": "スペシャルデッキセットMEGA",
+    "method": "store",
+    "entry_channel": "web_form",
+    "entry_start": "2026-11-02T11:00:00+09:00",
+    "entry_end": "2026-11-05T17:59:00+09:00",
+    "result_date": null,
+    "requirements_hint": [
+      {
+        "key": "membership",
+        "label": "Ponta/GEO ID連携"
+      }
+    ],
+    "payment_restriction": "unknown",
+    "primary_url": null,
+    "source_grade": "third_party",
+    "status": "new",
+    "note": "要確認:店舗の一次情報で照合する"
+  },
+  {
+    "id": "lead-seven-hadou",
+    "detected_at": "2026-11-02T12:00:00+09:00",
+    "via": "pokechuu+nyuka-now",
+    "store_name": "セブンネットショッピング",
+    "chain_id": null,
+    "prefecture": null,
+    "area": null,
+    "x_handle": null,
+    "is_new_store": true,
+    "matched_shop_id": null,
+    "product": "ハドウシーカー",
+    "method": "online",
+    "entry_channel": "web_form",
+    "entry_start": "2026-11-04T17:00:00+09:00",
+    "entry_end": null,
+    "result_date": null,
+    "requirements_hint": [
+      {
+        "key": "purchase_history",
+        "label": "期間内の注文・受取履歴"
+      }
+    ],
+    "payment_restriction": "unknown",
+    "primary_url": null,
+    "source_grade": "third_party",
+    "status": "new",
+    "note": "要確認:店舗の一次情報で照合する"
+  },
+  {
+    "id": "lead-pokecen-hadou",
+    "detected_at": "2026-11-02T12:00:00+09:00",
+    "via": "pokechuu+nyuka-now",
+    "store_name": "ポケモンセンターオンライン",
+    "chain_id": "pokemoncenter-online",
+    "prefecture": null,
+    "area": null,
+    "x_handle": null,
+    "is_new_store": true,
+    "matched_shop_id": null,
+    "product": "ハドウシーカー",
+    "method": "online",
+    "entry_channel": "web_form",
+    "entry_start": "2026-11-06T16:00:00+09:00",
+    "entry_end": "2026-11-10T16:59:00+09:00",
+    "result_date": "2026-11-17T15:00:00+09:00",
+    "requirements_hint": [
+      {
+        "key": "membership",
+        "label": "プレイヤーズクラブ認証枠"
+      }
+    ],
+    "payment_restriction": "unknown",
+    "primary_url": null,
+    "source_grade": "third_party",
+    "status": "new",
+    "note": "要確認:店舗の一次情報で照合する"
+  },
+  {
+    "id": "lead-pokecen-dec",
+    "detected_at": "2026-11-02T12:00:00+09:00",
+    "via": "nyuka-now",
+    "store_name": "ポケモンセンターオンライン",
+    "chain_id": "pokemoncenter-online",
+    "prefecture": null,
+    "area": null,
+    "x_handle": null,
+    "is_new_store": true,
+    "matched_shop_id": null,
+    "product": "30th CELEBRATION BOX ほか",
+    "method": "online",
+    "entry_channel": "web_form",
+    "entry_start": null,
+    "entry_end": null,
+    "result_date": null,
+    "requirements_hint": [],
+    "payment_restriction": "unknown",
+    "primary_url": null,
+    "source_grade": "third_party",
+    "status": "new",
+    "note": "要確認:店舗の一次情報で照合する"
+  },
+  {
+    "id": "lead-trecaace-30th",
+    "detected_at": "2026-11-02T12:00:00+09:00",
+    "via": "nyuka-now",
+    "store_name": "トレカエース(一部店舗)",
+    "chain_id": null,
+    "prefecture": null,
+    "area": null,
+    "x_handle": null,
+    "is_new_store": true,
+    "matched_shop_id": null,
+    "product": "30th CELEBRATION BOX/メガブレイブ/メガシンフォニア",
+    "method": "store",
+    "entry_channel": "web_form",
+    "entry_start": null,
+    "entry_end": "2026-11-03T23:59:00+09:00",
+    "result_date": "2026-11-05T00:00:00+09:00",
+    "requirements_hint": [
+      {
+        "key": "id_verification",
+        "label": "購入時の本人確認"
+      }
+    ],
+    "payment_restriction": "unknown",
+    "primary_url": null,
+    "source_grade": "third_party",
+    "status": "new",
+    "note": "要確認:店舗の一次情報で照合する"
+  },
+  {
+    "id": "lead-seagull-30th",
+    "detected_at": "2026-11-02T12:00:00+09:00",
+    "via": "nyuka-now",
+    "store_name": "シーガル",
+    "chain_id": null,
+    "prefecture": null,
+    "area": null,
+    "x_handle": null,
+    "is_new_store": true,
+    "matched_shop_id": null,
+    "product": "30th CELEBRATION BOX/ストームエメラルダ",
+    "method": "store",
+    "entry_channel": "web_form",
+    "entry_start": "2026-11-01T10:00:00+09:00",
+    "entry_end": "2026-11-03T20:00:00+09:00",
+    "result_date": "2026-11-05T20:00:00+09:00",
+    "requirements_hint": [
+      {
+        "key": "membership",
+        "label": "シーガルモバイル会員"
+      }
+    ],
+    "payment_restriction": "unknown",
+    "primary_url": null,
+    "source_grade": "third_party",
+    "status": "new",
+    "note": "要確認:店舗の一次情報で照合する"
+  },
+  {
+    "id": "lead-nojima-30th",
+    "detected_at": "2026-11-02T12:00:00+09:00",
+    "via": "nyuka-now",
+    "store_name": "ノジマオンライン",
+    "chain_id": null,
+    "prefecture": null,
+    "area": null,
+    "x_handle": null,
+    "is_new_store": true,
+    "matched_shop_id": null,
+    "product": "30th CELEBRATION BOX",
+    "method": "online",
+    "entry_channel": "invitation",
+    "entry_start": "2026-10-04T18:00:00+09:00",
+    "entry_end": null,
+    "result_date": null,
+    "requirements_hint": [
+      {
+        "key": "membership",
+        "label": "会員ID"
+      }
+    ],
+    "payment_restriction": "unknown",
+    "primary_url": null,
+    "source_grade": "third_party",
+    "status": "new",
+    "note": "要確認:店舗の一次情報で照合する"
+  },
+  {
+    "id": "lead-nojima-fw",
+    "detected_at": "2026-11-02T12:00:00+09:00",
+    "via": "nyuka-now",
+    "store_name": "ノジマオンライン",
+    "chain_id": null,
+    "prefecture": null,
+    "area": null,
+    "x_handle": null,
+    "is_new_store": true,
+    "matched_shop_id": null,
+    "product": "ポケモン新弾各種",
+    "method": "online",
+    "entry_channel": "invitation",
+    "entry_start": "2026-06-10T13:00:00+09:00",
+    "entry_end": null,
+    "result_date": null,
+    "requirements_hint": [
+      {
+        "key": "membership",
+        "label": "会員ID"
+      }
+    ],
+    "payment_restriction": "unknown",
+    "primary_url": null,
+    "source_grade": "third_party",
+    "status": "new",
+    "note": "要確認:店舗の一次情報で照合する"
+  },
+  {
+    "id": "lead-kiddyland-mega",
+    "detected_at": "2026-11-02T12:00:00+09:00",
+    "via": "nyuka-now",
+    "store_name": "キデイランド(対象店舗)",
+    "chain_id": null,
+    "prefecture": null,
+    "area": null,
+    "x_handle": null,
+    "is_new_store": true,
+    "matched_shop_id": null,
+    "product": "スペシャルデッキセットMEGA",
+    "method": "store",
+    "entry_channel": "web_form",
+    "entry_start": "2026-11-02T10:00:00+09:00",
+    "entry_end": "2026-11-04T23:59:00+09:00",
+    "result_date": "2026-11-05T00:00:00+09:00",
+    "requirements_hint": [],
+    "payment_restriction": "unknown",
+    "primary_url": null,
+    "source_grade": "third_party",
+    "status": "new",
+    "note": "要確認:店舗の一次情報で照合する"
+  }
+]
