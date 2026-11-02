@@ -5,6 +5,7 @@ on:
 permissions:
   contents: write
   pull-requests: write
+  statuses: write
 jobs:
   fetch:
     runs-on: ubuntu-latest
