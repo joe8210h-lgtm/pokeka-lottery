@@ -147,3 +147,13 @@ shops:
     priority: normal
     other_sources: []
     note: "ヨドバシ公式SNS一覧(https://www.yodobashi.com/ec/support/service/sns/index.html)で確認(2026-11-02)"
+  - id: pcl-shibuya
+    name: ポケモンカードラウンジ 渋谷(SHIBUYA TSUTAYA)
+    x_handle: PCGL_Shibuya
+    store_type: chain
+    chain_id: pokemon-card-lounge
+    prefecture: 東京都
+    area: 渋谷
+    priority: normal
+    other_sources: []
+    note: "SHIBUYA TSUTAYA公式ページ(https://shibuyatsutaya.tsite.jp/article/2235.html)の「公式X」リンクで確認(2026-11-02)。他のラウンジ店舗のXは未確認"
