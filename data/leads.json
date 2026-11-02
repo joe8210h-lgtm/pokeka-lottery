@@ -2867,5 +2867,166 @@
     "source_grade": "third_party",
     "status": "new",
     "note": "商品は画像から判定。店舗の一次情報で照合する"
+  },
+  {
+    "id": "lead-zm-yodobashi-30th",
+    "detected_at": "2026-11-02T15:00:00+09:00",
+    "via": "pokeca-zanmai",
+    "store_name": "ヨドバシ・ドット・コム",
+    "chain_id": "yodobashi",
+    "prefecture": null,
+    "area": null,
+    "x_handle": null,
+    "is_new_store": false,
+    "matched_shop_id": null,
+    "product": "30th CELEBRATION カードセット(9種セット)",
+    "method": "online",
+    "entry_channel": "web_form",
+    "entry_start": "2026-10-05T11:00:00+09:00",
+    "entry_end": "2026-10-06T10:59:00+09:00",
+    "result_date": "2026-10-06T18:00:00+09:00",
+    "requirements_hint": [
+      {
+        "key": "membership",
+        "label": "会員"
+      },
+      {
+        "key": "purchase_history",
+        "label": "購入履歴(ネット・店舗)"
+      }
+    ],
+    "payment_restriction": "unknown",
+    "primary_url": null,
+    "source_grade": "third_party",
+    "status": "new",
+    "note": "要確認:店舗の一次情報で照合する(受付終了済み。公式の抽選ページ limited.yodobashi.com で要確認)"
+  },
+  {
+    "id": "lead-zm-edion",
+    "detected_at": "2026-11-02T15:00:00+09:00",
+    "via": "pokeca-zanmai",
+    "store_name": "エディオン(店舗受取/自宅配送)",
+    "chain_id": null,
+    "prefecture": null,
+    "area": null,
+    "x_handle": null,
+    "is_new_store": false,
+    "matched_shop_id": null,
+    "product": null,
+    "method": "online",
+    "entry_channel": "web_form",
+    "entry_start": "2026-10-02T10:00:00+09:00",
+    "entry_end": "2026-10-04T23:59:00+09:00",
+    "result_date": null,
+    "requirements_hint": [
+      {
+        "key": "membership",
+        "label": "会員登録"
+      },
+      {
+        "key": "sms",
+        "label": "SMS受信可能な電話番号"
+      }
+    ],
+    "payment_restriction": "unknown",
+    "primary_url": null,
+    "source_grade": "third_party",
+    "status": "new",
+    "note": "要確認:店舗の一次情報で照合する(受付終了済み。当選発表は店舗受取10/15・自宅配送10/9ごろ)"
+  },
+  {
+    "id": "lead-zm-rakuten-books",
+    "detected_at": "2026-11-02T15:00:00+09:00",
+    "via": "pokeca-zanmai",
+    "store_name": "楽天ブックス",
+    "chain_id": null,
+    "prefecture": null,
+    "area": null,
+    "x_handle": null,
+    "is_new_store": false,
+    "matched_shop_id": null,
+    "product": null,
+    "method": "online",
+    "entry_channel": "web_form",
+    "entry_start": "2026-10-14T10:00:00+09:00",
+    "entry_end": "2026-10-18T23:59:00+09:00",
+    "result_date": null,
+    "requirements_hint": [
+      {
+        "key": "membership",
+        "label": "楽天会員"
+      },
+      {
+        "key": "purchase_history",
+        "label": "注文・発送履歴(場合あり)"
+      }
+    ],
+    "payment_restriction": "unknown",
+    "primary_url": null,
+    "source_grade": "third_party",
+    "status": "new",
+    "note": "要確認:店舗の一次情報で照合する(受付終了済み)"
+  },
+  {
+    "id": "lead-zm-shimamura",
+    "detected_at": "2026-11-02T15:00:00+09:00",
+    "via": "pokeca-zanmai",
+    "store_name": "しまむらパーク・バースデイ",
+    "chain_id": null,
+    "prefecture": null,
+    "area": null,
+    "x_handle": null,
+    "is_new_store": false,
+    "matched_shop_id": null,
+    "product": null,
+    "method": "online",
+    "entry_channel": "app",
+    "entry_start": "2026-10-13T13:00:00+09:00",
+    "entry_end": "2026-10-18T23:00:00+09:00",
+    "result_date": "2026-10-19T00:00:00+09:00",
+    "requirements_hint": [
+      {
+        "key": "app",
+        "label": "アプリ会員"
+      },
+      {
+        "key": "coupon",
+        "label": "応募券5枚"
+      }
+    ],
+    "payment_restriction": "unknown",
+    "primary_url": null,
+    "source_grade": "third_party",
+    "status": "new",
+    "note": "要確認:店舗の一次情報で照合する(受付終了済み)"
+  },
+  {
+    "id": "lead-zm-itoyokado-livepocket",
+    "detected_at": "2026-11-02T15:00:00+09:00",
+    "via": "pokeca-zanmai",
+    "store_name": "イトーヨーカドー(店舗・LivePocket)",
+    "chain_id": "itoyokado",
+    "prefecture": null,
+    "area": null,
+    "x_handle": null,
+    "is_new_store": false,
+    "matched_shop_id": null,
+    "product": "スペシャルデッキセットMEGA/ストームエメラルダ",
+    "method": "online",
+    "entry_channel": "web_form",
+    "entry_start": "2026-10-15T14:28:00+09:00",
+    "entry_end": "2026-10-25T23:59:00+09:00",
+    "result_date": null,
+    "requirements_hint": [
+      {
+        "key": "membership",
+        "label": "LivePocket会員"
+      }
+    ],
+    "payment_restriction": "unknown",
+    "primary_url": null,
+    "source_grade": "third_party",
+    "status": "new",
+    "note": "要確認:店舗の一次情報で照合する(受付終了済み)"
   }
 ]
