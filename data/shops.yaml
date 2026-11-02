@@ -1,7 +1,8 @@
 # 収集対象の店舗リスト(最大50件)。実在のXアカウント名はあなたが調べて書き込む
 # 選ぶ基準: 頻繁にXで告知する店舗、またはXでのみ告知する店舗
 # store_type: chain(chains.yamlにあるチェーン) / local_shop(個店) / maker_campaign(メーカー・企業キャンペーン)
-# 以下の example-* はサンプル用。本番の店舗を入れるときに置き換える
+# example-* はサンプル用(サンプルの抽選が参照しているため、サンプル差し替えまで残す)。x_handle は公式サイトのリンクで確認したものだけ入れる
+# 未確認: ビックカメラ梅田(公式一覧に無し)。ヤマダ・トイザらス・ゲオ・ジョーシン・イオンは公式ページを取得できず未確認(名前だけで登録しない)
 
 shops:
   - id: example-shop-1
@@ -44,3 +45,105 @@ shops:
     priority: normal
     other_sources: []
     note: ""
+
+  # --- 本番候補(公式サイトのリンクで確認済みのXアカウントのみ。2026-11-02) ---
+  - id: bic-ikebukuro
+    name: ビックカメラ池袋本店
+    x_handle: bicikebukuro
+    store_type: chain
+    chain_id: biccamera
+    prefecture: 東京都
+    area: 池袋
+    priority: high
+    other_sources: []
+    note: "ビックカメラ公式SNS一覧(https://www.biccamera.co.jp/sns/index.html)で確認(2026-11-02)"
+  - id: bic-yurakucho
+    name: ビックカメラ有楽町店
+    x_handle: bic_yuurakuchou
+    store_type: chain
+    chain_id: biccamera
+    prefecture: 東京都
+    area: 有楽町
+    priority: normal
+    other_sources: []
+    note: "ビックカメラ公式SNS一覧(https://www.biccamera.co.jp/sns/index.html)で確認(2026-11-02)"
+  - id: bic-shinjuku-west
+    name: ビックカメラ新宿西口店
+    x_handle: bic_shinjyuku
+    store_type: chain
+    chain_id: biccamera
+    prefecture: 東京都
+    area: 新宿
+    priority: normal
+    other_sources: []
+    note: "ビックカメラ公式SNS一覧(https://www.biccamera.co.jp/sns/index.html)で確認(2026-11-02)"
+  - id: bic-akiba
+    name: ビックカメラAKIBA
+    x_handle: bic_akiba
+    store_type: chain
+    chain_id: biccamera
+    prefecture: 東京都
+    area: 秋葉原
+    priority: normal
+    other_sources: []
+    note: "ビックカメラ公式SNS一覧(https://www.biccamera.co.jp/sns/index.html)で確認(2026-11-02)"
+  - id: bic-namba
+    name: ビックカメラなんば店
+    x_handle: biccamera_nanba
+    store_type: chain
+    chain_id: biccamera
+    prefecture: 大阪府
+    area: なんば
+    priority: normal
+    other_sources: []
+    note: "ビックカメラ公式SNS一覧(https://www.biccamera.co.jp/sns/index.html)で確認(2026-11-02)"
+  - id: bic-sapporo
+    name: ビックカメラ札幌店
+    x_handle: bic_sapporo
+    store_type: chain
+    chain_id: biccamera
+    prefecture: 北海道
+    area: 札幌
+    priority: normal
+    other_sources: []
+    note: "ビックカメラ公式SNS一覧(https://www.biccamera.co.jp/sns/index.html)で確認(2026-11-02)"
+  - id: yodo-official
+    name: ヨドバシカメラ公式
+    x_handle: Yodobashi_X
+    store_type: chain
+    chain_id: yodobashi
+    prefecture: 全国
+    area: オンライン・全店
+    priority: normal
+    other_sources: []
+    note: "ヨドバシ公式SNS一覧(https://www.yodobashi.com/ec/support/service/sns/index.html)で確認(2026-11-02)"
+  - id: yodo-hobby
+    name: ヨドバシカメラ ホビー専門
+    x_handle: Yodobashi_Hobby
+    store_type: chain
+    chain_id: yodobashi
+    prefecture: 全国
+    area: ホビー売場
+    priority: high
+    other_sources: []
+    note: "ヨドバシ公式SNS一覧(https://www.yodobashi.com/ec/support/service/sns/index.html)で確認(2026-11-02)"
+  - id: yodo-akiba
+    name: ヨドバシ マルチメディアAkiba
+    x_handle: yodobashi_akiba
+    store_type: chain
+    chain_id: yodobashi
+    prefecture: 東京都
+    area: 秋葉原
+    priority: normal
+    other_sources: []
+    note: "ヨドバシ公式SNS一覧(https://www.yodobashi.com/ec/support/service/sns/index.html)で確認(2026-11-02)"
+  - id: yodo-umeda
+    name: ヨドバシ マルチメディア梅田
+    x_handle: yodobashi_umed
+    store_type: chain
+    chain_id: yodobashi
+    prefecture: 大阪府
+    area: 梅田
+    priority: normal
+    other_sources: []
+    note: "ヨドバシ公式SNS一覧(https://www.yodobashi.com/ec/support/service/sns/index.html)で確認(2026-11-02)"
