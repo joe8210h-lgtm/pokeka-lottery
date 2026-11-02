@@ -871,7 +871,7 @@
     "chain_id": null,
     "prefecture": null,
     "area": null,
-    "x_handle": null,
+    "x_handle": "bookoff_20556",
     "is_new_store": true,
     "matched_shop_id": null,
     "product": "30周年パック(表記のまま)",
@@ -894,7 +894,7 @@
     "primary_url": null,
     "source_grade": "third_party",
     "status": "new",
-    "note": "要確認:店舗の一次情報で照合する"
+    "note": "要確認:店舗の一次情報で照合する / Xはcardchusen掲載の項目(未確認:店舗の公式サイトで確認する)"
   },
   {
     "id": "lead-justice-osaka-a",
@@ -1131,7 +1131,7 @@
     "chain_id": null,
     "prefecture": null,
     "area": null,
-    "x_handle": null,
+    "x_handle": "laughteria_TCG",
     "is_new_store": true,
     "matched_shop_id": null,
     "product": "30周年御三家カードセット(表記のまま)",
@@ -1150,7 +1150,7 @@
     "primary_url": null,
     "source_grade": "third_party",
     "status": "new",
-    "note": "要確認:店舗の一次情報で照合する"
+    "note": "要確認:店舗の一次情報で照合する / Xはcardchusen掲載の項目(未確認:店舗の公式サイトで確認する)"
   },
   {
     "id": "lead-giga-bofu-m",
@@ -2081,7 +2081,7 @@
     "chain_id": null,
     "prefecture": null,
     "area": null,
-    "x_handle": null,
+    "x_handle": "TTChiratsuka",
     "is_new_store": true,
     "matched_shop_id": null,
     "product": "プレミアムデッキセット エーフィ・ブラッキー",
@@ -2100,7 +2100,7 @@
     "primary_url": null,
     "source_grade": "third_party",
     "status": "new",
-    "note": "商品は画像から判定。店舗の一次情報で照合する"
+    "note": "商品は画像から判定。店舗の一次情報で照合する / Xはcardchusen掲載の項目(未確認:店舗の公式サイトで確認する)"
   },
   {
     "id": "lead-cc2-29",
