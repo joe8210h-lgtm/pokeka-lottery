@@ -2,9 +2,12 @@
   {
     "id": "30th-celebration",
     "name": "拡張パック『30th CELEBRATION』",
-    "aliases": ["拡張パック30th CELEBRATION", "30th CELEBRATION"],
-    "img_url": null,
-    "img_source": null,
-    "img_checked_at": null
+    "aliases": [
+      "拡張パック30th CELEBRATION",
+      "30th CELEBRATION"
+    ],
+    "img_url": "https://www.30th.pokemon-card.com/images/m6a/m6a_pillow_4f272152.webp",
+    "img_source": "https://www.30th.pokemon-card.com/product/m6a",
+    "img_checked_at": "2026-11-02"
   }
 ]
