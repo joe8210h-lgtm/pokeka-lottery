@@ -28,11 +28,14 @@
   },
   {
     "id": "p-4",
-    "name": "ストームエメラルダ",
-    "aliases": [],
-    "img_url": null,
-    "img_source": null,
-    "img_checked_at": null
+    "name": "拡張パック「ストームエメラルダ」",
+    "aliases": [
+      "ストームエメラルダ",
+      "MEGA 拡張パック ストームエメラルダ"
+    ],
+    "img_url": "https://www.pokemon-card.com/ex/m6/assets/images/product_pack-f5i4dgqs.png",
+    "img_source": "https://www.pokemon-card.com/ex/m6/",
+    "img_checked_at": "2026-11-02"
   },
   {
     "id": "p-5",
