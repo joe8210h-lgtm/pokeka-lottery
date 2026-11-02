@@ -440,5 +440,14 @@
     "img_source": "https://www.30th.pokemon-card.com/product/furbox",
     "img_checked_at": "2026-11-02",
     "img_file": "assets/products/p-47.webp"
+  },
+  {
+    "id": "p-48",
+    "name": "スペシャルデッキセットex フシギバナ・リザードン・カメックス",
+    "aliases": [],
+    "img_url": "https://www.pokemon-card.com/products/2023/images/SVG_carousel.jpg",
+    "img_source": "https://www.pokemon-card.com/products/sv/svg.html",
+    "img_checked_at": "2026-11-02",
+    "img_file": "assets/products/p-48.webp"
   }
 ]
