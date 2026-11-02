@@ -1,12 +1,12 @@
 {
-  "updated": "2026-11-01",
+  "updated": "2026-11-02",
   "project": "pokeka-lottery",
-  "repo_public": "https://github.com/jojojo8210-commits/pokeka-lottery",
+  "repo_public": "https://github.com/joe8210h-lgtm/pokeka-lottery",
   "site": "https://pokeka-lottery.jojojo8210.workers.dev/",
   "read_order": [
     "docs/HANDOFF.md",
     "docs/DECISIONS.md",
-    "docs/HANDOVER.md",
+    "docs/NEXT_ACTIONS.md",
     "docs/status.json",
     "CLAUDE.md"
   ],
@@ -15,48 +15,49 @@
     {
       "id": 1,
       "name": "準備(GitHub・リポジトリ)",
-      "status": "done"
-    },
-    {
-      "id": 2,
-      "name": "設計(CLAUDE.md・schema・chains・shops)",
-      "status": "done"
+      "status": "done",
+      "note": "新リポジトリ joe8210h-lgtm/pokeka-lottery に復元済み"
     },
     {
       "id": 3,
       "name": "一覧サイトMVPの公開",
       "status": "done",
-      "note": "サンプルデータ、noindex中、サンプルの締切は過ぎている"
+      "note": "サンプルデータ、noindex中"
     },
     {
       "id": 4,
       "name": "自動検証(GitHub Actions)",
       "status": "done",
-      "note": "段階1〜4の時点で緑を確認。以降の変更は未確認"
+      "note": "validate-data 合格を確認"
     },
     {
-      "id": "A",
-      "name": "無料の試験運用(知識ファイル・設定・正解データ・振り分け)",
-      "status": "scaffold_done",
-      "note": "API呼び出しなし"
+      "id": "I1",
+      "name": "X取込: Issueフォームと自動読み取り",
+      "status": "done",
+      "note": "テスト済み"
     },
     {
-      "id": "A2",
-      "name": "カードゲーム関連のアフィリエイト(枠と規則のみ)",
-      "status": "scaffold_done",
-      "note": "承認前のため非表示"
+      "id": "I2",
+      "name": "X取込: スプレッドシート→Apps Script→Issue",
+      "status": "done",
+      "note": "Issue #3 作成を確認。トークン権限を Read and write に修正"
     },
     {
-      "id": "5",
-      "name": "収集の最小版(Scout、Extractor、Verifier)",
+      "id": "I3",
+      "name": "X取込: 承認(J列)→approved→PR",
+      "status": "done",
+      "note": "承認→approved→PR作成まで動作確認済み。PR #5の赤は再実行で緑(一時的な失敗)。PR #5は未マージで閉じ済み、x-4はmainに無い"
+    },
+    {
+      "id": "X1",
+      "name": "Xの公式API(開発者アカウントと規約確認)",
       "status": "todo",
-      "blocker": "情報源URLの確定、APIキー、予算"
+      "blocker": "商用利用の規約が未確認"
     },
     {
-      "id": "5b",
-      "name": "リード検出と店舗拡張",
-      "status": "todo",
-      "note": "最初は手動。自動化は規約確認後"
+      "id": "X2",
+      "name": "10店舗・1週間の試験",
+      "status": "todo"
     },
     {
       "id": 6,
@@ -64,20 +65,21 @@
       "status": "todo"
     },
     {
-      "id": 7,
-      "name": "通知(Web Push)",
-      "status": "todo"
+      "id": 5,
+      "name": "収集スクリプト(X API+AI構造化)",
+      "status": "todo",
+      "blocker": "X規約、APIキー、予算"
     },
     {
-      "id": 8,
-      "name": "当選・落選の報告と穴場スコア",
-      "status": "todo"
+      "id": "V1",
+      "name": "VPSへの設置",
+      "status": "hold",
+      "note": "保留。朝7:00・夜19:00、メモリ200MB上限、専用ユーザー"
     },
     {
       "id": 9,
-      "name": "独自ドメイン・noindex解除・収益化",
-      "status": "todo",
-      "note": "独自ドメイン未取得"
+      "name": "公開準備(noindex解除・ポリシー・提携・ドメイン)",
+      "status": "todo"
     },
     {
       "id": 10,
@@ -86,30 +88,22 @@
     }
   ],
   "uploads_to_confirm": [
-    "CLAUDE.md",
-    "data/chains.yaml(hint版)",
-    "data/schema.json(v2)",
-    "data/leads.schema.json",
-    "data/leads.json",
-    "data/affiliate.json",
-    "config/operations.yaml",
-    "tests/golden/golden.json",
-    "knowledge/ の6ファイル",
-    "scripts/validate.py",
-    ".github/workflows/validate.yml",
-    ".assetsignore",
-    "index.html",
-    "docs/ の3ファイル"
+    "docs/HANDOFF.md(v2)",
+    "docs/DECISIONS.md(D28〜D30)",
+    "docs/NEXT_ACTIONS.md",
+    "docs/status.json",
+    "scripts/apply_intake.py",
+    "scripts/parse_intake.py(最新版)",
+    ".github/workflows/approve-intake.yml",
+    "apps_script/sheet_sync.gs(任意の控え)"
   ],
   "open_issues": [
-    "情報源URLの確定(外部サイトは、メッセージに貼られたURLのみ開ける)",
-    "X API の商用利用の規約と費用",
-    "予算の金額(現在0円)",
-    "cardchusen などの規約とrobots.txt の確認",
-    "提携プログラムへの申込みと規約確認",
-    "プライバシーポリシーと広告表記のページ",
-    "独自ドメインの取得",
-    "ログインが必要な応募ページは自動収集できない可能性"
+    "Xの商用利用の規約(最大の不確定要素)と、API予算の金額",
+    "pokechuu運営者の回答の控えの保存",
+    "情報源の確定(公式サイトのURLとrobots.txt)",
+    "店舗の公式Xアカウントの確定(ヤマダは偽投稿の注意あり)",
+    "GitHubトークンの期限(90日)の更新",
+    "提携プログラムの選定、プライバシーポリシー、独自ドメイン"
   ],
   "kpi_targets": {
     "extraction_match_rate": 0.95,
@@ -120,7 +114,36 @@
   },
   "x_collection": {
     "frequency_per_day": 2,
-    "scope": "頻繁にXで告知する店舗、またはXのみで告知する店舗 計50件",
-    "decision": "D22(2026-11-01)"
+    "method": "公式API(従量課金)",
+    "scope": "公式アカウントの投稿。最大50店舗",
+    "decision": "D29"
+  },
+  "spreadsheet_intake": {
+    "sheet": "ポケカ取込",
+    "columns": "A店舗名 B投稿のURL C商品名 D受付方法 E受付開始 F受付終了 G発表日 H必要なもの I支払い制限 J確認済み K状態",
+    "trigger": "10分ごと(Apps Script)",
+    "warning": "K列は新規の行以外で消さない(重複Issueが作られる)"
+  },
+  "git_progress": {
+    "checked_at": "2026-11-02 昼ごろ(画面の写真)",
+    "commits": 15,
+    "latest_commit": "fc64c25 Add files via upload(チェック緑)",
+    "workflows": [
+      "validate-data",
+      "x-intake-approve",
+      "x-intake-parse"
+    ],
+    "workflow_runs": 18,
+    "failed_run": null,
+    "issues": {
+      "open": 0,
+      "closed": 5,
+      "note": "テストのIssue #2〜#4を2026-11-02に閉じた(#1は以前から閉)"
+    },
+    "pull_requests": {
+      "open": 0,
+      "closed": 1,
+      "note": "PR #5。マージ済みかは未確認"
+    }
   }
 }
