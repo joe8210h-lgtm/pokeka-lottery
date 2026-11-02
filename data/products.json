@@ -2,9 +2,20 @@
   {
     "id": "30th-celebration",
     "name": "拡張パック『30th CELEBRATION』",
-    "aliases": ["拡張パック30th CELEBRATION", "30th CELEBRATION"],
+    "aliases": [
+      "拡張パック30th CELEBRATION",
+      "30th CELEBRATION"
+    ],
     "img_url": null,
     "img_source": null,
     "img_checked_at": null
+  },
+  {
+    "id": "p-1",
+    "name": "(架空)画像連携テスト",
+    "aliases": [],
+    "img_url": "https://example.com/test.jpg",
+    "img_source": "https://example.com/test",
+    "img_checked_at": "2026-11-02"
   }
 ]
