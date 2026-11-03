@@ -1,0 +1,122 @@
+[
+  {
+    "id": "example-shop-1",
+    "name": "例)○○カードショップ△△店",
+    "chain_id": null,
+    "store_type": "local_shop",
+    "prefecture": "東京都",
+    "area": "秋葉原"
+  },
+  {
+    "id": "example-aeon",
+    "name": "例)イオンスタイルオンライン",
+    "chain_id": "aeon",
+    "store_type": "chain",
+    "prefecture": "全国",
+    "area": "オンライン"
+  },
+  {
+    "id": "example-bic",
+    "name": "例)ビックカメラ○○店",
+    "chain_id": "biccamera",
+    "store_type": "chain",
+    "prefecture": "大阪府",
+    "area": "梅田"
+  },
+  {
+    "id": "example-yodo",
+    "name": "例)ヨドバシ・ドット・コム",
+    "chain_id": "yodobashi",
+    "store_type": "chain",
+    "prefecture": "全国",
+    "area": "オンライン"
+  },
+  {
+    "id": "bic-ikebukuro",
+    "name": "ビックカメラ池袋本店",
+    "chain_id": "biccamera",
+    "store_type": "chain",
+    "prefecture": "東京都",
+    "area": "池袋"
+  },
+  {
+    "id": "bic-yurakucho",
+    "name": "ビックカメラ有楽町店",
+    "chain_id": "biccamera",
+    "store_type": "chain",
+    "prefecture": "東京都",
+    "area": "有楽町"
+  },
+  {
+    "id": "bic-shinjuku-west",
+    "name": "ビックカメラ新宿西口店",
+    "chain_id": "biccamera",
+    "store_type": "chain",
+    "prefecture": "東京都",
+    "area": "新宿"
+  },
+  {
+    "id": "bic-akiba",
+    "name": "ビックカメラAKIBA",
+    "chain_id": "biccamera",
+    "store_type": "chain",
+    "prefecture": "東京都",
+    "area": "秋葉原"
+  },
+  {
+    "id": "bic-namba",
+    "name": "ビックカメラなんば店",
+    "chain_id": "biccamera",
+    "store_type": "chain",
+    "prefecture": "大阪府",
+    "area": "なんば"
+  },
+  {
+    "id": "bic-sapporo",
+    "name": "ビックカメラ札幌店",
+    "chain_id": "biccamera",
+    "store_type": "chain",
+    "prefecture": "北海道",
+    "area": "札幌"
+  },
+  {
+    "id": "yodo-official",
+    "name": "ヨドバシカメラ公式",
+    "chain_id": "yodobashi",
+    "store_type": "chain",
+    "prefecture": "全国",
+    "area": "オンライン・全店"
+  },
+  {
+    "id": "yodo-hobby",
+    "name": "ヨドバシカメラ ホビー専門",
+    "chain_id": "yodobashi",
+    "store_type": "chain",
+    "prefecture": "全国",
+    "area": "ホビー売場"
+  },
+  {
+    "id": "yodo-akiba",
+    "name": "ヨドバシ マルチメディアAkiba",
+    "chain_id": "yodobashi",
+    "store_type": "chain",
+    "prefecture": "東京都",
+    "area": "秋葉原"
+  },
+  {
+    "id": "yodo-umeda",
+    "name": "ヨドバシ マルチメディア梅田",
+    "chain_id": "yodobashi",
+    "store_type": "chain",
+    "prefecture": "大阪府",
+    "area": "梅田"
+  },
+  {
+    "id": "pcl-shibuya",
+    "name": "ポケモンカードラウンジ 渋谷(SHIBUYA TSUTAYA)",
+    "chain_id": "pokemon-card-lounge",
+    "store_type": "chain",
+    "prefecture": "東京都",
+    "area": "渋谷"
+  }
+]

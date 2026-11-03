@@ -291,8 +291,8 @@ function fmtD(v){var t=jt(v);return(t.getUTCMonth()+1)+"/"+t.getUTCDate()+"("+wd
 function fmtMD(v){var t=jt(v);return(t.getUTCMonth()+1)+"/"+t.getUTCDate()+"("+wd(t)+")"}
 function fmtOt(v){var t=jt(v);return(t.getUTCMonth()+1)+"/"+t.getUTCDate()+" "+t.getUTCHours()+":"+p2(t.getUTCMinutes())}
 function yen(n){return String(n).replace(/\B(?=(\d{3})+(?!\d))/g,",")}
-function adapt(L,P,now){
-  var pm={};(P||[]).forEach(function(p){if(p&&p.id)pm[p.id]=p});
+function adapt(L,P,now,SH){
+  var pm={},sm={};(P||[]).forEach(function(p){if(p&&p.id)pm[p.id]=p});(SH||[]).forEach(function(x){if(x&&x.id)sm[x.id]=x});
   return L.filter(function(it){return it&&it.id}).map(function(it){
     var pr=pm[it.product_id]||{},reqs=Array.isArray(it.requirements)?it.requirements:[],pay=it.payment||{},cons=it.consistency||{};
     var ic=[],seen={},c=[];
@@ -324,7 +324,7 @@ function adapt(L,P,now){
     if(cons.status==="conflict"&&(cons.conflict_fields||[]).length)src+="（食い違い："+cons.conflict_fields.join("・")+"）";
     if(it.last_verified_at)src+="・確認 "+fmtMD(it.last_verified_at);
     var d={id:String(it.id),m:it.method==="store"?"store":it.method==="online"?"online":"unknown",k:pr.kind||"box",img:pr.img_file||null,p:pr.name||it.product||"商品名は未確認",pr:prs,lim:ls,
-      s:it.shop_name||"店舗名は未確認",due:due,rc:rc,st:st,ic:ic,c:c,r:r,wn:it.result_date?fmtD(it.result_date):UNK,bp:bp,src:src,url:it.apply_url||it.source_url||null,keys:reqs.map(function(q){return q.key}),_rg:region(it.prefecture,it.area)};
+      s:it.shop_name||"店舗名は未確認",due:due,rc:rc,st:st,ic:ic,c:c,r:r,wn:it.result_date?fmtD(it.result_date):UNK,bp:bp,src:src,url:it.apply_url||it.source_url||null,keys:reqs.map(function(q){return q.key}),_rg:region(it.prefecture||(sm[it.shop_id]||{}).prefecture,it.area||(sm[it.shop_id]||{}).area)};
     if(it.entry_start){d.open=it.entry_start;d.ot=fmtOt(it.entry_start)}
     if(it.result_date)d.wnAt=it.result_date;
     if(it.purchase_end)d.bpEnd=it.purchase_end;
@@ -348,10 +348,10 @@ function loadPr(){
       $("prList").appendChild(li);n++});
     if(n)$("prArea").hidden=false}).catch(function(){})}
 window.__adapt=adapt;
-Promise.all([jget("data/lotteries.json"),jget("data/products.json").catch(function(){return[]})]).then(function(x){
+Promise.all([jget("data/lotteries.json"),jget("data/products.json").catch(function(){return[]}),jget("data/shops.json").catch(function(){return[]})]).then(function(x){
   var L=Array.isArray(x[0])?x[0]:[];
   setAsof(L);
-  window.D=adapt(L,x[1],Date.now());
+  window.D=adapt(L,x[1],Date.now(),x[2]);
   if(window.D.some(function(d){return/^sample/.test(d.id)}))$("sampleNotice").hidden=false;
   if(!window.D.length){var e=$("loadErr");e.textContent="いま掲載している抽選はありません。";e.hidden=false;return}
   var s=document.createElement("script");s.textContent=$("app").textContent;document.body.appendChild(s);
