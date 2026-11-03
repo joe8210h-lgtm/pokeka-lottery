@@ -9,7 +9,10 @@
     "img_url": "https://www.30th.pokemon-card.com/images/m6a/m6a_pillow_4f272152.webp",
     "img_source": "https://www.30th.pokemon-card.com/product/m6a",
     "img_checked_at": "2026-11-02",
-    "img_file": "assets/products/30th-celebration.webp"
+    "img_file": "assets/products/30th-celebration.webp",
+    "unit": "BOX",
+    "packs": 20,
+    "kind": "box"
   },
   {
     "id": "p-2",
@@ -20,7 +23,9 @@
     "img_url": "https://www.pokemon-card.com/products/2026/images/mg_1.jpg",
     "img_source": "https://www.pokemon-card.com/products/mega/mg.html",
     "img_checked_at": "2026-11-02",
-    "img_file": "assets/products/p-2.webp"
+    "img_file": "assets/products/p-2.webp",
+    "unit": "セット",
+    "kind": "set"
   },
   {
     "id": "p-3",
@@ -29,7 +34,10 @@
     "img_url": "https://shop.r10s.jp/market-place-osaka/cabinet/imgrc0159817388.jpg",
     "img_source": "https://item.rakuten.co.jp/market-place-osaka/s8819300/",
     "img_checked_at": "2026-11-02",
-    "img_file": "assets/products/p-3.webp"
+    "img_file": "assets/products/p-3.webp",
+    "unit": "BOX",
+    "packs": 30,
+    "kind": "box"
   },
   {
     "id": "p-4",
@@ -41,7 +49,10 @@
     "img_url": "https://www.pokemon-card.com/ex/m6/assets/images/product_pack-f5i4dgqs.png",
     "img_source": "https://www.pokemon-card.com/ex/m6/",
     "img_checked_at": "2026-11-02",
-    "img_file": "assets/products/p-4.webp"
+    "img_file": "assets/products/p-4.webp",
+    "unit": "BOX",
+    "packs": 30,
+    "kind": "box"
   },
   {
     "id": "p-5",
@@ -74,7 +85,9 @@
     "img_url": "https://www.30th.pokemon-card.com/images/mf/thumb_16471c73.webp",
     "img_source": "https://www.30th.pokemon-card.com/product/mf",
     "img_checked_at": "2026-11-02",
-    "img_file": "assets/products/p-7.webp"
+    "img_file": "assets/products/p-7.webp",
+    "unit": "セット",
+    "kind": "set"
   },
   {
     "id": "p-8",
@@ -85,7 +98,10 @@
     "img_url": "https://tshop.r10s.jp/yum-yum/cabinet/4521329462127.jpg",
     "img_source": "https://item.rakuten.co.jp/yum-yum/4521329462127/",
     "img_checked_at": "2026-11-02",
-    "img_file": "assets/products/p-8.webp"
+    "img_file": "assets/products/p-8.webp",
+    "unit": "BOX",
+    "packs": 30,
+    "kind": "box"
   },
   {
     "id": "p-9",
