@@ -2,9 +2,9 @@ name: ui-test
 on:
   push:
     branches: [main]
-    paths: ['index.html', 'privacy.html', 'sw.js', 'manifest.webmanifest', 'assets/**', 'tests/**', 'data/**']
+    paths: ['index.html', 'privacy.html', 'sw.js', 'notify-core.js', 'src/**', 'wrangler.jsonc', 'manifest.webmanifest', 'assets/**', 'tests/**', 'data/**']
   pull_request:
-    paths: ['index.html', 'privacy.html', 'sw.js', 'manifest.webmanifest', 'assets/**', 'tests/**', 'data/**']
+    paths: ['index.html', 'privacy.html', 'sw.js', 'notify-core.js', 'src/**', 'wrangler.jsonc', 'manifest.webmanifest', 'assets/**', 'tests/**', 'data/**']
 jobs:
   ui:
     runs-on: ubuntu-latest
@@ -31,3 +31,8 @@ jobs:
         env:
           BASE: http://localhost:8765
         run: node tests/pwa_check.js
+      - name: 通知の確認(判定・Worker・画面・push)
+        run: |
+          node tests/test_notify_core.js
+          node tests/test_worker.mjs
+          node tests/push_check.js
