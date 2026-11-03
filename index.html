@@ -277,6 +277,7 @@ body,button,input,.chip{font-family:"Zen Maru Gothic","Hiragino Sans",sans-serif
 <button class="gl" id="gb" hidden>🎡 抽選に戻る</button>
 <footer class="ft"><p>掲載内容は店舗の告知をもとにしており、正確性を保証するものではありません。「要確認」の項目は、出典が確認できていません。最新の条件は、各店舗の告知の原文でご確認ください。履歴などの記録は、お使いの端末のブラウザにだけ保存されます。<a href="privacy.html">プライバシーポリシーと広告表記</a></p></footer>
 <div id="toast"></div>
+<script src="notify-core.js"></script>
 <script>
 /* データの読み込みと、抽選データ(lotteries.json)から画面用の形への変換。画面本体は #app に入れ、読み込み後に実行する */
 (function(){
@@ -377,7 +378,7 @@ D.sort(function(x,y){return(x.h<=0)-(y.h<=0)||x.h-y.h});
 function byId(id){return D.filter(function(d){return d.id===id})[0]}
 var KEY="chusen_hist_v1",HS={};
 try{HS=JSON.parse(localStorage.getItem(KEY)||"{}")}catch(e){HS={}}
-function save(){try{localStorage.setItem(KEY,JSON.stringify(HS))}catch(e){}}
+function save(){try{localStorage.setItem(KEY,JSON.stringify(HS))}catch(e){}if(window.ntSnap)ntSnap()}
 var L={ok:["応募可","✓"],warn:["要確認","!"],ng:["終了","×"]};
 function chip(s){return'<span class="chip '+s+'"><span aria-hidden="true">'+L[s][1]+'</span>'+L[s][0]+'</span>'}
 function tb(d){
@@ -561,7 +562,7 @@ var MY={mn:0,ae:0,bc:0,yd:0,follow:[],set:0},LT=[],RP={},ONLYOK=false,DAYF=null;
 try{var _m=JSON.parse(localStorage.getItem(MYK)||"{}");for(var _k in _m)MY[_k]=_m[_k]}catch(e){}
 try{LT=JSON.parse(localStorage.getItem(LTK)||"[]")}catch(e){LT=[]}
 try{RP=JSON.parse(localStorage.getItem(RPK)||"{}")}catch(e){RP={}}
-function sv(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}
+function sv(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}if(window.ntSnap)ntSnap()}
 function chainOf(d){for(var i=0;i<CH.length;i++)if(d.s.indexOf(CH[i])===0)return CH[i];return d.s}
 var REQ=[["mn","mynumber_card","マイナンバーカード"],["bc","biccamera_card","BIG Suicaカード"],["ae","aeon_card","イオンカード"],["yd","yodobashi_member","ヨドバシ会員"]];
 function elig(d){var ks=d.keys||[],need=REQ.filter(function(q){return ks.indexOf(q[1])>=0}),un=need.filter(function(q){return!MY[q[0]]});
@@ -626,8 +627,8 @@ function lsc(){if(mq.matches){if(!hero.hidden){autoL=true;set3d(false)}}else if(
 if(mq.addEventListener)mq.addEventListener("change",lsc);else mq.addListener(lsc);
 function settingsBuild(){var rows=[["mn","マイナンバーカードを持っている"],["bc","ビックカメラ系カード（BIG Suica等）を持っている"],["ae","イオンカードを持っている"],["yd","ヨドバシ会員である"]];
   var h='<div class="sec2"><h2>マイ設定<em>この端末内だけに保存</em></h2><div class="list">'+rows.map(function(r){return'<label class="item sw"><span>'+r[1]+'</span><input type="checkbox" data-k="'+r[0]+'"'+(MY[r[0]]?" checked":"")+'></label>'}).join("")+'</div><p class="note">選ぶと、各抽選に「条件OK／対象外」が出ます。条件は店舗の告知で再確認してください。</p></div>';
-  h+='<div class="sec2"><h2>フォロー中の店舗<em>'+MY.follow.length+'件</em></h2>'+(MY.follow.length?'<div class="list">'+MY.follow.map(function(c){return'<div class="item sw"><span>★ '+esc(c)+'</span><button class="btn" data-unf="'+esc(c)+'">外す</button></div>'}).join("")+'</div>':'<div class="empty">カードの裏の「☆店舗をフォロー」で追加できます。フォロー中の店舗は、一覧の先頭に出ます。</div>')+'<p class="note">新着の通知（Web Push）は第2段階で追加します。</p></div>';
-  document.getElementById("set").innerHTML=h}
+  h+='<div class="sec2"><h2>フォロー中の店舗<em>'+MY.follow.length+'件</em></h2>'+(MY.follow.length?'<div class="list">'+MY.follow.map(function(c){return'<div class="item sw"><span>★ '+esc(c)+'</span><button class="btn" data-unf="'+esc(c)+'">外す</button></div>'}).join("")+'</div>':'<div class="empty">カードの裏の「☆店舗をフォロー」で追加できます。フォロー中の店舗は、一覧の先頭に出ます。</div>')+'</div>';
+  h+=ntHtml();document.getElementById("set").innerHTML=h}
 document.getElementById("set").addEventListener("change",function(e){var k=e.target.dataset.k;if(!k)return;MY[k]=e.target.checked?1:0;MY.set=1;sv(MYK,MY);refresh()});
 document.getElementById("set").addEventListener("click",function(e){var b=e.target.closest("button");if(b&&b.dataset.unf)toggleFollow(b.dataset.unf)});
 function statHtml(){var tot=0,win=0,los=0,by={},ms=new Date().getMonth();
@@ -758,6 +759,43 @@ function hideHint(){hintEl.className="";try{localStorage.setItem("chusen_hint","
 (function(){var seen=false;try{seen=localStorage.getItem("chusen_hint")==="1"}catch(e){}
   if(seen)return;setTimeout(function(){hintEl.className="on";setTimeout(hideHint,7000)},900);
   stage.addEventListener("pointerdown",hideHint,{once:true})})();
+/* ---- 通知(Web Push): 判定は notify-core.js。フォロー・条件・応募履歴は端末内にだけ置き、サーバーには宛先だけを送る ---- */
+var NTK="chusen_notify_v1",PF=Object.assign({},RaffNotify.DEFAULT_PREFS,{kinds:Object.assign({},RaffNotify.DEFAULT_PREFS.kinds)});
+try{var _p=JSON.parse(localStorage.getItem(NTK)||"{}");for(var _q in _p)PF[_q]=_p[_q]}catch(e){}
+var ntBusy=false,ntMsg="",ntT=0;
+function ntSnap(){clearTimeout(ntT);ntT=setTimeout(function(){var h={};Object.keys(HS).forEach(function(id){h[id]={st:HS[id].st}});
+  RaffNotify.kvSet("prefs",PF);RaffNotify.kvSet("my",MY);RaffNotify.kvSet("hist",h);RaffNotify.kvSet("follow",MY.follow)},300)}
+window.ntSnap=ntSnap;
+function ntSupport(){var ios=/iphone|ipad|ipod/i.test(navigator.userAgent),sa=window.matchMedia&&matchMedia("(display-mode: standalone)").matches||navigator.standalone;
+  if(!("serviceWorker" in navigator&&"PushManager" in window&&"Notification" in window))return ios&&!sa?"iPhoneは、共有メニューの「ホーム画面に追加」をしてから、ホーム画面のアイコンで開くと、通知が使えます。":"このブラウザは、通知に対応していません。";
+  if(Notification.permission==="denied")return"通知がブロックされています。ブラウザのサイト設定で、通知を許可してください。";return""}
+function ntHtml(){var u=ntSupport(),k=PF.kinds,cb=function(n,l,on){return'<label class="item sw"><span>'+l+'</span><input type="checkbox" data-nt="'+n+'"'+(on?" checked":"")+'></label>'};
+  var h='<div class="sec2"><h2>通知<em>'+(PF.on?"オン":"オフ")+'</em></h2><div class="list"><label class="item sw"><span>通知を受け取る</span><input type="checkbox" data-nt="on"'+(PF.on?" checked":"")+(u&&!PF.on?" disabled":"")+'></label>';
+  if(PF.on)h+=cb("k.new","新着の抽選（確認済みのもの）",k.new)+cb("k.deadline","締切の3時間前",k.deadline)+cb("k.result","当選発表の日（応募済みの抽選）",k.result)+cb("k.buy","購入期限の前日（当選した抽選）",k.buy)
+    +cb("onlyEligible","自分が応募できる抽選だけ（マイ設定で判定）",PF.onlyEligible)+cb("onlyFollow","フォロー中の店舗だけ",PF.onlyFollow)+cb("quiet","おやすみ時間（23時〜7時）は通知しない",PF.quiet);
+  h+='</div>'+(u?'<p class="note">'+u+'</p>':"")+(ntMsg?'<p class="note">'+esc(ntMsg)+'</p>':"")
+    +'<p class="note">通知するかどうかは、この端末の中で決めます。フォロー店舗・条件・応募履歴は、サーバーに送りません。サーバーに預けるのは通知の宛先だけです（<a href="privacy.html">詳しく</a>）。確認できていない抽選は、通知せず、件数だけをアイコンに出します。1日の通知は5件までです。</p></div>';return h}
+function u8(b){var p="=".repeat((4-b.length%4)%4),r=atob((b+p).replace(/-/g,"+").replace(/_/g,"/")),o=new Uint8Array(r.length);for(var i=0;i<r.length;i++)o[i]=r.charCodeAt(i);return o}
+function ntPost(path,body){return fetch(path,{method:"POST",body:JSON.stringify(body)})}
+function ntOn(){if(ntBusy)return;ntBusy=true;ntMsg="";
+  return Promise.resolve().then(function(){if(ntSupport())throw new Error(ntSupport());return Notification.requestPermission()})
+  .then(function(p){if(p!=="granted")throw new Error("通知が許可されなかったため、オンにできませんでした。");return navigator.serviceWorker.ready})
+  .then(function(reg){return fetch("/api/vapid").then(function(r){if(!r.ok)throw new Error("通知サーバーに接続できません。時間をおいてやり直してください。");return r.json()}).then(function(j){
+    return reg.pushManager.getSubscription().then(function(s){return s||reg.pushManager.subscribe({userVisibleOnly:true,applicationServerKey:u8(j.publicKey)})})})})
+  .then(function(sub){return ntPost("/api/subscribe",{endpoint:sub.endpoint}).then(function(r){if(!r.ok)throw new Error("登録できませんでした。時間をおいてやり直してください。")})})
+  .then(function(){PF.on=true;sv(NTK,PF);return RaffNotify.kvSet("notified",D.map(function(d){return d.id+":new"}))}) /* 登録前からある抽選は、通知しない */
+  .then(function(){ntMsg="通知をオンにしました。"}).catch(function(e){PF.on=false;ntMsg=e.message||"オンにできませんでした。"})
+  .then(function(){ntBusy=false;sv(NTK,PF);settingsBuild()})}
+function ntOff(){PF.on=false;sv(NTK,PF);ntMsg="通知をオフにしました。";
+  return navigator.serviceWorker.ready.then(function(reg){return reg.pushManager.getSubscription()}).then(function(s){if(!s)return;var ep=s.endpoint;return s.unsubscribe().then(function(){return ntPost("/api/unsubscribe",{endpoint:ep})})})
+  .catch(function(){}).then(function(){settingsBuild()})}
+document.getElementById("set").addEventListener("change",function(e){var n=e.target.dataset.nt;if(!n)return;
+  if(n==="on"){if(e.target.checked)ntOn();else ntOff();return}
+  if(n.indexOf("k.")===0)PF.kinds[n.slice(2)]=e.target.checked;else PF[n]=e.target.checked;sv(NTK,PF)});
+/* 通知から開いたとき(?lottery=ID)は、その抽選のカードへ移る */
+(function(){var m=/[?&]lottery=([^&]+)/.exec(location.search);if(!m)return;var id=decodeURIComponent(m[1]);
+  setTimeout(function(){ord();for(var i=0;i<O.length;i++)if(D[O[i]].id===id){go(i);break}try{history.replaceState(null,"",location.pathname)}catch(e){}},600)})();
+ntSnap();
 var weak=(window.matchMedia&&matchMedia("(prefers-reduced-motion: reduce)").matches)||(navigator.deviceMemory&&navigator.deviceMemory<=2);
 set3d(!weak);settingsBuild();build();fit();lsc();glUpdate();window.addEventListener('resize',fit);if(window.visualViewport)window.visualViewport.addEventListener('resize',fit);setTimeout(fit,400);window.addEventListener('orientationchange',fit);window.addEventListener('load',fit);
 </script>

@@ -13,3 +13,6 @@ wrangler.jsonc
 node_modules
 .env
 .env.*
+src
+package.json
+package-lock.json
