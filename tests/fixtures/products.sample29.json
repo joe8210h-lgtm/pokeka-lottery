@@ -1,0 +1,48 @@
+[
+ {
+  "id": "30th-celebration",
+  "name": "拡張パック『30th CELEBRATION』",
+  "img_file": "assets/products/30th-celebration.webp",
+  "unit": "BOX",
+  "kind": "pack",
+  "packs": 20
+ },
+ {
+  "id": "p-2",
+  "name": "スペシャルデッキセットMEGA メガオーダイル・メガカイリュー・メガゲンガー",
+  "img_file": "assets/products/p-2.webp",
+  "unit": "BOX",
+  "kind": "set"
+ },
+ {
+  "id": "p-3",
+  "name": "ハドウシーカー",
+  "img_file": "assets/products/p-3.webp",
+  "unit": "BOX",
+  "kind": "box",
+  "packs": 30
+ },
+ {
+  "id": "p-4",
+  "name": "拡張パック「ストームエメラルダ」",
+  "img_file": "assets/products/p-4.webp",
+  "unit": "BOX",
+  "kind": "box",
+  "packs": 30
+ },
+ {
+  "id": "p-7",
+  "name": "プレミアムデッキセット エーフィ・ブラッキー",
+  "img_file": "assets/products/p-7.webp",
+  "unit": "BOX",
+  "kind": "set"
+ },
+ {
+  "id": "p-8",
+  "name": "拡張パック「アビスアイ」",
+  "img_file": "assets/products/p-8.webp",
+  "unit": "BOX",
+  "kind": "box",
+  "packs": 30
+ }
+]

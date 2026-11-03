@@ -1,0 +1,1622 @@
+[
+ {
+  "id": "fx-bic-30th",
+  "shop_id": "fx-shop-bic-30th",
+  "shop_name": "ビックカメラ池袋本店（7F）",
+  "chain_id": null,
+  "store_type": "chain",
+  "product": "拡張パック『30th CELEBRATION』",
+  "product_id": "30th-celebration",
+  "method": "store",
+  "entry_channel": "unknown",
+  "window_type": "fixed",
+  "entry_start": "2026-11-02T09:30:00+09:00",
+  "entry_end": "2026-11-03T20:00:00+09:00",
+  "result_date": "2026-11-07T13:00:00+09:00",
+  "announce": {
+   "channel": "unknown",
+   "no_inquiry": false
+  },
+  "purchase_start": null,
+  "purchase_end": "2026-11-08T23:59:00+09:00",
+  "delivery": null,
+  "shrink": null,
+  "price_yen": 7200,
+  "limit_per_person": 1,
+  "entry_steps": [],
+  "requirements": [
+   {
+    "key": "biccamera_card",
+    "label": "BIG Suicaカード(会員)",
+    "detail": null
+   },
+   {
+    "key": "mynumber_card",
+    "label": "マイナンバーカード（原本）",
+    "detail": null
+   }
+  ],
+  "payment": {
+   "restriction": "own_card_only",
+   "required_card": "BIG Suicaカード",
+   "timing": "unknown"
+  },
+  "status": "open",
+  "source_type": "site",
+  "source_grade": "third_party",
+  "source_url": "https://example.com/fixture/bic-30th",
+  "first_seen_at": "2026-11-02T13:40:00+09:00",
+  "last_verified_at": "2026-11-02T13:40:00+09:00",
+  "confidence": 0.5,
+  "review_needed": true,
+  "summary": null,
+  "consistency": {
+   "status": "unverified",
+   "checked_at": null,
+   "conflict_fields": []
+  },
+  "prefecture": "東京都",
+  "area": "東京"
+ },
+ {
+  "id": "fx-cb-hiro-m",
+  "shop_id": "fx-shop-cb-hiro-m",
+  "shop_name": "カードボックス広島店（オンライン）",
+  "chain_id": null,
+  "store_type": "chain",
+  "product": "スペシャルデッキセットMEGA メガオーダイル・メガカイリュー・メガゲンガー",
+  "product_id": "p-2",
+  "method": "online",
+  "entry_channel": "unknown",
+  "window_type": "fixed",
+  "entry_start": null,
+  "entry_end": "2026-11-02T23:59:00+09:00",
+  "result_date": null,
+  "announce": {
+   "channel": "unknown",
+   "no_inquiry": false
+  },
+  "purchase_start": null,
+  "purchase_end": null,
+  "delivery": null,
+  "shrink": null,
+  "price_yen": 5500,
+  "limit_per_person": 1,
+  "entry_steps": [],
+  "requirements": [
+   {
+    "key": "member",
+    "label": "会員登録あり（要確認）",
+    "detail": null
+   },
+   {
+    "key": "id_check",
+    "label": "あり（要確認）",
+    "detail": null
+   }
+  ],
+  "payment": {
+   "restriction": "unknown",
+   "required_card": null,
+   "timing": "unknown"
+  },
+  "status": "open",
+  "source_type": "site",
+  "source_grade": "third_party",
+  "source_url": "https://example.com/fixture/cb-hiro-m",
+  "first_seen_at": "2026-11-02T13:40:00+09:00",
+  "last_verified_at": "2026-11-02T13:40:00+09:00",
+  "confidence": 0.5,
+  "review_needed": true,
+  "summary": null,
+  "consistency": {
+   "status": "unverified",
+   "checked_at": null,
+   "conflict_fields": []
+  },
+  "prefecture": "広島県",
+  "area": "広島"
+ },
+ {
+  "id": "fx-tsu-omura-h",
+  "shop_id": "fx-shop-tsu-omura-h",
+  "shop_name": "TSUTAYAココアドバンス大村店",
+  "chain_id": null,
+  "store_type": "chain",
+  "product": "ハドウシーカー",
+  "product_id": "p-3",
+  "method": "online",
+  "entry_channel": "unknown",
+  "window_type": "fixed",
+  "entry_start": null,
+  "entry_end": "2026-11-02T22:00:00+09:00",
+  "result_date": null,
+  "announce": {
+   "channel": "unknown",
+   "no_inquiry": false
+  },
+  "purchase_start": null,
+  "purchase_end": null,
+  "delivery": null,
+  "shrink": null,
+  "price_yen": 6000,
+  "limit_per_person": 1,
+  "entry_steps": [],
+  "requirements": [
+   {
+    "key": "member",
+    "label": "会員登録あり（要確認）",
+    "detail": null
+   },
+   {
+    "key": "id_check",
+    "label": "あり（要確認）",
+    "detail": null
+   }
+  ],
+  "payment": {
+   "restriction": "unknown",
+   "required_card": null,
+   "timing": "unknown"
+  },
+  "status": "open",
+  "source_type": "site",
+  "source_grade": "third_party",
+  "source_url": "https://example.com/fixture/tsu-omura-h",
+  "first_seen_at": "2026-11-02T13:40:00+09:00",
+  "last_verified_at": "2026-11-02T13:40:00+09:00",
+  "confidence": 0.5,
+  "review_needed": true,
+  "summary": null,
+  "consistency": {
+   "status": "unverified",
+   "checked_at": null,
+   "conflict_fields": []
+  },
+  "prefecture": "福岡県",
+  "area": "福岡"
+ },
+ {
+  "id": "fx-geo-m",
+  "shop_id": "fx-shop-geo-m",
+  "shop_name": "ゲオ（店頭受取）",
+  "chain_id": null,
+  "store_type": "chain",
+  "product": "スペシャルデッキセットMEGA メガオーダイル・メガカイリュー・メガゲンガー",
+  "product_id": "p-2",
+  "method": "store",
+  "entry_channel": "unknown",
+  "window_type": "fixed",
+  "entry_start": "2026-11-02T11:00:00+09:00",
+  "entry_end": "2026-11-05T17:59:00+09:00",
+  "result_date": null,
+  "announce": {
+   "channel": "unknown",
+   "no_inquiry": false
+  },
+  "purchase_start": null,
+  "purchase_end": null,
+  "delivery": null,
+  "shrink": null,
+  "price_yen": 5500,
+  "limit_per_person": 1,
+  "entry_steps": [],
+  "requirements": [
+   {
+    "key": "member",
+    "label": "Ponta会員IDの連携（要確認）",
+    "detail": null
+   }
+  ],
+  "payment": {
+   "restriction": "unknown",
+   "required_card": null,
+   "timing": "unknown"
+  },
+  "status": "open",
+  "source_type": "site",
+  "source_grade": "third_party",
+  "source_url": "https://example.com/fixture/geo-m",
+  "first_seen_at": "2026-11-02T13:40:00+09:00",
+  "last_verified_at": "2026-11-02T13:40:00+09:00",
+  "confidence": 0.5,
+  "review_needed": true,
+  "summary": null,
+  "consistency": {
+   "status": "unverified",
+   "checked_at": null,
+   "conflict_fields": []
+  },
+  "prefecture": "全国",
+  "area": "オンライン"
+ },
+ {
+  "id": "fx-seagull-t",
+  "shop_id": "fx-shop-seagull-t",
+  "shop_name": "シーガル各店（店頭受取）",
+  "chain_id": null,
+  "store_type": "chain",
+  "product": "拡張パック『30th CELEBRATION』",
+  "product_id": "30th-celebration",
+  "method": "store",
+  "entry_channel": "unknown",
+  "window_type": "fixed",
+  "entry_start": "2026-11-01T10:00:00+09:00",
+  "entry_end": "2026-11-03T20:00:00+09:00",
+  "result_date": null,
+  "announce": {
+   "channel": "unknown",
+   "no_inquiry": false
+  },
+  "purchase_start": null,
+  "purchase_end": null,
+  "delivery": null,
+  "shrink": null,
+  "price_yen": 7200,
+  "limit_per_person": null,
+  "entry_steps": [],
+  "requirements": [
+   {
+    "key": "member",
+    "label": "シーガルモバイル会員限定",
+    "detail": null
+   }
+  ],
+  "payment": {
+   "restriction": "unknown",
+   "required_card": null,
+   "timing": "unknown"
+  },
+  "status": "open",
+  "source_type": "site",
+  "source_grade": "third_party",
+  "source_url": "https://example.com/fixture/seagull-t",
+  "first_seen_at": "2026-11-02T13:40:00+09:00",
+  "last_verified_at": "2026-11-02T13:40:00+09:00",
+  "confidence": 0.5,
+  "review_needed": true,
+  "summary": null,
+  "consistency": {
+   "status": "unverified",
+   "checked_at": null,
+   "conflict_fields": []
+  },
+  "prefecture": "全国",
+  "area": "オンライン"
+ },
+ {
+  "id": "fx-amiami-h",
+  "shop_id": "fx-shop-amiami-h",
+  "shop_name": "あみあみ（オンライン）",
+  "chain_id": null,
+  "store_type": "chain",
+  "product": "ハドウシーカー",
+  "product_id": "p-3",
+  "method": "online",
+  "entry_channel": "unknown",
+  "window_type": "fixed",
+  "entry_start": null,
+  "entry_end": "2026-11-04T13:59:00+09:00",
+  "result_date": null,
+  "announce": {
+   "channel": "unknown",
+   "no_inquiry": false
+  },
+  "purchase_start": null,
+  "purchase_end": null,
+  "delivery": null,
+  "shrink": null,
+  "price_yen": 6000,
+  "limit_per_person": 1,
+  "entry_steps": [],
+  "requirements": [
+   {
+    "key": "member",
+    "label": "会員アカウントが必要",
+    "detail": null
+   },
+   {
+    "key": "purchase_history",
+    "label": "直近1年の受取実績で優先（要確認）",
+    "detail": null
+   }
+  ],
+  "payment": {
+   "restriction": "unknown",
+   "required_card": null,
+   "timing": "unknown"
+  },
+  "status": "open",
+  "source_type": "site",
+  "source_grade": "third_party",
+  "source_url": "https://example.com/fixture/amiami-h",
+  "first_seen_at": "2026-11-02T13:40:00+09:00",
+  "last_verified_at": "2026-11-02T13:40:00+09:00",
+  "confidence": 0.5,
+  "review_needed": true,
+  "summary": null,
+  "consistency": {
+   "status": "unverified",
+   "checked_at": null,
+   "conflict_fields": []
+  },
+  "prefecture": "全国",
+  "area": "オンライン"
+ },
+ {
+  "id": "fx-kojima-m",
+  "shop_id": "fx-shop-kojima-m",
+  "shop_name": "コジマ（アプリ・店頭受取）",
+  "chain_id": null,
+  "store_type": "chain",
+  "product": "スペシャルデッキセットMEGA メガオーダイル・メガカイリュー・メガゲンガー",
+  "product_id": "p-2",
+  "method": "store",
+  "entry_channel": "unknown",
+  "window_type": "fixed",
+  "entry_start": "2026-10-30T21:00:00+09:00",
+  "entry_end": "2026-11-06T23:59:00+09:00",
+  "result_date": null,
+  "announce": {
+   "channel": "unknown",
+   "no_inquiry": false
+  },
+  "purchase_start": null,
+  "purchase_end": null,
+  "delivery": null,
+  "shrink": null,
+  "price_yen": 5500,
+  "limit_per_person": 1,
+  "entry_steps": [],
+  "requirements": [
+   {
+    "key": "member",
+    "label": "マイ店舗の登録",
+    "detail": null
+   },
+   {
+    "key": "app",
+    "label": "コジマアプリから応募",
+    "detail": null
+   },
+   {
+    "key": "purchase_history",
+    "label": "期間内に累計5,000円以上",
+    "detail": null
+   }
+  ],
+  "payment": {
+   "restriction": "unknown",
+   "required_card": null,
+   "timing": "unknown"
+  },
+  "status": "open",
+  "source_type": "site",
+  "source_grade": "third_party",
+  "source_url": "https://example.com/fixture/kojima-m",
+  "first_seen_at": "2026-11-02T13:40:00+09:00",
+  "last_verified_at": "2026-11-02T13:40:00+09:00",
+  "confidence": 0.5,
+  "review_needed": true,
+  "summary": null,
+  "consistency": {
+   "status": "unverified",
+   "checked_at": null,
+   "conflict_fields": []
+  },
+  "prefecture": "全国",
+  "area": "オンライン"
+ },
+ {
+  "id": "fx-pokecen-h",
+  "shop_id": "fx-shop-pokecen-h",
+  "shop_name": "ポケモンセンターオンライン",
+  "chain_id": null,
+  "store_type": "chain",
+  "product": "ハドウシーカー",
+  "product_id": "p-3",
+  "method": "online",
+  "entry_channel": "unknown",
+  "window_type": "fixed",
+  "entry_start": "2026-11-06T16:00:00+09:00",
+  "entry_end": "2026-11-10T16:59:00+09:00",
+  "result_date": null,
+  "announce": {
+   "channel": "unknown",
+   "no_inquiry": false
+  },
+  "purchase_start": null,
+  "purchase_end": null,
+  "delivery": null,
+  "shrink": null,
+  "price_yen": 6000,
+  "limit_per_person": 1,
+  "entry_steps": [],
+  "requirements": [
+   {
+    "key": "member",
+    "label": "プレイヤーズクラブの認証枠あり",
+    "detail": null
+   }
+  ],
+  "payment": {
+   "restriction": "unknown",
+   "required_card": null,
+   "timing": "unknown"
+  },
+  "status": "upcoming",
+  "source_type": "site",
+  "source_grade": "third_party",
+  "source_url": "https://example.com/fixture/pokecen-h",
+  "first_seen_at": "2026-11-02T13:40:00+09:00",
+  "last_verified_at": "2026-11-02T13:40:00+09:00",
+  "confidence": 0.5,
+  "review_needed": true,
+  "summary": null,
+  "consistency": {
+   "status": "unverified",
+   "checked_at": null,
+   "conflict_fields": []
+  },
+  "prefecture": "全国",
+  "area": "オンライン"
+ },
+ {
+  "id": "fx-lounge-t",
+  "shop_id": "fx-shop-lounge-t",
+  "shop_name": "ポケモンカードラウンジ",
+  "chain_id": null,
+  "store_type": "chain",
+  "product": "拡張パック『30th CELEBRATION』",
+  "product_id": "30th-celebration",
+  "method": "online",
+  "entry_channel": "unknown",
+  "window_type": "fixed",
+  "entry_start": null,
+  "entry_end": "2026-11-01T23:59:00+09:00",
+  "result_date": null,
+  "announce": {
+   "channel": "unknown",
+   "no_inquiry": false
+  },
+  "purchase_start": null,
+  "purchase_end": null,
+  "delivery": null,
+  "shrink": null,
+  "price_yen": 7200,
+  "limit_per_person": 1,
+  "entry_steps": [],
+  "requirements": [],
+  "payment": {
+   "restriction": "unknown",
+   "required_card": null,
+   "timing": "unknown"
+  },
+  "status": "closed",
+  "source_type": "site",
+  "source_grade": "third_party",
+  "source_url": "https://example.com/fixture/lounge-t",
+  "first_seen_at": "2026-11-02T13:40:00+09:00",
+  "last_verified_at": "2026-11-02T13:40:00+09:00",
+  "confidence": 0.5,
+  "review_needed": true,
+  "summary": null,
+  "consistency": {
+   "status": "unverified",
+   "checked_at": null,
+   "conflict_fields": []
+  },
+  "prefecture": "東京都",
+  "area": "東京"
+ },
+ {
+  "id": "fx-s-otakara-storm",
+  "shop_id": "fx-shop-s-otakara-storm",
+  "shop_name": "お宝創庫(お宝倉庫/プレイズ)",
+  "chain_id": null,
+  "store_type": "chain",
+  "product": "拡張パック「ストームエメラルダ」",
+  "product_id": "p-4",
+  "method": "online",
+  "entry_channel": "unknown",
+  "window_type": "fixed",
+  "entry_start": null,
+  "entry_end": "2026-11-01T23:45:00+09:00",
+  "result_date": null,
+  "announce": {
+   "channel": "unknown",
+   "no_inquiry": false
+  },
+  "purchase_start": null,
+  "purchase_end": null,
+  "delivery": null,
+  "shrink": null,
+  "price_yen": 6000,
+  "limit_per_person": 1,
+  "entry_steps": [],
+  "requirements": [
+   {
+    "key": "purchase_history",
+    "label": "購入履歴",
+    "detail": null
+   }
+  ],
+  "payment": {
+   "restriction": "unknown",
+   "required_card": null,
+   "timing": "unknown"
+  },
+  "status": "closed",
+  "source_type": "site",
+  "source_grade": "third_party",
+  "source_url": "https://example.com/fixture/s-otakara-storm",
+  "first_seen_at": "2026-11-02T13:40:00+09:00",
+  "last_verified_at": "2026-11-02T13:40:00+09:00",
+  "confidence": 0.5,
+  "review_needed": true,
+  "summary": null,
+  "consistency": {
+   "status": "unverified",
+   "checked_at": null,
+   "conflict_fields": []
+  },
+  "prefecture": null,
+  "area": null
+ },
+ {
+  "id": "fx-s-bic-hadou",
+  "shop_id": "fx-shop-s-bic-hadou",
+  "shop_name": "ビックカメラ(一部店舗)",
+  "chain_id": null,
+  "store_type": "chain",
+  "product": "ハドウシーカー",
+  "product_id": "p-3",
+  "method": "store",
+  "entry_channel": "unknown",
+  "window_type": "fixed",
+  "entry_start": null,
+  "entry_end": "2026-11-01T00:00:00+09:00",
+  "result_date": null,
+  "announce": {
+   "channel": "unknown",
+   "no_inquiry": false
+  },
+  "purchase_start": null,
+  "purchase_end": null,
+  "delivery": null,
+  "shrink": null,
+  "price_yen": 6000,
+  "limit_per_person": 1,
+  "entry_steps": [],
+  "requirements": [
+   {
+    "key": "purchase_history",
+    "label": "購入履歴",
+    "detail": null
+   }
+  ],
+  "payment": {
+   "restriction": "unknown",
+   "required_card": null,
+   "timing": "unknown"
+  },
+  "status": "closed",
+  "source_type": "site",
+  "source_grade": "third_party",
+  "source_url": "https://example.com/fixture/s-bic-hadou",
+  "first_seen_at": "2026-11-02T13:40:00+09:00",
+  "last_verified_at": "2026-11-02T13:40:00+09:00",
+  "confidence": 0.5,
+  "review_needed": true,
+  "summary": null,
+  "consistency": {
+   "status": "unverified",
+   "checked_at": null,
+   "conflict_fields": []
+  },
+  "prefecture": "全国",
+  "area": "オンライン"
+ },
+ {
+  "id": "fx-s-heiwado-mega",
+  "shop_id": "fx-shop-s-heiwado-mega",
+  "shop_name": "平和堂",
+  "chain_id": null,
+  "store_type": "chain",
+  "product": "スペシャルデッキセットMEGA メガオーダイル・メガカイリュー・メガゲンガー",
+  "product_id": "p-2",
+  "method": "online",
+  "entry_channel": "unknown",
+  "window_type": "fixed",
+  "entry_start": null,
+  "entry_end": "2026-11-01T23:59:00+09:00",
+  "result_date": null,
+  "announce": {
+   "channel": "unknown",
+   "no_inquiry": false
+  },
+  "purchase_start": null,
+  "purchase_end": null,
+  "delivery": null,
+  "shrink": null,
+  "price_yen": 5500,
+  "limit_per_person": 1,
+  "entry_steps": [],
+  "requirements": [
+   {
+    "key": "purchase_history",
+    "label": "購入履歴",
+    "detail": null
+   }
+  ],
+  "payment": {
+   "restriction": "unknown",
+   "required_card": null,
+   "timing": "unknown"
+  },
+  "status": "closed",
+  "source_type": "site",
+  "source_grade": "third_party",
+  "source_url": "https://example.com/fixture/s-heiwado-mega",
+  "first_seen_at": "2026-11-02T13:40:00+09:00",
+  "last_verified_at": "2026-11-02T13:40:00+09:00",
+  "confidence": 0.5,
+  "review_needed": true,
+  "summary": null,
+  "consistency": {
+   "status": "unverified",
+   "checked_at": null,
+   "conflict_fields": []
+  },
+  "prefecture": "大阪府",
+  "area": "大阪"
+ },
+ {
+  "id": "fx-s-cardbox-hiroshima-h",
+  "shop_id": "fx-shop-s-cardbox-hiroshima-h",
+  "shop_name": "カードボックス広島店",
+  "chain_id": null,
+  "store_type": "chain",
+  "product": "ハドウシーカー",
+  "product_id": "p-3",
+  "method": "online",
+  "entry_channel": "unknown",
+  "window_type": "fixed",
+  "entry_start": null,
+  "entry_end": "2026-11-02T23:59:00+09:00",
+  "result_date": null,
+  "announce": {
+   "channel": "unknown",
+   "no_inquiry": false
+  },
+  "purchase_start": null,
+  "purchase_end": null,
+  "delivery": null,
+  "shrink": null,
+  "price_yen": 6000,
+  "limit_per_person": 1,
+  "entry_steps": [],
+  "requirements": [
+   {
+    "key": "member",
+    "label": "会員登録（要確認）",
+    "detail": null
+   },
+   {
+    "key": "id_check",
+    "label": "本人確認（要確認）",
+    "detail": null
+   }
+  ],
+  "payment": {
+   "restriction": "unknown",
+   "required_card": null,
+   "timing": "unknown"
+  },
+  "status": "open",
+  "source_type": "site",
+  "source_grade": "third_party",
+  "source_url": "https://example.com/fixture/s-cardbox-hiroshima-h",
+  "first_seen_at": "2026-11-02T13:40:00+09:00",
+  "last_verified_at": "2026-11-02T13:40:00+09:00",
+  "confidence": 0.5,
+  "review_needed": true,
+  "summary": null,
+  "consistency": {
+   "status": "unverified",
+   "checked_at": null,
+   "conflict_fields": []
+  },
+  "prefecture": "広島県",
+  "area": "広島"
+ },
+ {
+  "id": "fx-s-cardbox-nihonbashi-m",
+  "shop_id": "fx-shop-s-cardbox-nihonbashi-m",
+  "shop_name": "カードボックス日本橋店",
+  "chain_id": null,
+  "store_type": "chain",
+  "product": "スペシャルデッキセットMEGA メガオーダイル・メガカイリュー・メガゲンガー",
+  "product_id": "p-2",
+  "method": "online",
+  "entry_channel": "unknown",
+  "window_type": "fixed",
+  "entry_start": null,
+  "entry_end": "2026-11-02T23:59:00+09:00",
+  "result_date": null,
+  "announce": {
+   "channel": "unknown",
+   "no_inquiry": false
+  },
+  "purchase_start": null,
+  "purchase_end": null,
+  "delivery": null,
+  "shrink": null,
+  "price_yen": 5500,
+  "limit_per_person": 1,
+  "entry_steps": [],
+  "requirements": [
+   {
+    "key": "member",
+    "label": "会員登録（要確認）",
+    "detail": null
+   },
+   {
+    "key": "id_check",
+    "label": "本人確認（要確認）",
+    "detail": null
+   }
+  ],
+  "payment": {
+   "restriction": "unknown",
+   "required_card": null,
+   "timing": "unknown"
+  },
+  "status": "open",
+  "source_type": "site",
+  "source_grade": "third_party",
+  "source_url": "https://example.com/fixture/s-cardbox-nihonbashi-m",
+  "first_seen_at": "2026-11-02T13:40:00+09:00",
+  "last_verified_at": "2026-11-02T13:40:00+09:00",
+  "confidence": 0.5,
+  "review_needed": true,
+  "summary": null,
+  "consistency": {
+   "status": "unverified",
+   "checked_at": null,
+   "conflict_fields": []
+  },
+  "prefecture": "大阪府",
+  "area": "大阪"
+ },
+ {
+  "id": "fx-s-cc2-02",
+  "shop_id": "fx-shop-s-cc2-02",
+  "shop_name": "キデイランド ららぽーと富士…",
+  "chain_id": null,
+  "store_type": "chain",
+  "product": "拡張パック「ストームエメラルダ」",
+  "product_id": "p-4",
+  "method": "online",
+  "entry_channel": "unknown",
+  "window_type": "fixed",
+  "entry_start": null,
+  "entry_end": "2026-11-02T23:59:00+09:00",
+  "result_date": null,
+  "announce": {
+   "channel": "unknown",
+   "no_inquiry": false
+  },
+  "purchase_start": null,
+  "purchase_end": null,
+  "delivery": null,
+  "shrink": null,
+  "price_yen": 6000,
+  "limit_per_person": 1,
+  "entry_steps": [],
+  "requirements": [
+   {
+    "key": "member",
+    "label": "会員登録（要確認）",
+    "detail": null
+   },
+   {
+    "key": "id_check",
+    "label": "本人確認（要確認）",
+    "detail": null
+   }
+  ],
+  "payment": {
+   "restriction": "unknown",
+   "required_card": null,
+   "timing": "unknown"
+  },
+  "status": "open",
+  "source_type": "site",
+  "source_grade": "third_party",
+  "source_url": "https://example.com/fixture/s-cc2-02",
+  "first_seen_at": "2026-11-02T13:40:00+09:00",
+  "last_verified_at": "2026-11-02T13:40:00+09:00",
+  "confidence": 0.5,
+  "review_needed": true,
+  "summary": null,
+  "consistency": {
+   "status": "unverified",
+   "checked_at": null,
+   "conflict_fields": []
+  },
+  "prefecture": "愛知県",
+  "area": "名古屋"
+ },
+ {
+  "id": "fx-s-tcg193-mega",
+  "shop_id": "fx-shop-s-tcg193-mega",
+  "shop_name": "TCGShop193",
+  "chain_id": null,
+  "store_type": "chain",
+  "product": "スペシャルデッキセットMEGA メガオーダイル・メガカイリュー・メガゲンガー",
+  "product_id": "p-2",
+  "method": "online",
+  "entry_channel": "unknown",
+  "window_type": "fixed",
+  "entry_start": null,
+  "entry_end": "2026-11-03T23:59:00+09:00",
+  "result_date": null,
+  "announce": {
+   "channel": "unknown",
+   "no_inquiry": false
+  },
+  "purchase_start": null,
+  "purchase_end": null,
+  "delivery": null,
+  "shrink": null,
+  "price_yen": 5500,
+  "limit_per_person": 1,
+  "entry_steps": [],
+  "requirements": [],
+  "payment": {
+   "restriction": "unknown",
+   "required_card": null,
+   "timing": "unknown"
+  },
+  "status": "open",
+  "source_type": "site",
+  "source_grade": "third_party",
+  "source_url": "https://example.com/fixture/s-tcg193-mega",
+  "first_seen_at": "2026-11-02T13:40:00+09:00",
+  "last_verified_at": "2026-11-02T13:40:00+09:00",
+  "confidence": 0.5,
+  "review_needed": true,
+  "summary": null,
+  "consistency": {
+   "status": "unverified",
+   "checked_at": null,
+   "conflict_fields": []
+  },
+  "prefecture": null,
+  "area": null
+ },
+ {
+  "id": "fx-s-kiddyland-mega",
+  "shop_id": "fx-shop-s-kiddyland-mega",
+  "shop_name": "キデイランド(対象店舗)",
+  "chain_id": null,
+  "store_type": "chain",
+  "product": "スペシャルデッキセットMEGA メガオーダイル・メガカイリュー・メガゲンガー",
+  "product_id": "p-2",
+  "method": "store",
+  "entry_channel": "unknown",
+  "window_type": "fixed",
+  "entry_start": "2026-11-02T10:00:00+09:00",
+  "entry_end": "2026-11-04T23:59:00+09:00",
+  "result_date": null,
+  "announce": {
+   "channel": "unknown",
+   "no_inquiry": false
+  },
+  "purchase_start": null,
+  "purchase_end": null,
+  "delivery": null,
+  "shrink": null,
+  "price_yen": 5500,
+  "limit_per_person": 1,
+  "entry_steps": [],
+  "requirements": [],
+  "payment": {
+   "restriction": "unknown",
+   "required_card": null,
+   "timing": "unknown"
+  },
+  "status": "open",
+  "source_type": "site",
+  "source_grade": "third_party",
+  "source_url": "https://example.com/fixture/s-kiddyland-mega",
+  "first_seen_at": "2026-11-02T13:40:00+09:00",
+  "last_verified_at": "2026-11-02T13:40:00+09:00",
+  "confidence": 0.5,
+  "review_needed": true,
+  "summary": null,
+  "consistency": {
+   "status": "unverified",
+   "checked_at": null,
+   "conflict_fields": []
+  },
+  "prefecture": "全国",
+  "area": "オンライン"
+ },
+ {
+  "id": "fx-s-aeon-kyushu-hadou",
+  "shop_id": "fx-shop-s-aeon-kyushu-hadou",
+  "shop_name": "イオン九州",
+  "chain_id": null,
+  "store_type": "chain",
+  "product": "ハドウシーカー",
+  "product_id": "p-3",
+  "method": "store",
+  "entry_channel": "unknown",
+  "window_type": "fixed",
+  "entry_start": "2026-10-31T00:00:00+09:00",
+  "entry_end": "2026-11-08T23:59:00+09:00",
+  "result_date": null,
+  "announce": {
+   "channel": "unknown",
+   "no_inquiry": false
+  },
+  "purchase_start": null,
+  "purchase_end": null,
+  "delivery": null,
+  "shrink": null,
+  "price_yen": 6000,
+  "limit_per_person": 1,
+  "entry_steps": [],
+  "requirements": [
+   {
+    "key": "app",
+    "label": "iAEONアプリ（要確認）",
+    "detail": null
+   }
+  ],
+  "payment": {
+   "restriction": "unknown",
+   "required_card": null,
+   "timing": "unknown"
+  },
+  "status": "open",
+  "source_type": "site",
+  "source_grade": "third_party",
+  "source_url": "https://example.com/fixture/s-aeon-kyushu-hadou",
+  "first_seen_at": "2026-11-02T13:40:00+09:00",
+  "last_verified_at": "2026-11-02T13:40:00+09:00",
+  "confidence": 0.5,
+  "review_needed": true,
+  "summary": null,
+  "consistency": {
+   "status": "unverified",
+   "checked_at": null,
+   "conflict_fields": []
+  },
+  "prefecture": "福岡県",
+  "area": "福岡"
+ },
+ {
+  "id": "fx-s-cardbox-nabari-h",
+  "shop_id": "fx-shop-s-cardbox-nabari-h",
+  "shop_name": "カードボックス名張店",
+  "chain_id": null,
+  "store_type": "chain",
+  "product": "ハドウシーカー",
+  "product_id": "p-3",
+  "method": "store",
+  "entry_channel": "unknown",
+  "window_type": "fixed",
+  "entry_start": null,
+  "entry_end": "2026-11-03T21:00:00+09:00",
+  "result_date": null,
+  "announce": {
+   "channel": "unknown",
+   "no_inquiry": false
+  },
+  "purchase_start": null,
+  "purchase_end": null,
+  "delivery": null,
+  "shrink": null,
+  "price_yen": 6000,
+  "limit_per_person": 1,
+  "entry_steps": [],
+  "requirements": [
+   {
+    "key": "member",
+    "label": "会員登録（要確認）",
+    "detail": null
+   },
+   {
+    "key": "id_check",
+    "label": "本人確認（要確認）",
+    "detail": null
+   }
+  ],
+  "payment": {
+   "restriction": "unknown",
+   "required_card": null,
+   "timing": "unknown"
+  },
+  "status": "open",
+  "source_type": "site",
+  "source_grade": "third_party",
+  "source_url": "https://example.com/fixture/s-cardbox-nabari-h",
+  "first_seen_at": "2026-11-02T13:40:00+09:00",
+  "last_verified_at": "2026-11-02T13:40:00+09:00",
+  "confidence": 0.5,
+  "review_needed": true,
+  "summary": null,
+  "consistency": {
+   "status": "unverified",
+   "checked_at": null,
+   "conflict_fields": []
+  },
+  "prefecture": "大阪府",
+  "area": "大阪"
+ },
+ {
+  "id": "fx-s-cardbox-kyoto-h",
+  "shop_id": "fx-shop-s-cardbox-kyoto-h",
+  "shop_name": "カードボックス京都店",
+  "chain_id": null,
+  "store_type": "chain",
+  "product": "ハドウシーカー",
+  "product_id": "p-3",
+  "method": "online",
+  "entry_channel": "unknown",
+  "window_type": "fixed",
+  "entry_start": null,
+  "entry_end": "2026-11-03T22:00:00+09:00",
+  "result_date": null,
+  "announce": {
+   "channel": "unknown",
+   "no_inquiry": false
+  },
+  "purchase_start": null,
+  "purchase_end": null,
+  "delivery": null,
+  "shrink": null,
+  "price_yen": 6000,
+  "limit_per_person": 1,
+  "entry_steps": [],
+  "requirements": [
+   {
+    "key": "member",
+    "label": "会員登録（要確認）",
+    "detail": null
+   },
+   {
+    "key": "id_check",
+    "label": "本人確認（要確認）",
+    "detail": null
+   }
+  ],
+  "payment": {
+   "restriction": "unknown",
+   "required_card": null,
+   "timing": "unknown"
+  },
+  "status": "open",
+  "source_type": "site",
+  "source_grade": "third_party",
+  "source_url": "https://example.com/fixture/s-cardbox-kyoto-h",
+  "first_seen_at": "2026-11-02T13:40:00+09:00",
+  "last_verified_at": "2026-11-02T13:40:00+09:00",
+  "confidence": 0.5,
+  "review_needed": true,
+  "summary": null,
+  "consistency": {
+   "status": "unverified",
+   "checked_at": null,
+   "conflict_fields": []
+  },
+  "prefecture": "大阪府",
+  "area": "大阪"
+ },
+ {
+  "id": "fx-s-giga-bofu-m",
+  "shop_id": "fx-shop-s-giga-bofu-m",
+  "shop_name": "GIGA防府店(フタバ図書TSUTAYA)",
+  "chain_id": null,
+  "store_type": "chain",
+  "product": "スペシャルデッキセットMEGA メガオーダイル・メガカイリュー・メガゲンガー",
+  "product_id": "p-2",
+  "method": "store",
+  "entry_channel": "unknown",
+  "window_type": "fixed",
+  "entry_start": null,
+  "entry_end": "2026-11-06T23:59:00+09:00",
+  "result_date": null,
+  "announce": {
+   "channel": "unknown",
+   "no_inquiry": false
+  },
+  "purchase_start": null,
+  "purchase_end": null,
+  "delivery": null,
+  "shrink": null,
+  "price_yen": 5500,
+  "limit_per_person": 1,
+  "entry_steps": [],
+  "requirements": [
+   {
+    "key": "member",
+    "label": "会員登録（要確認）",
+    "detail": null
+   }
+  ],
+  "payment": {
+   "restriction": "unknown",
+   "required_card": null,
+   "timing": "unknown"
+  },
+  "status": "open",
+  "source_type": "site",
+  "source_grade": "third_party",
+  "source_url": "https://example.com/fixture/s-giga-bofu-m",
+  "first_seen_at": "2026-11-02T13:40:00+09:00",
+  "last_verified_at": "2026-11-02T13:40:00+09:00",
+  "confidence": 0.5,
+  "review_needed": true,
+  "summary": null,
+  "consistency": {
+   "status": "unverified",
+   "checked_at": null,
+   "conflict_fields": []
+  },
+  "prefecture": "広島県",
+  "area": "広島"
+ },
+ {
+  "id": "fx-s-home-kagoshima-h",
+  "shop_id": "fx-shop-s-home-kagoshima-h",
+  "shop_name": "カードショップ@ほ〜む。鹿児島店",
+  "chain_id": null,
+  "store_type": "chain",
+  "product": "ハドウシーカー",
+  "product_id": "p-3",
+  "method": "store",
+  "entry_channel": "unknown",
+  "window_type": "fixed",
+  "entry_start": null,
+  "entry_end": "2026-11-08T23:59:00+09:00",
+  "result_date": null,
+  "announce": {
+   "channel": "unknown",
+   "no_inquiry": false
+  },
+  "purchase_start": null,
+  "purchase_end": null,
+  "delivery": null,
+  "shrink": null,
+  "price_yen": 6000,
+  "limit_per_person": 1,
+  "entry_steps": [],
+  "requirements": [
+   {
+    "key": "member",
+    "label": "会員登録（要確認）",
+    "detail": null
+   }
+  ],
+  "payment": {
+   "restriction": "unknown",
+   "required_card": null,
+   "timing": "unknown"
+  },
+  "status": "open",
+  "source_type": "site",
+  "source_grade": "third_party",
+  "source_url": "https://example.com/fixture/s-home-kagoshima-h",
+  "first_seen_at": "2026-11-02T13:40:00+09:00",
+  "last_verified_at": "2026-11-02T13:40:00+09:00",
+  "confidence": 0.5,
+  "review_needed": true,
+  "summary": null,
+  "consistency": {
+   "status": "unverified",
+   "checked_at": null,
+   "conflict_fields": []
+  },
+  "prefecture": "福岡県",
+  "area": "福岡"
+ },
+ {
+  "id": "fx-s-cc2-04",
+  "shop_id": "fx-shop-s-cc2-04",
+  "shop_name": "ふるいちイオンモール熱田店",
+  "chain_id": null,
+  "store_type": "chain",
+  "product": "拡張パック「ストームエメラルダ」",
+  "product_id": "p-4",
+  "method": "online",
+  "entry_channel": "unknown",
+  "window_type": "fixed",
+  "entry_start": null,
+  "entry_end": "2026-11-03T21:01:00+09:00",
+  "result_date": null,
+  "announce": {
+   "channel": "unknown",
+   "no_inquiry": false
+  },
+  "purchase_start": null,
+  "purchase_end": null,
+  "delivery": null,
+  "shrink": null,
+  "price_yen": 6000,
+  "limit_per_person": 1,
+  "entry_steps": [],
+  "requirements": [
+   {
+    "key": "member",
+    "label": "会員登録（要確認）",
+    "detail": null
+   },
+   {
+    "key": "id_check",
+    "label": "本人確認（要確認）",
+    "detail": null
+   },
+   {
+    "key": "app",
+    "label": "アプリ（要確認）",
+    "detail": null
+   }
+  ],
+  "payment": {
+   "restriction": "unknown",
+   "required_card": null,
+   "timing": "unknown"
+  },
+  "status": "open",
+  "source_type": "site",
+  "source_grade": "third_party",
+  "source_url": "https://example.com/fixture/s-cc2-04",
+  "first_seen_at": "2026-11-02T13:40:00+09:00",
+  "last_verified_at": "2026-11-02T13:40:00+09:00",
+  "confidence": 0.5,
+  "review_needed": true,
+  "summary": null,
+  "consistency": {
+   "status": "unverified",
+   "checked_at": null,
+   "conflict_fields": []
+  },
+  "prefecture": "愛知県",
+  "area": "名古屋"
+ },
+ {
+  "id": "fx-s-cc2-13",
+  "shop_id": "fx-shop-s-cc2-13",
+  "shop_name": "ブックオフ栄スカイル店",
+  "chain_id": null,
+  "store_type": "chain",
+  "product": "プレミアムデッキセット エーフィ・ブラッキー",
+  "product_id": "p-7",
+  "method": "online",
+  "entry_channel": "unknown",
+  "window_type": "fixed",
+  "entry_start": null,
+  "entry_end": "2026-11-04T23:59:00+09:00",
+  "result_date": null,
+  "announce": {
+   "channel": "unknown",
+   "no_inquiry": false
+  },
+  "purchase_start": null,
+  "purchase_end": null,
+  "delivery": null,
+  "shrink": null,
+  "price_yen": 6200,
+  "limit_per_person": 1,
+  "entry_steps": [
+   {
+    "type": "follow",
+    "label": "SNS応募（要確認）"
+   }
+  ],
+  "requirements": [],
+  "payment": {
+   "restriction": "unknown",
+   "required_card": null,
+   "timing": "unknown"
+  },
+  "status": "open",
+  "source_type": "site",
+  "source_grade": "third_party",
+  "source_url": "https://example.com/fixture/s-cc2-13",
+  "first_seen_at": "2026-11-02T13:40:00+09:00",
+  "last_verified_at": "2026-11-02T13:40:00+09:00",
+  "confidence": 0.5,
+  "review_needed": true,
+  "summary": null,
+  "consistency": {
+   "status": "unverified",
+   "checked_at": null,
+   "conflict_fields": []
+  },
+  "prefecture": "愛知県",
+  "area": "名古屋"
+ },
+ {
+  "id": "fx-s-cc2-20",
+  "shop_id": "fx-shop-s-cc2-20",
+  "shop_name": "福福トレカ通販店",
+  "chain_id": null,
+  "store_type": "chain",
+  "product": "拡張パック「アビスアイ」",
+  "product_id": "p-8",
+  "method": "online",
+  "entry_channel": "unknown",
+  "window_type": "fixed",
+  "entry_start": null,
+  "entry_end": "2026-11-05T23:59:00+09:00",
+  "result_date": null,
+  "announce": {
+   "channel": "unknown",
+   "no_inquiry": false
+  },
+  "purchase_start": null,
+  "purchase_end": null,
+  "delivery": null,
+  "shrink": null,
+  "price_yen": 6000,
+  "limit_per_person": 1,
+  "entry_steps": [],
+  "requirements": [
+   {
+    "key": "member",
+    "label": "会員登録（要確認）",
+    "detail": null
+   }
+  ],
+  "payment": {
+   "restriction": "unknown",
+   "required_card": null,
+   "timing": "unknown"
+  },
+  "status": "open",
+  "source_type": "site",
+  "source_grade": "third_party",
+  "source_url": "https://example.com/fixture/s-cc2-20",
+  "first_seen_at": "2026-11-02T13:40:00+09:00",
+  "last_verified_at": "2026-11-02T13:40:00+09:00",
+  "confidence": 0.5,
+  "review_needed": true,
+  "summary": null,
+  "consistency": {
+   "status": "unverified",
+   "checked_at": null,
+   "conflict_fields": []
+  },
+  "prefecture": "全国",
+  "area": "オンライン"
+ },
+ {
+  "id": "fx-s-cc2-24",
+  "shop_id": "fx-shop-s-cc2-24",
+  "shop_name": "竜のしっぽ",
+  "chain_id": null,
+  "store_type": "chain",
+  "product": "スペシャルデッキセットMEGA メガオーダイル・メガカイリュー・メガゲンガー",
+  "product_id": "p-2",
+  "method": "online",
+  "entry_channel": "unknown",
+  "window_type": "fixed",
+  "entry_start": null,
+  "entry_end": "2026-11-06T23:59:00+09:00",
+  "result_date": null,
+  "announce": {
+   "channel": "unknown",
+   "no_inquiry": false
+  },
+  "purchase_start": null,
+  "purchase_end": null,
+  "delivery": null,
+  "shrink": null,
+  "price_yen": 5500,
+  "limit_per_person": 1,
+  "entry_steps": [],
+  "requirements": [
+   {
+    "key": "member",
+    "label": "会員登録（要確認）",
+    "detail": null
+   },
+   {
+    "key": "id_check",
+    "label": "本人確認（要確認）",
+    "detail": null
+   }
+  ],
+  "payment": {
+   "restriction": "unknown",
+   "required_card": null,
+   "timing": "unknown"
+  },
+  "status": "open",
+  "source_type": "site",
+  "source_grade": "third_party",
+  "source_url": "https://example.com/fixture/s-cc2-24",
+  "first_seen_at": "2026-11-02T13:40:00+09:00",
+  "last_verified_at": "2026-11-02T13:40:00+09:00",
+  "confidence": 0.5,
+  "review_needed": true,
+  "summary": null,
+  "consistency": {
+   "status": "unverified",
+   "checked_at": null,
+   "conflict_fields": []
+  },
+  "prefecture": null,
+  "area": null
+ },
+ {
+  "id": "fx-s-cc2-28",
+  "shop_id": "fx-shop-s-cc2-28",
+  "shop_name": "TSUTAYA Trading Card 平塚店",
+  "chain_id": null,
+  "store_type": "chain",
+  "product": "プレミアムデッキセット エーフィ・ブラッキー",
+  "product_id": "p-7",
+  "method": "online",
+  "entry_channel": "unknown",
+  "window_type": "fixed",
+  "entry_start": null,
+  "entry_end": "2026-11-13T23:59:00+09:00",
+  "result_date": null,
+  "announce": {
+   "channel": "unknown",
+   "no_inquiry": false
+  },
+  "purchase_start": null,
+  "purchase_end": null,
+  "delivery": null,
+  "shrink": null,
+  "price_yen": 6200,
+  "limit_per_person": 1,
+  "entry_steps": [
+   {
+    "type": "follow",
+    "label": "SNS応募（要確認）"
+   }
+  ],
+  "requirements": [],
+  "payment": {
+   "restriction": "unknown",
+   "required_card": null,
+   "timing": "unknown"
+  },
+  "status": "open",
+  "source_type": "site",
+  "source_grade": "third_party",
+  "source_url": "https://example.com/fixture/s-cc2-28",
+  "first_seen_at": "2026-11-02T13:40:00+09:00",
+  "last_verified_at": "2026-11-02T13:40:00+09:00",
+  "confidence": 0.5,
+  "review_needed": true,
+  "summary": null,
+  "consistency": {
+   "status": "unverified",
+   "checked_at": null,
+   "conflict_fields": []
+  },
+  "prefecture": "東京都",
+  "area": "東京"
+ },
+ {
+  "id": "fx-s-cc2-35",
+  "shop_id": "fx-shop-s-cc2-35",
+  "shop_name": "秋葉原チェルモ",
+  "chain_id": null,
+  "store_type": "chain",
+  "product": "ハドウシーカー",
+  "product_id": "p-3",
+  "method": "online",
+  "entry_channel": "unknown",
+  "window_type": "fixed",
+  "entry_start": null,
+  "entry_end": "2026-11-25T23:59:00+09:00",
+  "result_date": null,
+  "announce": {
+   "channel": "unknown",
+   "no_inquiry": false
+  },
+  "purchase_start": null,
+  "purchase_end": null,
+  "delivery": null,
+  "shrink": null,
+  "price_yen": 6000,
+  "limit_per_person": 1,
+  "entry_steps": [
+   {
+    "type": "follow",
+    "label": "SNS応募（要確認）"
+   }
+  ],
+  "requirements": [],
+  "payment": {
+   "restriction": "unknown",
+   "required_card": null,
+   "timing": "unknown"
+  },
+  "status": "open",
+  "source_type": "site",
+  "source_grade": "third_party",
+  "source_url": "https://example.com/fixture/s-cc2-35",
+  "first_seen_at": "2026-11-02T13:40:00+09:00",
+  "last_verified_at": "2026-11-02T13:40:00+09:00",
+  "confidence": 0.5,
+  "review_needed": true,
+  "summary": null,
+  "consistency": {
+   "status": "unverified",
+   "checked_at": null,
+   "conflict_fields": []
+  },
+  "prefecture": "東京都",
+  "area": "東京"
+ },
+ {
+  "id": "fx-s-cc2-09",
+  "shop_id": "fx-shop-s-cc2-09",
+  "shop_name": "TSUTAYA富士八幡町店",
+  "chain_id": null,
+  "store_type": "chain",
+  "product": "スペシャルデッキセットMEGA メガオーダイル・メガカイリュー・メガゲンガー",
+  "product_id": "p-2",
+  "method": "store",
+  "entry_channel": "unknown",
+  "window_type": "fixed",
+  "entry_start": null,
+  "entry_end": "2026-11-03T22:00:00+09:00",
+  "result_date": null,
+  "announce": {
+   "channel": "unknown",
+   "no_inquiry": false
+  },
+  "purchase_start": null,
+  "purchase_end": null,
+  "delivery": null,
+  "shrink": null,
+  "price_yen": 5500,
+  "limit_per_person": 1,
+  "entry_steps": [],
+  "requirements": [
+   {
+    "key": "member",
+    "label": "会員登録（要確認）",
+    "detail": null
+   },
+   {
+    "key": "id_check",
+    "label": "本人確認（要確認）",
+    "detail": null
+   }
+  ],
+  "payment": {
+   "restriction": "unknown",
+   "required_card": null,
+   "timing": "unknown"
+  },
+  "status": "open",
+  "source_type": "site",
+  "source_grade": "third_party",
+  "source_url": "https://example.com/fixture/s-cc2-09",
+  "first_seen_at": "2026-11-02T13:40:00+09:00",
+  "last_verified_at": "2026-11-02T13:40:00+09:00",
+  "confidence": 0.5,
+  "review_needed": true,
+  "summary": null,
+  "consistency": {
+   "status": "unverified",
+   "checked_at": null,
+   "conflict_fields": []
+  },
+  "prefecture": "愛知県",
+  "area": "名古屋"
+ }
+]
