@@ -3,7 +3,7 @@
  * 画像・アイコンは「保存優先」(裏で更新)。他のサイト(フォントなど)には触れない。
  * 変更したら VERSION を上げる(古い保存は自動で消える)。 */
 importScripts("notify-core.js");
-const VERSION = "raffrare-v2";
+const VERSION = "raffrare-v3";
 const SHELL = ["./", "index.html", "privacy.html", "manifest.webmanifest", "notify-core.js", "assets/icons/icon-192.png"];
 
 self.addEventListener("install", (e) => {
@@ -39,7 +39,7 @@ self.addEventListener("fetch", (e) => {
   if (req.method !== "GET") return;
   const url = new URL(req.url);
   if (url.origin !== self.location.origin) return;
-  if (req.mode === "navigate" || url.pathname.endsWith(".json") || url.pathname.endsWith(".html")) {
+  if (req.mode === "navigate" || url.pathname.endsWith(".json") || url.pathname.endsWith(".html") || url.pathname.endsWith(".js") || url.pathname.endsWith(".webmanifest")) {
     e.respondWith(networkFirst(req));
   } else if (url.pathname.includes("/assets/")) {
     e.respondWith(staleWhileRevalidate(req));
