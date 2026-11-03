@@ -25,6 +25,12 @@ shop_ids = {s["id"] for s in shops}
 products = json.loads((ROOT / "data/products.json").read_text(encoding="utf-8"))
 product_ids = {p.get("id") for p in products}
 
+# 画面用の shops.json が shops.yaml と合っているか(合っていなければ、画面の地域がずれる)
+import build_shops_json  # noqa: E402
+_sj = ROOT / "data/shops.json"
+if not _sj.exists() or _sj.read_text(encoding="utf-8") != build_shops_json.render(build_shops_json.build()):
+    errors.append("data/shops.json が shops.yaml と合っていません。python scripts/build_shops_json.py を実行して、shops.json もコミットしてください")
+
 try:
     import jsonschema
 except ImportError:
