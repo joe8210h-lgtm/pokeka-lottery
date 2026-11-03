@@ -1,0 +1,74 @@
+name: collect
+# 1日2回(07:00・19:00 JST)。Xの鍵が未登録なら、何も取得せず正常終了する(collect.py が判断)。
+# 新しい抽選が増えるときは、mainに直接書かず PR にする(人が確認してマージ)。既存の抽選の更新(削除の反映)と状態・記録は直接反映する。
+on:
+  schedule:
+    - cron: '0 22 * * *'
+    - cron: '0 10 * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+concurrency:
+  group: collect
+  cancel-in-progress: false
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install jsonschema pyyaml
+      - name: 収集
+        id: run
+        env:
+          X_BEARER_TOKEN: ${{ secrets.X_BEARER_TOKEN }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python scripts/collect.py
+      - name: 検証
+        run: python scripts/validate.py
+      - name: 反映(抽選の追加はPR、それ以外は直接)
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          ADDED=$(python - <<'PY'
+          import json, subprocess
+          old = json.loads(subprocess.run(["git","show","HEAD:data/lotteries.json"],capture_output=True,text=True).stdout)
+          new = json.load(open("data/lotteries.json",encoding="utf-8"))
+          print("yes" if len(new) > len(old) else "no")
+          PY
+          )
+          # 状態と記録は、いつも main に直接反映する(PRが未マージでも、次回は続きから取得できる)
+          git add data/scout_state.json data/usage.json data/collect_log.json 2>/dev/null || true
+          if ! git diff --cached --quiet; then git commit -q -m "自動収集: 状態と記録を更新(run ${{ github.run_id }})"; git push -q; fi
+          if git diff --quiet -- data/lotteries.json; then echo "抽選の変更なし"; exit 0; fi
+          if [ "$ADDED" = "yes" ]; then
+            B="collect/run-${{ github.run_id }}"
+            git checkout -q -b "$B"
+            git add data/lotteries.json data/products.json 2>/dev/null || true
+            git commit -q -m "自動収集: 新しい抽選(確認待ち)を追加(run ${{ github.run_id }})"
+            git push -q origin "$B"
+            gh pr create --title "【自動収集】新しい抽選の確認待ち" --body "collect.yml が追加した抽選です。review_needed=true のものは、店舗の一次情報で確認してからマージしてください。" --base main --head "$B"
+          else
+            git add data/lotteries.json
+            git commit -q -m "自動収集: 削除された投稿の出典を外し、確認待ちにする(run ${{ github.run_id }})"
+            git push -q
+          fi
+  watchdog:
+    needs: collect
+    if: failure()
+    runs-on: ubuntu-latest
+    steps:
+      - env:
+          GH_TOKEN: ${{ github.token }}
+          RUN: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          T="【自動】collect が失敗"
+          B="収集が失敗しました(取得・抽出・検証のいずれか)。ログ: $RUN"
+          N=$(gh issue list --state open --search "$T in:title" --json number --jq '.[0].number // empty')
+          if [ -n "$N" ]; then gh issue comment "$N" --body "$B"; else gh issue create --title "$T" --body "$B"; fi
