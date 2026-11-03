@@ -1,4 +1,4 @@
-# 運用の設定(エージェントの振り分けと安全装置)  版: v1 / 2026-10-15
+# 運用の設定(エージェントの振り分けと安全装置)  版: v2 / 2026-11-03
 # 無料の試験運用では、API利用はしない。値は変更したら版番号を上げ、learn.md に理由を書く。
 
 publish_policy:
@@ -11,6 +11,11 @@ safety:
   shadow_mode: true                     # true の間は公開せず、結果だけ記録する
   shadow_days_required: 7               # 本番切り替えの前に必要な日数
   max_failure_rate_to_run: 0.2          # 失敗率がこれを超えたら kill_switch を有効にする
+
+extractor:
+  model: claude-sonnet-5-5         # 抽出に使うモデル。精度が足りないときだけ上位に切り替える
+  max_tokens: 1200
+  yen_per_call: 3.0                     # 1回あたりの推定費用(円)。実測で見直す
 
 budget:
   monthly_api_budget_yen: 0             # 0=無料の試験運用(API呼び出しなし)。金額を決めたら設定する
