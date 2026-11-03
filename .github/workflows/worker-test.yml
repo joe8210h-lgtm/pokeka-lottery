@@ -9,6 +9,7 @@ on:
 jobs:
   worker:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -18,26 +19,26 @@ jobs:
         run: npx --yes wrangler@4 deploy --dry-run
       - name: ローカルで起動
         run: |
-          nohup npx --yes wrangler@4 dev --local --port 8787 --test-scheduled > wrangler.log 2>&1 &
-          for i in $(seq 1 40); do curl -s localhost:8787/api/vapid >/dev/null && break; sleep 3; done
+          nohup npx --yes wrangler@4 dev --local --port 8787 --test-scheduled > wrangler.log 2>&1 < /dev/null &
+          for i in $(seq 1 40); do curl -s --max-time 5 localhost:8787/api/vapid >/dev/null && break; sleep 3; done
           cat wrangler.log | tail -20
       - name: APIと画面を確認
         run: |
           set -e
-          K=$(curl -sf localhost:8787/api/vapid | python3 -c "import sys,json;print(json.load(sys.stdin)['publicKey'])")
+          K=$(curl -sf --max-time 10 localhost:8787/api/vapid | python3 -c "import sys,json;print(json.load(sys.stdin)['publicKey'])")
           test ${#K} -gt 80
-          K2=$(curl -sf localhost:8787/api/vapid | python3 -c "import sys,json;print(json.load(sys.stdin)['publicKey'])")
+          K2=$(curl -sf --max-time 10 localhost:8787/api/vapid | python3 -c "import sys,json;print(json.load(sys.stdin)['publicKey'])")
           test "$K" = "$K2"
           EP='https://fcm.googleapis.com/fcm/send/abc'
-          curl -sf -X POST localhost:8787/api/subscribe -d "{\"endpoint\":\"$EP\"}" | grep -q ok
-          curl -s -o /dev/null -w "%{http_code}" -X POST localhost:8787/api/subscribe -d '{"endpoint":"https://evil.example.com/x"}' | grep -q 400
-          curl -sf localhost:8787/api/stats | grep -q '"subscribers":1'
-          curl -sf localhost:8787/index.html | grep -q "ラッフレア"
-          curl -sf localhost:8787/data/lotteries.json | grep -q '"id"'
-          test "$(curl -s -o /dev/null -w '%{http_code}' localhost:8787/src/worker.js)" != "200" || (echo "src が公開されています"; exit 1)
-          curl -sf "localhost:8787/__scheduled?cron=*/30+*+*+*+*" >/dev/null
-          curl -sf -X POST localhost:8787/api/unsubscribe -d "{\"endpoint\":\"$EP\"}" | grep -q ok
-          curl -sf localhost:8787/api/stats | grep -q '"subscribers":0'
+          curl -sf --max-time 10 -X POST localhost:8787/api/subscribe -d "{\"endpoint\":\"$EP\"}" | grep -q ok
+          curl -s --max-time 10 -o /dev/null -w "%{http_code}" -X POST localhost:8787/api/subscribe -d '{"endpoint":"https://evil.example.com/x"}' | grep -q 400
+          curl -sf --max-time 10 localhost:8787/api/stats | grep -q '"subscribers":1'
+          curl -sf --max-time 10 localhost:8787/index.html | grep -q "ラッフレア"
+          curl -sf --max-time 10 localhost:8787/data/lotteries.json | grep -q '"id"'
+          test "$(curl -s --max-time 10 -o /dev/null -w '%{http_code}' localhost:8787/src/worker.js)" != "200" || (echo "src が公開されています"; exit 1)
+          curl -sf --max-time 10 "localhost:8787/__scheduled?cron=*/30+*+*+*+*" >/dev/null
+          curl -sf --max-time 10 -X POST localhost:8787/api/unsubscribe -d "{\"endpoint\":\"$EP\"}" | grep -q ok
+          curl -sf --max-time 10 localhost:8787/api/stats | grep -q '"subscribers":0'
           echo OK
       - name: 失敗時のログ
         if: failure()
