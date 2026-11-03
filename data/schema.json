@@ -339,7 +339,11 @@
       "description": "出典の種類(公式規約・店頭ポスターはofficial/store_notice)"
     },
     "source_url": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "出典の告知URL。X投稿が削除・非公開になったときは null にして review_needed=true にする(D39②)"
     },
     "apply_url": {
       "type": [

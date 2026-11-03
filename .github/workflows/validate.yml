@@ -20,4 +20,5 @@ jobs:
           python tests/test_close_expired.py
           python tests/test_check_links.py
           python tests/test_extractor_publisher.py
+          python tests/test_collect.py
           python scripts/eval_golden.py

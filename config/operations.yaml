@@ -23,6 +23,7 @@ budget:
 
 collection:
   max_checks_per_day: 2                 # 1日2回まで
+  mode: measure                         # measure=件数と費用だけ測る(抽出しない) / extract=抽出して振り分ける。最初の1週間は measure
   
 golden_set:
   path: tests/golden/golden.json
