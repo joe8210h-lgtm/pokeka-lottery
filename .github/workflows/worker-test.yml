@@ -33,7 +33,7 @@ jobs:
           curl -sf --max-time 10 -X POST localhost:8787/api/subscribe -d "{\"endpoint\":\"$EP\"}" | grep -q ok
           curl -s --max-time 10 -o /dev/null -w "%{http_code}" -X POST localhost:8787/api/subscribe -d '{"endpoint":"https://evil.example.com/x"}' | grep -q 400
           curl -sf --max-time 10 localhost:8787/api/stats | grep -q '"subscribers":1'
-          curl -sf --max-time 10 localhost:8787/index.html | grep -q "ラッフレア"
+          curl -sfL --max-time 10 localhost:8787/index.html | grep -q "ラッフレア"
           curl -sf --max-time 10 localhost:8787/data/lotteries.json | grep -q '"id"'
           test "$(curl -s --max-time 10 -o /dev/null -w '%{http_code}' localhost:8787/src/worker.js)" != "200" || (echo "src が公開されています"; exit 1)
           curl -sf --max-time 10 "localhost:8787/__scheduled?cron=*/30+*+*+*+*" >/dev/null
