@@ -4,7 +4,7 @@ const {chromium}=require('playwright');const fs=require('fs');const path=require
 const FIX=n=>fs.readFileSync(path.join(__dirname,'fixtures',n),'utf8');
 const NOW=Date.parse('2026-11-02T13:40:00+09:00');
 (async()=>{
-  const b=await chromium.launch();const ctx=await b.newContext({viewport:{width:393,height:780},hasTouch:true,isMobile:true});
+  const b=await chromium.launch();const ctx=await b.newContext({viewport:{width:393,height:780},hasTouch:true,isMobile:true,serviceWorkers:'block'});
   const p=await ctx.newPage();const errs=[];p.on('pageerror',e=>errs.push(e.message));
   await p.clock.install({time:NOW});
   await p.route('**/data/lotteries.json',r=>r.fulfill({contentType:'application/json',body:FIX('lotteries.sample29.json')}));
@@ -25,7 +25,7 @@ const NOW=Date.parse('2026-11-02T13:40:00+09:00');
 // ---- 追加の確認: 操作・空データ・読み込み失敗 ----
 (async()=>{
   const b=await chromium.launch();
-  const mk=async(routes)=>{const c=await b.newContext({viewport:{width:393,height:780},hasTouch:true,isMobile:true});const p=await c.newPage();const e=[];p.on('pageerror',x=>e.push(x.message));
+  const mk=async(routes)=>{const c=await b.newContext({viewport:{width:393,height:780},hasTouch:true,isMobile:true,serviceWorkers:'block'});const p=await c.newPage();const e=[];p.on('pageerror',x=>e.push(x.message));
     await p.clock.install({time:NOW});
     for(const [pat,fn] of routes)await p.route(pat,fn);await p.goto(process.env.BASE||'http://localhost:8765/index.html');return {p,e,c}};
   const fx=[['**/data/lotteries.json',r=>r.fulfill({contentType:'application/json',body:FIX('lotteries.sample29.json')})],['**/data/products.json',r=>r.fulfill({contentType:'application/json',body:FIX('products.sample29.json')})],['**/data/affiliate.json',r=>r.fulfill({status:404,body:''})]];
