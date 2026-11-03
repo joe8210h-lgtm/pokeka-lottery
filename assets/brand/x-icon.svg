@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#6A2CC4"/><stop offset="1" stop-color="#D4217D"/></linearGradient>
+<mask id="tk"><rect width="400" height="400" fill="#000"/>
+<rect x="70" y="120" width="260" height="160" rx="22" fill="#fff"/>
+<circle cx="70" cy="200" r="22" fill="#000"/><circle cx="330" cy="200" r="22" fill="#000"/></mask>
+</defs>
+<rect width="400" height="400" fill="url(#bg)"/>
+<circle cx="200" cy="200" r="160" fill="none" stroke="#fff" stroke-opacity=".25" stroke-width="10"/>
+<g transform="rotate(-8 200 200)">
+<rect width="400" height="400" fill="#fff" mask="url(#tk)"/>
+<line x1="262" y1="138" x2="262" y2="262" stroke="#D4217D" stroke-opacity=".45" stroke-width="5" stroke-dasharray="10 9" stroke-linecap="round"/>
+<text x="162" y="238" text-anchor="middle" font-family="'Baloo 2','Arial Rounded MT Bold',Arial,sans-serif" font-weight="800" font-size="120" fill="#6A2CC4">R</text>
+<path d="M298 188l5 13 13 5-13 5-5 13-5-13-13-5 13-5z" fill="#FF8FC8"/>
+</g>
+<path d="M322 84l7 18 18 7-18 7-7 18-7-18-18-7 18-7z" fill="#FFE27A"/>
+<path d="M84 304l5 12 12 5-12 5-5 12-5-12-12-5 12-5z" fill="#fff"/>
+</svg>
