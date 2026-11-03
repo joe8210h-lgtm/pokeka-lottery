@@ -19,7 +19,7 @@ jobs:
         run: npx --yes wrangler@4 deploy --dry-run
       - name: ローカルで起動
         run: |
-          nohup npx --yes wrangler@4 dev --local --port 8787 --test-scheduled > $RUNNER_TEMP/wrangler.log 2>&1 < /dev/null &
+          nohup npx --yes wrangler@4 dev --local --port 8787 --test-scheduled --persist-to $RUNNER_TEMP/wr-state > $RUNNER_TEMP/wrangler.log 2>&1 < /dev/null &
           for i in $(seq 1 40); do curl -s --max-time 5 localhost:8787/api/vapid >/dev/null && break; sleep 3; done
           tail -20 $RUNNER_TEMP/wrangler.log
       - name: APIと画面を確認
