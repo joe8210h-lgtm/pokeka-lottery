@@ -2,9 +2,9 @@ name: ui-test
 on:
   push:
     branches: [main]
-    paths: ['index.html', 'privacy.html', 'assets/**', 'tests/**', 'data/**']
+    paths: ['index.html', 'privacy.html', 'sw.js', 'manifest.webmanifest', 'assets/**', 'tests/**', 'data/**']
   pull_request:
-    paths: ['index.html', 'privacy.html', 'assets/**', 'tests/**', 'data/**']
+    paths: ['index.html', 'privacy.html', 'sw.js', 'manifest.webmanifest', 'assets/**', 'tests/**', 'data/**']
 jobs:
   ui:
     runs-on: ubuntu-latest
@@ -27,3 +27,7 @@ jobs:
           grep -q '"jumpSheet":true' ui.log
           grep -q '"hist":true' ui.log
           grep -q '"err1":\[\]' ui.log
+      - name: PWAの確認(登録・オフライン)
+        env:
+          BASE: http://localhost:8765
+        run: node tests/pwa_check.js
