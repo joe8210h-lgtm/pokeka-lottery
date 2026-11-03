@@ -1,7 +1,19 @@
 # 次にやること(実行用チェックリスト)
 
-更新日: 2026-11-02(最新)
+更新日: 2026-11-03(最新)
 使い方: 上から順に行う。各項目の「完了の目印」を満たしたら、次へ進む。詳しい背景は docs/HANDOFF.md。
+
+## 0. 現在の状況(2026-11-03)
+実装済み(自動で動くもの): 画面の本番移植、毎日の保守(自動closed・リンク切れ検査・Watchdog)、UIテストの自動実行、Extractor/Publisher/summaryの骨組み(実APIなし)、正解データ10件の測定、収集の定期実行(鍵が無いので停止中)、PWA化、プライバシーポリシー(草案)。
+**あなたの作業(これが済むと収集が動く):**
+- [ ] X の開発者アカウントを作り、API の鍵を GitHub Secrets に `X_BEARER_TOKEN` として登録(クレジット10〜20ドル、自動チャージなし)
+- [ ] 最初の1週間は `config/operations.yaml` の `collection.mode: measure`(件数と費用の測定のみ)。件数と費用を見てから `extract` に切り替える
+- [ ] Anthropic API キーを `ANTHROPIC_API_KEY` として登録し、`budget.monthly_api_budget_yen` を決める(extract に切り替えるとき)
+- [ ] `privacy.html` の運営者名・連絡先を記入
+- [ ] X アカウントの作成(素材は docs/design/x-account.md)
+- [ ] 追加する店舗の公式URL・Xアカウント名を送る(ヤマダ・ゲオ・ジョーシン・個店など)
+- [ ] 公開の判断(noindex の解除。手順は docs/design/launch-checklist.md)
+決定: D40(Xの商用利用は確認済み・VPSは使わない)。
 
 ## 1. 承認テストの片付け
 - [x] スプレッドシートのK列は、**新規の行以外では消さない**(消すと重複Issueが作られる)
