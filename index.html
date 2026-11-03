@@ -324,7 +324,7 @@ function adapt(L,P,now,SH){
     if(cons.status==="conflict"&&(cons.conflict_fields||[]).length)src+="（食い違い："+cons.conflict_fields.join("・")+"）";
     if(it.last_verified_at)src+="・確認 "+fmtMD(it.last_verified_at);
     var d={id:String(it.id),m:it.method==="store"?"store":it.method==="online"?"online":"unknown",k:pr.kind||"box",img:pr.img_file||null,p:pr.name||it.product||"商品名は未確認",pr:prs,lim:ls,
-      s:it.shop_name||"店舗名は未確認",due:due,rc:rc,st:st,ic:ic,c:c,r:r,wn:it.result_date?fmtD(it.result_date):UNK,bp:bp,src:src,url:it.apply_url||it.source_url||null,keys:reqs.map(function(q){return q.key}),_rg:region(it.prefecture||(sm[it.shop_id]||{}).prefecture,it.area||(sm[it.shop_id]||{}).area)};
+      s:it.shop_name||"店舗名は未確認",due:due,rc:rc,st:st,ic:ic,c:c,r:r,wn:it.result_date?fmtD(it.result_date):UNK,bp:bp,src:src,url:it.apply_url||null,su:safeUrl(it.source_url||""),keys:reqs.map(function(q){return q.key}),_rg:region(it.prefecture||(sm[it.shop_id]||{}).prefecture,it.area||(sm[it.shop_id]||{}).area)};
     if(it.entry_start){d.open=it.entry_start;d.ot=fmtOt(it.entry_start)}
     if(it.result_date)d.wnAt=it.result_date;
     if(it.purchase_end)d.bpEnd=it.purchase_end;
@@ -405,11 +405,11 @@ function front(d){var a=HS[d.id];
   '<div class="info"><div class="pn">'+d.p+'</div><div class="pr">'+pp(d)+'</div><div class="lim">'+d.lim.replace(/<br>/g,"")+'</div><div class="ic">'+ics(d)+'</div><div class="sh">'+(MY.follow.indexOf(chainOf(d))>=0?'<em class="fol">★</em>':'')+shp(d.s)+'</div><div class="rc">受付 '+d.rc+'</div></div>'}
 function back(d){var a=HS[d.id];
   var cd=d.c.map(function(x){return"<dt>"+x[0]+"</dt><dd>"+x[1]+"</dd>"}).join("");
-  var btn=a?'<button class="cta alt" data-go="hist">'+(a.st==="pending"?"応募中（履歴で完了にする）":"✓ 応募済み（履歴を見る）")+'</button>':d.h<=0?'<button class="cta off" disabled>受付終了</button>':d.pre?'<button class="cta pre" data-act="notify">🔔 開始を通知で知らせる</button>':'<button class="cta" data-act="apply" data-id="'+d.id+'">応募する！ ›</button>';
+  var btn=a?'<button class="cta alt" data-go="hist">'+(a.st==="pending"?"応募中（履歴で完了にする）":"✓ 応募済み（履歴を見る）")+'</button>':d.h<=0?'<button class="cta off" disabled>受付終了</button>':d.pre?'<button class="cta pre" data-act="notify">🔔 開始を通知で知らせる</button>':(!d.url&&d.su)?'<a class="cta alt" href="'+d.su+'" target="_blank" rel="noopener">店舗の告知を確認する ›</a>':'<button class="cta" data-act="apply" data-id="'+d.id+'">応募する！ ›</button>';
   var fol=MY.follow.indexOf(chainOf(d))>=0,lat=LT.indexOf(d.id)>=0,rp=RP[d.id]||{ok:0,end:0,diff:0,mine:null},el=MY.set?elig(d):null;
   var ngb=(el&&el.st==="ng")?'<div class="wbar ngb">あなたは対象外：'+el.why+'</div>':"";
   var qa='<div class="qa"><button data-act="follow" data-id="'+d.id+'" class="'+(fol?"on":"")+'">'+(fol?"★フォロー中":"☆店舗をフォロー")+'</button><button data-act="repopen" data-id="'+d.id+'">⚑ 報告</button></div>';
-  var rpt='<div class="rep">みんなの報告（この端末のみ集計）<div>'+[["ok","✓ 受付中"],["end","✕ 終了"],["diff","！条件が違う"]].map(function(x){return'<button data-act="rep" data-id="'+d.id+'" data-k="'+x[0]+'" class="'+(rp.mine===x[0]?"on":"")+'">'+x[1]+" "+(rp[x[0]]||0)+'</button>'}).join("")+'</div></div>';
+  var rpt='<div class="rep">あなたの報告メモ（この端末のみ・他の人には共有されません）<div>'+[["ok","✓ 受付中"],["end","✕ 終了"],["diff","！条件が違う"]].map(function(x){return'<button data-act="rep" data-id="'+d.id+'" data-k="'+x[0]+'" class="'+(rp.mine===x[0]?"on":"")+'">'+x[1]+" "+(rp[x[0]]||0)+'</button>'}).join("")+'</div></div>';
   return'<div class="row"><b>応募条件</b>'+(eligChip(d)||chip(d.st))+'</div><dl class="bd">'+cd+'</dl><dl class="bd sec"><dt>判定</dt><dd class="em">'+d.r+'</dd><dt>当選発表</dt><dd>'+d.wn+'</dd><dt>購入</dt><dd>'+d.bp+'</dd></dl><div class="src">'+d.src+'</div>'+ngb+((d.wn===UNK||d.bp===UNK)&&d.h>0&&!a?'<div class="wbar">⚠ 日付が未確認です。応募前に店舗の公式で確認してください</div>':'')+btn+qa}
 var stage=document.getElementById("stage"),list=document.getElementById("list"),dots=document.getElementById("dots"),hero=document.getElementById("hero"),tg=document.getElementById("tg"),hid=document.getElementById("hid");
 var a=0,flip=false,cards=[],moved=false,pending=null,F="all",pos=0,tgt=0,raf=0,O=[];
@@ -630,7 +630,7 @@ document.getElementById("set").addEventListener("click",function(e){var b=e.targ
 function statHtml(){var tot=0,win=0,los=0,by={},ms=new Date().getMonth();
   Object.keys(HS).forEach(function(id){var r=HS[id],d=byId(id);if(!d||r.st==="pending"||new Date(r.at).getMonth()!==ms)return;tot++;var c=chainOf(d);by[c]=by[c]||[0,0];by[c][1]++;if(r.st==="won"||r.st==="bought"){win++;by[c][0]++}else if(r.st==="lost")los++});
   if(!tot)return"";var best=Object.keys(by).filter(function(c){return by[c][0]>0}).sort(function(x,y){return by[y][0]-by[x][0]})[0];
-  return'<div class="stat"><div><b>'+tot+'</b>応募</div><div><b>'+win+'</b>当選</div><div><b>'+(win+los?Math.round(win/(win+los)*100)+"%":"—")+'</b>当選率</div></div><div class="meta" style="margin:0 0 8px">今月のあなたの記録'+(best?"｜よく当たる："+esc(best)+"（"+by[best][0]+"/"+by[best][1]+"）":"")+'（他サイトの当選率は使いません）</div>'}
+  return'<div class="stat"><div><b>'+tot+'</b>応募</div><div><b>'+win+'</b>当選</div><div><b>'+(win+los?Math.round(win/(win+los)*100)+"%":"—")+'</b>当選割合（自分の記録）</div></div><div class="meta" style="margin:0 0 8px">今月のあなたの記録'+(best?"｜よく当たる："+esc(best)+"（"+by[best][0]+"/"+by[best][1]+"）":"")+'（他サイトの当選率は使いません）</div>'}
 function needTxt(d){return d.c.filter(function(x){return/本人確認|支払い|会員|アプリ|方式|回数/.test(x[0])})}
 function passHtml(d){var lf=Math.max(0,d.be-Date.now()),dy=Math.floor(lf/864e5),hr=Math.floor(lf%864e5/36e5);
   return'<div class="pass"><div class="ph"><b>🎫 購入パス</b><span>期限まで あと'+(dy>0?dy+"日":"")+hr+'時間</span></div><dl><dt>店舗</dt><dd>'+d.s+'</dd><dt>購入期間</dt><dd>'+d.bp+'</dd></dl><ul>'+needTxt(d).map(function(x){return'<li><span>'+x[0]+'</span>'+esc(x[1])+'</li>'}).join("")+'</ul></div>'}
