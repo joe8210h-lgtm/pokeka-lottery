@@ -153,10 +153,13 @@
 - 提携プログラムの選定。独自ドメインの取得。
 - 承認の自動マージを入れるか(今は、人がマージ)。
 
-## 14. 2026-11-03 の進捗(短い版)
-- 完了: 画面の本番移植(PR #12〜#18)、商品の単位(#16)、毎日の保守とUIテスト(#25)、Extractor/Publisher/summary・正解データ(#26)、収集の定期実行(#27)、PWA(#28)。
-- 決定: D40(Xの商用利用は確認済み。VPSは使わず、必要になったら判断)。拡張パックは1BOX=30P、30th周年は20P(運営の方針。公式に記載なし)。
-- 未完了: X・Anthropic の鍵の登録、1週間の測定、店舗リストの拡充、privacy.html の記入、noindex の解除(公開の判断)、アフィリエイトの申込み、独自ドメイン。
-- 注意: ブランチのCloudflareビルドが赤い(原因は未確認。本番は緑)。本番の失敗1件はビルドトークンの一時的な無効化。
-- 次の一手: 鍵の登録 → collect.yml を手動実行(workflow_dispatch)→ measure の記録(data/collect_log.json)を確認。
-
+## 14. 2026-11-03 の進捗(最新・短い版)
+- 完了: 画面の本番移植(#12〜#18)、商品の単位(#16)、毎日の保守とUIテスト(#25)、Extractor/Publisher/summary・正解データ(#26)、収集の定期実行(#27)、PWA(#28)、Web Push通知(#29〜#30。精度向上6案を含む)、テスト抽選の削除(#32)。
+- 通知: 実機で受信を確認済み。Worker(cron 30分)+KV(SUBS)は本番で稼働中。VAPID鍵はKVに自動生成。サーバーが持つのは購読endpointのみ。
+- 決定: D40(Xの商用利用は確認済み。VPSは使わない)。拡張パックは1BOX=30P、30th周年は20P(運営の方針。公式に記載なし)。
+- 現在の抽選データ: 終了済みサンプル4件のみ(実データなし)。収集は休止中(mode: measure / shadow_mode: true / 予算0円)。
+- 未完了(あなた側): X_BEARER_TOKEN と ANTHROPIC_API_KEY をGitHub Secretsに登録/予算の決定/privacy.html の運営者名・連絡先/店舗URLの追加(ヤマダ・ゲオ・ジョーシン・地域店)/noindex解除の判断(docs/design/launch-checklist.md)/アフィリエイト申込み/独自ドメイン。
+- 未完了(Claude側): ScoutのX画像取得(画像のみ告知)/consistency=match の自動公開方針の決定待ち/X APIコストとD39上限($10/月)の比較/Projectの古い doc(claude/card-ui-motion.md)の更新。
+- 注意: ブランチのCloudflareビルドが赤い(原因未確認。mainは緑)。本番の失敗1件はビルドトークンの一時無効化だった。
+- 次の一手: 鍵の登録 → collect.yml を手動実行(workflow_dispatch)→ data/collect_log.json の measure 記録を確認 → 1週間後に extract へ切替。
+- 進め方: ブランチ→PR→validate成功→squashマージ(「問題が無ければ進めて」承認済み)。commit/pushは指示がある時のみ。REST-only(`gh api`)。
