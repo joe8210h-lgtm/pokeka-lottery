@@ -127,6 +127,15 @@ for p in products:
         if key in pnames and pnames[key] != pi:
             errors.append(f"products {pi}: 名前『{k}』が {pnames[key]} と重複しています(表記ゆれの二重登録)")
         pnames[key] = pi
+    # 任意項目(画面の価格表示で使う): unit=販売の単位、packs=1つあたりのパック数、kind=種類
+    if p.get("unit") is not None and p["unit"] not in ("BOX", "セット", "パック"):
+        errors.append(f"products {pi}: unit は BOX / セット / パック のどれかです: {p['unit']}")
+    if p.get("kind") is not None and p["kind"] not in ("box", "set", "pack"):
+        errors.append(f"products {pi}: kind は box / set / pack のどれかです: {p['kind']}")
+    if p.get("packs") is not None and not (isinstance(p["packs"], int) and not isinstance(p["packs"], bool) and p["packs"] > 0):
+        errors.append(f"products {pi}: packs は1以上の整数です: {p['packs']}")
+    if p.get("packs") is not None and p.get("unit") != "BOX":
+        errors.append(f"products {pi}: packs はunitがBOXのときだけ指定できます")
     for e in products_lib.check_image(p.get("img_url"), p.get("img_source")):
         errors.append(f"products {pi}: {e}")
     for e in products_lib.check_file(ROOT, p.get("img_file")):
