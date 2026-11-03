@@ -1,0 +1,63 @@
+name: daily-maintenance
+# 毎日 00:30 JST(15:30 UTC)。終了した抽選を closed にし、検証とリンク切れ検査を行う。失敗・リンク切れは Issue にする(Watchdog)。
+on:
+  schedule:
+    - cron: '30 15 * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+  issues: write
+concurrency:
+  group: daily-maintenance
+  cancel-in-progress: false
+jobs:
+  maintain:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install jsonschema pyyaml
+      - name: テスト
+        run: |
+          python tests/test_close_expired.py
+          python tests/test_check_links.py
+      - name: 終了した抽選を closed にする
+        run: python scripts/close_expired.py
+      - name: 検証
+        run: python scripts/validate.py
+      - name: 変更があれば main に反映
+        run: |
+          if git diff --quiet -- data/lotteries.json; then echo "変更なし"; exit 0; fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/lotteries.json
+          git commit -m "自動: 受付が終わった抽選を closed にする(daily-maintenance)"
+          git push
+      - name: リンク切れ検査
+        id: links
+        continue-on-error: true
+        run: python scripts/check_links.py --out links-report.md
+      - name: リンク切れを Issue にする(Watchdog)
+        if: steps.links.outcome == 'failure'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          T="【自動】リンク切れを検知"
+          N=$(gh issue list --state open --search "$T in:title" --json number --jq '.[0].number // empty')
+          if [ -n "$N" ]; then gh issue comment "$N" --body-file links-report.md; else gh issue create --title "$T" --body-file links-report.md; fi
+  watchdog:
+    # 上の job が失敗したとき(検証エラー・push失敗など)に Issue を立てる
+    needs: maintain
+    if: failure()
+    runs-on: ubuntu-latest
+    steps:
+      - env:
+          GH_TOKEN: ${{ github.token }}
+          RUN: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          T="【自動】daily-maintenance が失敗"
+          B="毎日の保守が失敗しました。ログ: $RUN"
+          N=$(gh issue list --state open --search "$T in:title" --json number --jq '.[0].number // empty')
+          if [ -n "$N" ]; then gh issue comment "$N" --body "$B"; else gh issue create --title "$T" --body "$B"; fi
