@@ -1,0 +1,29 @@
+name: ui-test
+on:
+  push:
+    branches: [main]
+    paths: ['index.html', 'privacy.html', 'assets/**', 'tests/**', 'data/**']
+  pull_request:
+    paths: ['index.html', 'privacy.html', 'assets/**', 'tests/**', 'data/**']
+jobs:
+  ui:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - run: npm install --no-save playwright@1.49.1
+      - run: npx playwright install --with-deps chromium
+      - name: 静的サーバーを起動
+        run: nohup python3 -m http.server 8765 >/dev/null 2>&1 &
+      - name: UIの動作確認
+        env:
+          BASE: http://localhost:8765/index.html
+        run: |
+          sleep 2
+          node tests/ui_port_check.js | tee ui.log
+          grep -q '^errors \[\]' ui.log
+          grep -q '"jumpSheet":true' ui.log
+          grep -q '"hist":true' ui.log
+          grep -q '"err1":\[\]' ui.log

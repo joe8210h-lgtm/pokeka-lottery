@@ -15,3 +15,7 @@ jobs:
           python-version: '3.12'
       - run: pip install jsonschema pyyaml
       - run: python scripts/validate.py
+      - run: |
+          python tests/test_scout_x.py
+          python tests/test_close_expired.py
+          python tests/test_check_links.py
